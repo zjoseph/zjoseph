@@ -1,0 +1,2677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Effects due to Hurricanes</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.EFFECTS_ABREVIATION">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data"><a href='hurr_Deaths.html'> Deaths </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='hurr_Injuries.html'> Injuries </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='hurr_Property_Damage.html'> Property Damage </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='hurr_Crop_Damage.html'> Crop Damage </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter"><a href='..\Storm_Home_Page.html'> Storm Home Page </a></td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<div>
+<map name="SGPlot2">
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 12 " title=" state = VIRGINIA  
+ COL1 = 12 " href="State/51-Deaths.html " target="_BLANK" coords="526,183,524,184,522,191,523,197,526,183,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 12 " title=" state = VIRGINIA  
+ COL1 = 12 " href="State/51-Deaths.html " target="_BLANK" coords="523,200,519,200,519,201,517,203,518,200,513,198,513,196,518,201,520,198,517,197,518,196,517,194,519,195,519,193,516,192,518,192,515,192,510,187,517,191,518,189,518,187,514,186,513,184,509,184,505,183,506,179,507,175,506,175,499,170,499,173,493,170,493,174,489,180,488,180,486,186,482,184,476,202,464,207,461,203,450,216,445,219,465,216,522,205,522,205,523,205,523,203,524,205,524,205,523,202,525,205,525,205,523,200,523,200,"/>
+<Area shape="poly" alt=" state = VERMONT  
+ COL1 = 0 " title=" state = VERMONT  
+ COL1 = 0 " href="State/50-Deaths.html " target="_BLANK" coords="543,85,539,89,538,100,540,112,533,113,529,100,527,88,527,82,542,78,543,85,543,85,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 114 " title=" state = TEXAS  
+ COL1 = 114 " href="State/48-Deaths.html " target="_BLANK" coords="307,347,300,359,302,353,307,347,307,347,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 114 " title=" state = TEXAS  
+ COL1 = 114 " href="State/48-Deaths.html " target="_BLANK" coords="338,292,338,277,338,270,333,269,325,264,315,266,313,268,310,265,308,266,306,264,304,268,303,265,301,266,298,264,295,265,294,261,290,263,282,260,280,257,277,258,274,255,275,228,243,226,238,289,199,285,200,288,216,306,220,321,233,331,238,328,241,321,245,319,255,321,263,331,267,343,275,353,276,361,280,370,290,375,297,375,299,378,303,376,298,364,300,358,296,358,296,355,297,358,298,354,298,358,300,357,302,352,301,353,299,350,303,349,305,346,303,347,303,346,307,345,307,341,308,343,312,342,309,338,311,339,311,340,315,337,314,340,317,339,312,342,326,333,325,334,326,331,329,329,328,325,331,323,330,326,334,326,331,329,341,325,340,322,342,320,344,305,338,292,338,292,"/>
+<Area shape="poly" alt=" state = TENNESSEE  
+ COL1 = 0 " title=" state = TENNESSEE  
+ COL1 = 0 " href="State/47-Deaths.html " target="_BLANK" coords="465,216,466,219,463,223,457,226,456,225,453,229,444,234,443,238,441,239,441,242,427,244,399,246,377,248,380,246,378,242,381,240,380,237,383,235,382,233,384,226,385,226,385,226,399,225,399,223,445,219,465,216,465,216,"/>
+<Area shape="poly" alt=" state = SOUTH CAROLINA  
+ COL1 = 5 " title=" state = SOUTH CAROLINA  
+ COL1 = 5 " href="State/45-Deaths.html " target="_BLANK" coords="504,248,490,237,478,239,475,235,461,236,453,240,451,245,457,247,461,254,474,265,480,275,483,277,483,270,488,270,489,267,489,269,491,268,490,268,492,267,491,265,493,265,498,259,498,255,499,254,499,256,504,248,504,248,"/>
+<Area shape="poly" alt=" state = RHODE ISLAND  
+ COL1 = 0 " title=" state = RHODE ISLAND  
+ COL1 = 0 " href="State/44-Deaths.html " target="_BLANK" coords="555,123,556,123,556,123,557,125,555,123,555,123,"/>
+<Area shape="poly" alt=" state = RHODE ISLAND  
+ COL1 = 0 " title=" state = RHODE ISLAND  
+ COL1 = 0 " href="State/44-Deaths.html " target="_BLANK" coords="554,122,553,119,549,120,551,128,550,130,554,128,554,122,554,122,"/>
+<Area shape="poly" alt=" state = PENNSYLVANIA  
+ COL1 = 1 " title=" state = PENNSYLVANIA  
+ COL1 = 1 " href="State/42-Deaths.html " target="_BLANK" coords="520,135,518,130,515,128,473,137,473,133,466,139,469,157,471,170,481,168,517,161,521,159,526,152,520,146,520,142,523,136,520,135,520,135,"/>
+<Area shape="poly" alt=" state = OKLAHOMA  
+ COL1 = 0 " title=" state = OKLAHOMA  
+ COL1 = 0 " href="State/40-Deaths.html " target="_BLANK" coords="333,269,325,264,315,266,313,268,310,265,308,266,306,264,304,268,303,265,301,266,298,264,295,265,294,261,290,263,282,260,280,257,277,258,274,255,275,228,243,226,244,219,254,219,331,222,331,229,333,244,333,269,333,269,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 51 " title=" state = NORTH CAROLINA  
+ COL1 = 51 " href="State/37-Deaths.html " target="_BLANK" coords="525,205,525,205,527,209,525,205,525,205,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 51 " title=" state = NORTH CAROLINA  
+ COL1 = 51 " href="State/37-Deaths.html " target="_BLANK" coords="527,213,526,217,525,213,518,216,517,210,519,214,522,212,520,211,524,211,522,209,526,210,524,208,527,211,523,205,522,205,522,205,465,216,466,219,463,223,457,226,456,225,453,229,444,234,443,238,441,239,441,242,453,240,461,236,475,235,478,239,490,237,504,248,510,246,510,242,511,245,512,239,515,236,514,233,515,236,517,232,521,232,521,231,522,232,522,230,523,231,525,229,526,227,524,229,523,226,523,229,522,228,519,229,516,227,520,229,522,224,519,224,520,223,517,223,515,221,521,222,519,221,522,220,521,222,525,222,529,217,527,213,527,213,"/>
+<Area shape="poly" alt=" state = NEW YORK  
+ COL1 = 4 " title=" state = NEW YORK  
+ COL1 = 4 " href="State/36-Deaths.html " target="_BLANK" coords="533,113,533,123,535,135,533,137,534,138,532,143,532,141,532,140,532,139,523,136,520,135,518,130,515,128,473,137,473,133,480,125,477,119,482,116,497,114,503,109,501,105,503,103,502,102,501,104,500,102,511,87,525,83,529,100,533,113,533,113,"/>
+<Area shape="poly" alt=" state = NEW JERSEY  
+ COL1 = 1 " title=" state = NEW JERSEY  
+ COL1 = 1 " href="State/34-Deaths.html " target="_BLANK" coords="532,140,532,141,530,147,533,147,534,156,533,152,533,157,529,169,528,170,528,166,520,164,521,159,521,159,526,152,520,146,520,142,523,136,532,139,532,140,532,140,"/>
+<Area shape="poly" alt=" state = NEW HAMPSHIRE  
+ COL1 = 1 " title=" state = NEW HAMPSHIRE  
+ COL1 = 1 " href="State/33-Deaths.html " target="_BLANK" coords="552,99,544,73,541,75,542,78,543,85,539,89,538,100,540,112,551,109,555,106,555,103,552,99,552,99,"/>
+<Area shape="poly" alt=" state = NEVADA  
+ COL1 = 0 " title=" state = NEVADA  
+ COL1 = 0 " href="State/32-Deaths.html " target="_BLANK" coords="130,202,127,216,125,213,121,214,119,229,77,161,87,120,115,127,143,133,130,202,130,202,"/>
+<Area shape="poly" alt=" state = MISSOURI  
+ COL1 = 0 " title=" state = MISSOURI  
+ COL1 = 0 " href="State/29-Deaths.html " target="_BLANK" coords="388,219,383,216,383,209,374,203,376,194,373,192,371,193,370,188,363,182,362,173,359,170,319,171,323,179,327,181,328,183,326,186,331,191,331,222,331,229,371,227,371,227,378,227,379,229,376,234,382,233,384,226,384,226,384,225,385,226,385,226,388,224,388,219,388,219,"/>
+<Area shape="poly" alt=" state = MISSISSIPPI  
+ COL1 = 184 " title=" state = MISSISSIPPI  
+ COL1 = 184 " href="State/28-Deaths.html " target="_BLANK" coords="400,290,402,312,392,312,390,315,389,315,386,308,387,304,365,305,365,301,368,297,366,296,369,294,368,293,372,288,370,288,373,285,370,284,372,284,371,282,370,282,369,277,370,273,370,270,368,270,368,267,370,267,369,263,372,260,371,259,375,256,375,251,377,250,377,248,399,246,401,248,400,290,400,290,"/>
+<Area shape="poly" alt=" state = MASSACHUSETTS  
+ COL1 = 0 " title=" state = MASSACHUSETTS  
+ COL1 = 0 " href="State/25-Deaths.html " target="_BLANK" coords="565,115,563,115,566,118,563,120,559,117,558,114,555,114,558,108,555,108,555,106,551,109,540,112,533,113,533,123,549,120,553,119,554,122,554,122,554,122,554,122,555,122,555,123,556,123,556,123,557,125,561,120,561,124,567,120,567,118,565,115,565,115,"/>
+<Area shape="poly" alt=" state = MARYLAND  
+ COL1 = 2 " title=" state = MARYLAND  
+ COL1 = 2 " href="State/24-Deaths.html " target="_BLANK" coords="528,177,522,178,517,161,481,168,482,175,488,168,491,169,494,166,498,167,499,170,506,175,508,175,508,176,506,182,510,183,509,181,517,185,515,182,512,180,512,178,515,181,511,173,513,174,513,172,510,169,512,169,514,165,514,167,514,163,516,163,516,165,516,166,517,166,515,166,514,170,515,169,517,169,515,172,517,174,515,174,515,174,516,176,517,175,517,177,515,177,517,178,515,179,516,180,519,180,520,180,522,182,521,185,524,184,526,183,528,177,528,177,"/>
+<Area shape="poly" alt=" state = MAINE  
+ COL1 = 0 " title=" state = MAINE  
+ COL1 = 0 " href="State/23-Deaths.html " target="_BLANK" coords="574,79,572,79,573,81,572,80,572,77,574,79,574,79,"/>
+<Area shape="poly" alt=" state = MAINE  
+ COL1 = 0 " title=" state = MAINE  
+ COL1 = 0 " href="State/23-Deaths.html " target="_BLANK" coords="581,69,581,68,582,67,580,65,577,64,576,60,572,59,567,41,562,38,557,43,553,40,549,52,550,63,547,70,548,71,547,71,547,74,544,73,552,99,555,103,558,92,559,90,560,89,560,88,563,90,564,85,565,87,566,85,566,80,568,78,568,81,571,81,570,77,571,78,573,75,575,78,576,74,579,74,578,72,581,72,583,69,581,69,581,69,"/>
+<Area shape="poly" alt=" state = LOUISIANA  
+ COL1 = 826 " title=" state = LOUISIANA  
+ COL1 = 826 " href="State/22-Deaths.html " target="_BLANK" coords="396,328,390,326,388,322,391,323,393,321,393,315,388,319,386,318,388,316,387,315,383,318,379,316,382,313,389,315,386,308,387,304,365,305,365,301,368,297,366,296,369,294,368,293,372,288,370,288,373,285,370,284,372,284,371,282,370,282,369,277,338,277,338,292,344,305,342,320,341,324,348,323,364,326,365,325,360,323,364,321,363,323,366,322,367,326,371,327,372,329,371,327,369,328,370,329,375,331,380,327,382,331,384,329,384,326,382,325,381,322,382,320,383,325,385,325,385,323,387,327,389,327,392,330,393,329,393,330,395,331,396,328,396,328,"/>
+<Area shape="poly" alt=" state = GEORGIA  
+ COL1 = 7 " title=" state = GEORGIA  
+ COL1 = 7 " href="State/13-Deaths.html " target="_BLANK" coords="480,275,474,265,461,254,457,247,451,245,453,240,441,242,427,244,435,273,439,281,437,287,439,299,441,302,471,300,472,303,473,303,473,297,479,297,479,294,477,293,479,293,477,291,480,285,480,279,482,279,480,275,480,275,"/>
+<Area shape="poly" alt=" state = FLORIDA  
+ COL1 = 151 " title=" state = FLORIDA  
+ COL1 = 151 " href="State/12-Deaths.html " target="_BLANK" coords="503,348,495,332,493,325,484,311,479,297,473,297,473,303,472,303,471,300,441,302,439,299,410,302,413,309,413,311,415,310,416,307,417,309,417,307,419,309,416,310,427,307,428,309,423,309,432,312,431,309,434,309,432,311,436,312,433,312,438,315,437,318,440,318,448,313,447,311,450,310,456,312,464,322,467,321,470,329,469,339,471,341,472,338,470,336,473,339,474,337,472,343,474,343,471,344,477,352,479,352,477,350,480,350,481,356,483,353,481,356,483,357,486,364,491,366,494,373,503,369,504,362,503,348,503,348,"/>
+<Area shape="poly" alt=" state = DISTRICT OF COLUMBIA  
+ COL1 = 0 " title=" state = DISTRICT OF COLUMBIA  
+ COL1 = 0 " href="State/11-Deaths.html " target="_BLANK" coords="508,176,507,175,506,175,508,175,508,176,508,176,"/>
+<Area shape="poly" alt=" state = DELAWARE  
+ COL1 = 0 " title=" state = DELAWARE  
+ COL1 = 0 " href="State/10-Deaths.html " target="_BLANK" coords="528,174,528,174,527,172,520,164,521,159,521,159,517,161,522,178,528,177,528,177,528,177,528,174,528,174,"/>
+<Area shape="poly" alt=" state = CONNECTICUT  
+ COL1 = 1 " title=" state = CONNECTICUT  
+ COL1 = 1 " href="State/09-Deaths.html " target="_BLANK" coords="549,120,533,123,535,135,533,137,534,138,541,132,546,131,546,131,551,128,549,120,549,120,"/>
+<Area shape="poly" alt=" state = CALIFORNIA  
+ COL1 = 0 " title=" state = CALIFORNIA  
+ COL1 = 0 " href="State/06-Deaths.html " target="_BLANK" coords="119,229,77,161,87,120,47,108,44,121,39,128,42,138,40,151,45,162,44,166,48,170,49,166,52,167,49,168,52,176,49,173,48,170,47,178,51,183,49,192,56,207,55,210,57,211,56,219,57,221,66,224,70,230,76,233,76,237,80,238,85,245,86,257,113,260,116,259,114,252,117,249,118,244,123,240,119,229,119,229,"/>
+<Area shape="poly" alt=" state = ARKANSAS  
+ COL1 = 1 " title=" state = ARKANSAS  
+ COL1 = 1 " href="State/05-Deaths.html " target="_BLANK" coords="382,233,376,234,379,229,378,227,371,227,371,227,331,229,333,244,333,269,338,270,338,277,369,277,370,273,370,270,368,270,368,267,370,267,369,263,372,260,371,259,375,256,375,251,377,250,377,248,380,246,378,242,381,240,380,237,383,235,382,233,382,233,"/>
+<Area shape="poly" alt=" state = ARIZONA  
+ COL1 = 0 " title=" state = ARIZONA  
+ COL1 = 0 " href="State/04-Deaths.html " target="_BLANK" coords="182,212,130,202,127,216,125,213,121,214,119,229,123,240,118,244,117,249,114,252,116,259,113,260,111,263,149,287,171,291,182,212,182,212,"/>
+<Area shape="poly" alt=" state = ALABAMA  
+ COL1 = 2 " title=" state = ALABAMA  
+ COL1 = 2 " href="State/01-Deaths.html " target="_BLANK" coords="437,287,439,299,410,302,413,309,413,311,406,313,409,312,406,307,405,312,402,312,400,290,401,248,399,246,427,244,435,273,439,281,437,287,437,287,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot2.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot2" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<div>
+<map name="SGPlot3">
+<Area shape="poly" alt=" begin_date_time = Sep 2018 
+ Deaths (Sum) = 11 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2018 
+ Deaths (Sum) = 11 
+ event_type = Tropical Storm" coords="589,336,596,336,596,340,589,340,589,336,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2018 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Sep 2018 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="589,339,596,339,596,340,589,340,589,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2018 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = May 2018 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="582,339,589,339,589,340,582,340,582,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2017 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2017 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="574,339,582,339,582,340,574,340,574,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2017 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Oct 2017 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="574,339,582,339,582,340,574,340,574,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2017 
+ Deaths (Sum) = 52 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2017 
+ Deaths (Sum) = 52 
+ event_type = Tropical Storm" coords="567,316,574,316,574,333,567,333,567,316,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2017 
+ Deaths (Sum) = 25 
+ event_type = Hurricane" title=" begin_date_time = Sep 2017 
+ Deaths (Sum) = 25 
+ event_type = Hurricane" coords="567,332,574,332,574,340,567,340,567,332,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2017 
+ Deaths (Sum) = 55 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2017 
+ Deaths (Sum) = 55 
+ event_type = Tropical Storm" coords="560,322,567,322,567,339,560,339,560,322,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2017 
+ Deaths (Sum) = 3 
+ event_type = Hurricane" title=" begin_date_time = Aug 2017 
+ Deaths (Sum) = 3 
+ event_type = Hurricane" coords="560,338,567,338,567,340,560,340,560,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2017 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 2017 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="552,339,560,339,560,340,552,340,552,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2017 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2017 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="545,339,552,339,552,340,545,340,545,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2016 
+ Deaths (Sum) = 15 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2016 
+ Deaths (Sum) = 15 
+ event_type = Tropical Storm" coords="538,333,545,333,545,338,538,338,538,333,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2016 
+ Deaths (Sum) = 6 
+ event_type = Hurricane" title=" begin_date_time = Oct 2016 
+ Deaths (Sum) = 6 
+ event_type = Hurricane" coords="538,337,545,337,545,340,538,340,538,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2016 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2016 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="530,339,538,339,538,340,530,340,530,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2016 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Sep 2016 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="530,339,538,339,538,340,530,340,530,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2016 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2016 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="523,339,530,339,530,340,523,340,523,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2015 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2015 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="516,339,523,339,523,340,516,340,516,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2015 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = May 2015 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="508,339,516,339,516,340,508,340,508,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2014 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 2014 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="501,339,508,339,508,340,501,340,501,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2014 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Jul 2014 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="501,339,508,339,508,340,501,340,501,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2013 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2013 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="494,339,501,339,501,340,494,340,494,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2012 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2012 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="486,339,494,339,494,340,486,340,486,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2012 
+ Deaths (Sum) = 4 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2012 
+ Deaths (Sum) = 4 
+ event_type = Tropical Storm" coords="479,338,486,338,486,340,479,340,479,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2012 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Aug 2012 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="479,339,486,339,486,340,479,340,479,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2012 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2012 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="472,339,479,339,479,340,472,340,472,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2012 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = May 2012 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="464,339,472,339,472,340,464,340,464,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2011 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2011 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="457,339,464,339,464,340,457,340,457,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2011 
+ Deaths (Sum) = 13 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2011 
+ Deaths (Sum) = 13 
+ event_type = Tropical Storm" coords="450,335,457,335,457,340,450,340,450,335,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2011 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Aug 2011 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="450,339,457,339,457,340,450,340,450,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2010 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2010 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="443,339,450,339,450,340,443,340,443,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2010 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 2010 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="435,339,442,339,442,340,435,340,435,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2010 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2010 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="428,339,435,339,435,340,428,340,428,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2009 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Nov 2009 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="421,339,428,339,428,340,421,340,421,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2009 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2009 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="413,339,420,339,420,340,413,340,413,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2008 
+ Deaths (Sum) = 4 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2008 
+ Deaths (Sum) = 4 
+ event_type = Tropical Storm" coords="406,329,413,329,413,332,406,332,406,329,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2008 
+ Deaths (Sum) = 29 
+ event_type = Hurricane" title=" begin_date_time = Sep 2008 
+ Deaths (Sum) = 29 
+ event_type = Hurricane" coords="406,331,413,331,413,340,406,340,406,331,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2008 
+ Deaths (Sum) = 13 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2008 
+ Deaths (Sum) = 13 
+ event_type = Tropical Storm" coords="399,335,406,335,406,340,399,340,399,335,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2008 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 2008 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="391,339,398,339,398,340,391,340,391,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2008 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Jul 2008 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="391,339,398,339,398,340,391,340,391,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="384,339,391,339,391,340,384,340,384,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="377,339,384,339,384,340,377,340,377,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2007 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Sep 2007 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="377,339,384,339,384,340,377,340,377,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="369,339,377,339,377,340,369,340,369,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="362,339,369,339,369,340,362,340,362,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = May 2007 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="355,339,362,339,362,340,355,340,355,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2006 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2006 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="347,339,355,339,355,340,347,340,347,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2006 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2006 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="340,339,347,339,347,340,340,340,340,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2006 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2006 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="333,339,340,339,340,340,333,340,333,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="325,338,333,338,333,339,325,339,325,338,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2005 
+ Deaths (Sum) = 5 
+ event_type = Hurricane" title=" begin_date_time = Oct 2005 
+ Deaths (Sum) = 5 
+ event_type = Hurricane" coords="325,338,333,338,333,340,325,340,325,338,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="318,337,325,337,325,338,318,338,318,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2005 
+ Deaths (Sum) = 6 
+ event_type = Hurricane" title=" begin_date_time = Sep 2005 
+ Deaths (Sum) = 6 
+ event_type = Hurricane" coords="318,337,325,337,325,340,318,340,318,337,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="311,39,318,39,318,40,311,40,311,39,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2005 
+ Deaths (Sum) = 1003 
+ event_type = Hurricane" title=" begin_date_time = Aug 2005 
+ Deaths (Sum) = 1003 
+ event_type = Hurricane" coords="311,39,318,39,318,340,311,340,311,39,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="303,339,311,339,311,340,303,340,303,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2005 
+ Deaths (Sum) = 2 
+ event_type = Hurricane" title=" begin_date_time = Jul 2005 
+ Deaths (Sum) = 2 
+ event_type = Hurricane" coords="303,339,311,339,311,340,303,340,303,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2005 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="296,339,303,339,303,340,296,340,296,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2004 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2004 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="289,339,296,339,296,340,289,340,289,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2004 
+ Deaths (Sum) = 6 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2004 
+ Deaths (Sum) = 6 
+ event_type = Tropical Storm" coords="281,333,289,333,289,336,281,336,281,333,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2004 
+ Deaths (Sum) = 14 
+ event_type = Hurricane" title=" begin_date_time = Sep 2004 
+ Deaths (Sum) = 14 
+ event_type = Hurricane" coords="281,335,289,335,289,340,281,340,281,335,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2004 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2004 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="274,336,281,336,281,338,274,338,274,336,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2004 
+ Deaths (Sum) = 9 
+ event_type = Hurricane" title=" begin_date_time = Aug 2004 
+ Deaths (Sum) = 9 
+ event_type = Hurricane" coords="274,337,281,337,281,340,274,340,274,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2003 
+ Deaths (Sum) = 5 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2003 
+ Deaths (Sum) = 5 
+ event_type = Tropical Storm" coords="267,336,274,336,274,338,267,338,267,336,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2003 
+ Deaths (Sum) = 6 
+ event_type = Hurricane" title=" begin_date_time = Sep 2003 
+ Deaths (Sum) = 6 
+ event_type = Hurricane" coords="267,337,274,337,274,340,267,340,267,337,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2003 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2003 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="259,339,267,339,267,340,259,340,259,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2003 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 2003 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="252,339,259,339,259,340,252,340,252,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2003 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Jul 2003 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="252,339,259,339,259,340,252,340,252,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2003 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2003 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="245,339,252,339,252,340,245,340,245,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2002 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 2002 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="238,339,245,339,245,340,238,340,238,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2002 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Oct 2002 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="238,339,245,339,245,340,238,340,238,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2002 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2002 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="230,339,237,339,237,340,230,340,230,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2002 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2002 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="223,339,230,339,230,340,223,340,223,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2002 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Feb 2002 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="216,339,223,339,223,340,216,340,216,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2001 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Nov 2001 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="208,339,215,339,215,340,208,340,208,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2001 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2001 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="201,339,208,339,208,340,201,340,201,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2001 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 2001 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="194,339,201,339,201,340,194,340,194,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2001 
+ Deaths (Sum) = 22 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 2001 
+ Deaths (Sum) = 22 
+ event_type = Tropical Storm" coords="186,333,193,333,193,340,186,340,186,333,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2000 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 2000 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="179,339,186,339,186,340,179,340,179,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2000 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Sep 2000 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="179,339,186,339,186,340,179,340,179,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1999 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 1999 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="172,339,179,339,179,340,172,340,172,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1999 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Oct 1999 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="172,339,179,339,179,340,172,340,172,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1999 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 1999 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="164,335,172,335,172,336,164,336,164,335,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1999 
+ Deaths (Sum) = 14 
+ event_type = Hurricane" title=" begin_date_time = Sep 1999 
+ Deaths (Sum) = 14 
+ event_type = Hurricane" coords="164,335,172,335,172,340,164,340,164,335,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1999 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Aug 1999 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="157,339,164,339,164,340,157,340,157,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1998 
+ Deaths (Sum) = 2 
+ event_type = Tropical Storm" title=" begin_date_time = Nov 1998 
+ Deaths (Sum) = 2 
+ event_type = Tropical Storm" coords="150,339,157,339,157,340,150,340,150,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1998 
+ Deaths (Sum) = 3 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 1998 
+ Deaths (Sum) = 3 
+ event_type = Tropical Storm" coords="142,337,150,337,150,339,142,339,142,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1998 
+ Deaths (Sum) = 3 
+ event_type = Hurricane" title=" begin_date_time = Sep 1998 
+ Deaths (Sum) = 3 
+ event_type = Hurricane" coords="142,338,150,338,150,340,142,340,142,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1998 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Aug 1998 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="135,339,142,339,142,340,135,340,135,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1998 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Aug 1998 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="135,339,142,339,142,340,135,340,135,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1997 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Sep 1997 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="128,339,135,339,135,340,128,340,128,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1997 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" title=" begin_date_time = Jul 1997 
+ Deaths (Sum) = 1 
+ event_type = Hurricane" coords="120,339,128,339,128,340,120,340,120,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1996 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Oct 1996 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="113,339,120,339,120,340,113,340,113,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1996 
+ Deaths (Sum) = 14 
+ event_type = Hurricane" title=" begin_date_time = Sep 1996 
+ Deaths (Sum) = 14 
+ event_type = Hurricane" coords="106,335,113,335,113,340,106,340,106,335,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1996 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" title=" begin_date_time = Aug 1996 
+ Deaths (Sum) = 0 
+ event_type = Hurricane" coords="98,339,106,339,106,340,98,340,98,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1996 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" title=" begin_date_time = Jul 1996 
+ Deaths (Sum) = 1 
+ event_type = Tropical Storm" coords="91,338,98,338,98,339,91,339,91,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1996 
+ Deaths (Sum) = 3 
+ event_type = Hurricane" title=" begin_date_time = Jul 1996 
+ Deaths (Sum) = 3 
+ event_type = Hurricane" coords="91,338,98,338,98,340,91,340,91,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1996 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" title=" begin_date_time = Jun 1996 
+ Deaths (Sum) = 0 
+ event_type = Tropical Storm" coords="84,339,91,339,91,340,84,340,84,339,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot3.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot3" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Hurricane Deaths</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Parameter results from HPGENSELECT</td>
+</tr>
+<tr>
+<td class="c systemtitle3">Distribution = Zero Inflated Poisson</td>
+</tr>
+</table><br>
+<div class="c proctitle">The HPGENSELECT Procedure</div>
+<div class="c proctitle">Selected Model</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Hpgenselect: Parameter Estimates">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<td class="r data">1</td>
+<td class="r data">154.723015</td>
+<td class="r data">51.687889</td>
+<td class="r data">8.9605</td>
+<td class="r data">0.0028</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">event_type Hurricane</th>
+<td class="r data">1</td>
+<td class="r data">1.313245</td>
+<td class="r data">0.132528</td>
+<td class="r data">98.1913</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">event_type Tropical</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">year</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.081508</td>
+<td class="r data">0.026044</td>
+<td class="r data">9.7943</td>
+<td class="r data">0.0018</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name August</th>
+<td class="r data">1</td>
+<td class="r data">2.379416</td>
+<td class="r data">0.086270</td>
+<td class="r data">760.7209</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name February</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-8.107917</td>
+<td class="r data">1033.249689</td>
+<td class="r data">0.0001</td>
+<td class="r data">0.9937</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name July</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.335253</td>
+<td class="r data">0.417351</td>
+<td class="r data">0.6453</td>
+<td class="r data">0.4218</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name June</th>
+<td class="r data">1</td>
+<td class="r data">7.662775</td>
+<td class="r data">0.572877</td>
+<td class="r data">178.9160</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name May</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-11.339150</td>
+<td class="r data">260.776547</td>
+<td class="r data">0.0019</td>
+<td class="r data">0.9653</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name November</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.748716</td>
+<td class="r data">0.606532</td>
+<td class="r data">1.5238</td>
+<td class="r data">0.2170</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name October</th>
+<td class="r data">1</td>
+<td class="r data">1.015732</td>
+<td class="r data">0.254534</td>
+<td class="r data">15.9245</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name September</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ALABAMA</th>
+<td class="r data">1</td>
+<td class="r data">1.190650</td>
+<td class="r data">1.010654</td>
+<td class="r data">1.3879</td>
+<td class="r data">0.2388</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ARIZONA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-8.807542</td>
+<td class="r data">617.653272</td>
+<td class="r data">0.0002</td>
+<td class="r data">0.9886</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ARKANSAS</th>
+<td class="r data">1</td>
+<td class="r data">4.489937</td>
+<td class="r data">1.502612</td>
+<td class="r data">8.9287</td>
+<td class="r data">0.0028</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state CALIFORNIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-32.015908</td>
+<td class="r data">171.158469</td>
+<td class="r data">0.0350</td>
+<td class="r data">0.8516</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state CONNECTICUT</th>
+<td class="r data">1</td>
+<td class="r data">2.576542</td>
+<td class="r data">1.169613</td>
+<td class="r data">4.8528</td>
+<td class="r data">0.0276</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state DELAWARE</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-6.050735</td>
+<td class="r data">360.140853</td>
+<td class="r data">0.0003</td>
+<td class="r data">0.9866</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state DISTRICT OF COLUMBIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-5.716598</td>
+<td class="r data">442.978316</td>
+<td class="r data">0.0002</td>
+<td class="r data">0.9897</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state FLORIDA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-9.044538</td>
+<td class="r data">1.197905</td>
+<td class="r data">57.0070</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state GEORGIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.980930</td>
+<td class="r data">0.528728</td>
+<td class="r data">14.0370</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state LOUISIANA</th>
+<td class="r data">1</td>
+<td class="r data">6.450638</td>
+<td class="r data">0.445228</td>
+<td class="r data">209.9139</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MAINE</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-6.840646</td>
+<td class="r data">406.184062</td>
+<td class="r data">0.0003</td>
+<td class="r data">0.9866</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MARYLAND</th>
+<td class="r data">1</td>
+<td class="r data">0.840256</td>
+<td class="r data">0.822700</td>
+<td class="r data">1.0431</td>
+<td class="r data">0.3071</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MASSACHUSETTS</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-10.685815</td>
+<td class="r data">263.071005</td>
+<td class="r data">0.0016</td>
+<td class="r data">0.9676</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MISSISSIPPI</th>
+<td class="r data">1</td>
+<td class="r data">5.468805</td>
+<td class="r data">0.598781</td>
+<td class="r data">83.4158</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MISSOURI</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-9.002260</td>
+<td class="r data">761.237605</td>
+<td class="r data">0.0001</td>
+<td class="r data">0.9906</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEVADA</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW HAMPSHIRE</th>
+<td class="r data">1</td>
+<td class="r data">4.761700</td>
+<td class="r data">1.316137</td>
+<td class="r data">13.0895</td>
+<td class="r data">0.0003</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW JERSEY</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.573577</td>
+<td class="r data">1.766743</td>
+<td class="r data">0.1054</td>
+<td class="r data">0.7454</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW YORK</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-9.810045</td>
+<td class="r data">1.363590</td>
+<td class="r data">51.7576</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NORTH CAROLINA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.567170</td>
+<td class="r data">0.394457</td>
+<td class="r data">15.7846</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state OKLAHOMA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-7.363713</td>
+<td class="r data">906.979730</td>
+<td class="r data">0.0001</td>
+<td class="r data">0.9935</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state PENNSYLVANIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-4.864722</td>
+<td class="r data">1.159658</td>
+<td class="r data">17.5977</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state RHODE ISLAND</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-6.091658</td>
+<td class="r data">470.445891</td>
+<td class="r data">0.0002</td>
+<td class="r data">0.9897</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state SOUTH CAROLINA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.673689</td>
+<td class="r data">0.670558</td>
+<td class="r data">6.2298</td>
+<td class="r data">0.0126</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state TENNESSEE</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-16.660857</td>
+<td class="r data">761.492961</td>
+<td class="r data">0.0005</td>
+<td class="r data">0.9825</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state TEXAS</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-15.883013</td>
+<td class="r data">2.064608</td>
+<td class="r data">59.1821</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state VERMONT</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-6.469996</td>
+<td class="r data">763.082154</td>
+<td class="r data">0.0001</td>
+<td class="r data">0.9932</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state VIRGINIA</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Population_n</th>
+<td class="r data">1</td>
+<td class="r data">0.000000882</td>
+<td class="r data">0.000000109</td>
+<td class="r data">65.1550</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">num_events</th>
+<td class="r data">1</td>
+<td class="r data">0.349188</td>
+<td class="r data">0.032631</td>
+<td class="r data">114.5119</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter">&nbsp;</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>

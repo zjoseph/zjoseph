@@ -1,0 +1,3122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Effects due to Wild Fires</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.EFFECTS_ABREVIATION">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data"><a href='wf_Deaths.html'> Deaths </a></td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data"><a href='wf_Injuries.html'> Injuries </a></td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data"><a href='wf_Property_Damage.html'> Property Damage </a></td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data"><a href='wf_Crop_Damage.html'> Crop Damage </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter"><a href='..\Storm_Home_Page.html'> Storm Home Page </a></td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<div>
+<map name="SGPlot22">
+<Area shape="poly" alt=" state = WYOMING  
+ COL1 = 0 " title=" state = WYOMING  
+ COL1 = 0 " href="State/56-Crop_Damage.html " target="_BLANK" coords="265,147,267,121,203,113,202,119,197,152,195,165,214,168,263,173,265,147,"/>
+<Area shape="poly" alt=" state = WISCONSIN  
+ COL1 = 2000 " title=" state = WISCONSIN  
+ COL1 = 2000 " href="State/55-Crop_Damage.html " target="_BLANK" coords="425,116,422,120,425,116,425,116,"/>
+<Area shape="poly" alt=" state = WISCONSIN  
+ COL1 = 2000 " title=" state = WISCONSIN  
+ COL1 = 2000 " href="State/55-Crop_Damage.html " target="_BLANK" coords="419,144,420,154,393,155,389,152,387,143,385,136,372,127,372,120,372,120,373,118,371,114,376,109,375,101,378,101,388,97,388,102,389,100,392,102,396,105,414,109,414,110,417,112,417,116,419,116,420,119,416,126,417,127,421,122,422,123,419,144,419,144,"/>
+<Area shape="poly" alt=" state = WEST VIRGINIA  
+ COL1 = 0 " title=" state = WEST VIRGINIA  
+ COL1 = 0 " href="State/54-Crop_Damage.html " target="_BLANK" coords="523,184,517,181,518,185,514,191,512,190,511,196,507,195,501,211,489,216,485,212,479,208,477,201,481,198,482,193,485,194,485,189,492,183,493,174,492,170,494,169,496,181,506,180,507,186,513,179,516,180,519,178,522,178,524,182,523,184,523,184,"/>
+<Area shape="poly" alt=" state = WASHINGTON  
+ COL1 = 8.53E7 " title=" state = WASHINGTON  
+ COL1 = 8.53E7 " href="State/53-Crop_Damage.html " target="_BLANK" coords="152,85,160,51,112,38,113,44,110,46,112,47,111,50,112,51,113,53,110,56,110,60,103,63,102,61,105,58,105,61,107,59,109,58,107,57,108,54,110,55,109,52,103,58,105,58,102,58,107,53,109,49,107,51,106,48,98,46,93,41,92,61,93,59,95,61,92,61,92,63,94,64,92,68,92,65,91,69,91,70,91,70,94,70,96,71,97,73,100,75,100,80,103,83,108,82,113,85,121,86,134,85,153,89,152,85,152,85,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 1.69E6 " title=" state = VIRGINIA  
+ COL1 = 1.69E6 " href="State/51-Crop_Damage.html " target="_BLANK" coords="551,194,548,195,546,201,547,207,551,194,551,194,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 1.69E6 " title=" state = VIRGINIA  
+ COL1 = 1.69E6 " href="State/51-Crop_Damage.html " target="_BLANK" coords="547,209,544,210,544,210,542,212,542,210,537,207,537,206,543,210,544,208,541,206,543,205,542,203,544,205,543,203,541,202,543,202,540,202,535,197,542,201,542,199,542,197,539,197,538,195,534,195,530,194,530,189,531,186,531,185,524,182,523,184,517,181,518,185,514,191,512,190,511,196,507,195,501,211,489,216,485,212,475,224,470,227,490,224,547,215,547,214,548,214,547,213,548,214,549,214,548,212,549,214,550,214,547,209,547,209,"/>
+<Area shape="poly" alt=" state = VERMONT  
+ COL1 = 0 " title=" state = VERMONT  
+ COL1 = 0 " href="State/50-Crop_Damage.html " target="_BLANK" coords="567,101,564,105,563,115,565,126,557,128,553,115,552,104,551,99,566,95,567,101,567,101,"/>
+<Area shape="poly" alt=" state = UTAH  
+ COL1 = 40000 " title=" state = UTAH  
+ COL1 = 40000 " href="State/49-Crop_Damage.html " target="_BLANK" coords="214,168,195,165,197,152,168,147,156,212,207,220,214,168,214,168,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 1.66E8 " title=" state = TEXAS  
+ COL1 = 1.66E8 " href="State/48-Crop_Damage.html " target="_BLANK" coords="332,348,325,359,327,353,332,348,332,348,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 1.66E8 " title=" state = TEXAS  
+ COL1 = 1.66E8 " href="State/48-Crop_Damage.html " target="_BLANK" coords="363,296,363,282,363,275,358,274,350,270,340,272,338,274,335,271,333,272,331,270,329,273,329,271,326,272,324,270,320,271,319,267,315,269,307,266,306,263,302,264,299,261,300,236,269,234,264,293,225,289,225,292,242,310,246,324,258,333,263,330,266,323,270,322,280,324,288,333,292,344,301,354,301,361,305,369,315,374,322,374,325,377,328,376,323,364,325,358,322,358,321,356,323,358,324,355,323,358,325,358,327,353,326,353,324,351,328,350,330,348,328,348,328,347,332,346,332,343,334,345,337,343,334,340,336,340,336,341,340,339,339,341,342,340,337,344,351,335,350,336,351,333,354,331,353,327,356,325,355,329,359,328,356,331,366,327,365,325,367,322,369,309,363,296,363,296,"/>
+<Area shape="poly" alt=" state = TENNESSEE  
+ COL1 = 0 " title=" state = TENNESSEE  
+ COL1 = 0 " href="State/47-Crop_Damage.html " target="_BLANK" coords="490,224,490,228,487,231,482,234,481,233,478,237,469,242,468,245,465,246,465,249,452,251,424,253,402,255,405,253,403,249,406,247,405,245,408,242,407,241,409,234,410,234,410,234,424,233,424,231,470,227,490,224,490,224,"/>
+<Area shape="poly" alt=" state = SOUTH DAKOTA  
+ COL1 = 0 " title=" state = SOUTH DAKOTA  
+ COL1 = 0 " href="State/46-Crop_Damage.html " target="_BLANK" coords="336,154,338,157,330,152,323,153,318,150,265,147,267,121,269,108,337,112,334,116,338,120,338,144,336,144,338,149,336,154,336,154,"/>
+<Area shape="poly" alt=" state = SOUTH CAROLINA  
+ COL1 = 0 " title=" state = SOUTH CAROLINA  
+ COL1 = 0 " href="State/45-Crop_Damage.html " target="_BLANK" coords="529,255,515,244,503,246,500,242,485,243,478,247,476,252,482,254,486,260,499,271,504,281,507,283,508,275,513,276,514,272,514,275,516,274,514,274,517,273,516,271,518,271,523,266,522,262,523,260,523,263,529,255,529,255,"/>
+<Area shape="poly" alt=" state = PENNSYLVANIA  
+ COL1 = 0 " title=" state = PENNSYLVANIA  
+ COL1 = 0 " href="State/42-Crop_Damage.html " target="_BLANK" coords="545,148,543,144,540,142,498,150,497,147,491,152,494,169,496,181,506,180,542,172,545,171,551,165,545,159,545,155,548,149,545,148,545,148,"/>
+<Area shape="poly" alt=" state = OREGON  
+ COL1 = 562400 " title=" state = OREGON  
+ COL1 = 562400 " href="State/41-Crop_Damage.html " target="_BLANK" coords="153,89,134,85,121,86,113,85,108,82,103,83,100,80,100,75,97,73,96,71,94,70,91,70,81,99,73,111,73,123,112,134,140,141,148,113,145,109,156,95,153,89,153,89,"/>
+<Area shape="poly" alt=" state = OKLAHOMA  
+ COL1 = 275000 " title=" state = OKLAHOMA  
+ COL1 = 275000 " href="State/40-Crop_Damage.html " target="_BLANK" coords="358,274,350,270,340,272,338,274,335,271,333,272,331,270,329,273,329,271,326,272,324,270,320,271,319,267,315,269,307,266,306,263,302,264,299,261,300,236,269,234,269,227,279,228,356,230,356,236,358,251,358,274,358,274,"/>
+<Area shape="poly" alt=" state = NORTH DAKOTA  
+ COL1 = 50000 " title=" state = NORTH DAKOTA  
+ COL1 = 50000 " href="State/38-Crop_Damage.html " target="_BLANK" coords="337,112,269,108,272,69,331,72,337,112,337,112,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 2.33E6 " title=" state = NORTH CAROLINA  
+ COL1 = 2.33E6 " href="State/37-Crop_Damage.html " target="_BLANK" coords="550,214,549,214,551,218,550,214,550,214,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 2.33E6 " title=" state = NORTH CAROLINA  
+ COL1 = 2.33E6 " href="State/37-Crop_Damage.html " target="_BLANK" coords="552,221,550,226,549,221,543,224,542,219,544,222,547,221,545,220,549,219,547,218,550,219,549,217,552,220,548,214,547,214,547,215,490,224,490,228,487,231,482,234,481,233,478,237,469,242,468,245,465,246,465,249,478,247,485,243,500,242,503,246,515,244,529,255,535,253,534,249,535,252,537,246,540,243,538,241,540,243,541,240,546,240,546,238,547,239,547,238,548,239,549,237,550,235,548,236,548,234,547,237,546,236,543,237,541,235,544,237,547,232,544,232,544,231,541,231,540,230,546,231,544,229,546,228,546,230,550,230,554,226,552,221,552,221,"/>
+<Area shape="poly" alt=" state = NEW YORK  
+ COL1 = 0 " title=" state = NEW YORK  
+ COL1 = 0 " href="State/36-Crop_Damage.html " target="_BLANK" coords="557,128,557,137,560,148,558,150,559,151,557,156,557,153,557,153,556,152,548,149,545,148,543,144,540,142,498,150,497,147,505,138,502,133,507,130,521,129,527,124,526,120,528,118,526,117,526,119,525,117,535,103,550,99,553,115,557,128,557,128,"/>
+<Area shape="poly" alt=" state = NEW MEXICO  
+ COL1 = 15000 " title=" state = NEW MEXICO  
+ COL1 = 15000 " href="State/35-Crop_Damage.html " target="_BLANK" coords="269,227,207,220,197,295,206,296,207,290,225,292,225,289,264,293,269,234,269,227,269,227,"/>
+<Area shape="poly" alt=" state = NEW JERSEY  
+ COL1 = 0 " title=" state = NEW JERSEY  
+ COL1 = 0 " href="State/34-Crop_Damage.html " target="_BLANK" coords="557,153,557,153,554,159,557,159,558,168,557,164,558,169,554,180,552,181,552,178,545,175,545,171,545,171,551,165,545,159,545,155,548,149,556,152,557,153,557,153,"/>
+<Area shape="poly" alt=" state = NEVADA  
+ COL1 = 0 " title=" state = NEVADA  
+ COL1 = 0 " href="State/32-Crop_Damage.html " target="_BLANK" coords="156,212,153,224,150,222,147,222,145,237,103,172,112,134,140,141,168,147,156,212,156,212,"/>
+<Area shape="poly" alt=" state = NEBRASKA  
+ COL1 = 1.31E7 " title=" state = NEBRASKA  
+ COL1 = 1.31E7 " href="State/31-Crop_Damage.html " target="_BLANK" coords="349,190,282,188,283,175,263,173,265,147,318,150,323,153,330,152,338,157,341,170,343,171,344,182,349,190,349,190,"/>
+<Area shape="poly" alt=" state = MONTANA  
+ COL1 = 1E6 " title=" state = MONTANA  
+ COL1 = 1E6 " href="State/30-Crop_Damage.html " target="_BLANK" coords="269,108,272,69,209,61,168,53,166,66,168,70,167,73,170,76,174,85,177,86,172,100,174,101,178,99,181,111,184,112,185,118,191,116,198,118,200,115,202,119,203,113,267,121,269,108,269,108,"/>
+<Area shape="poly" alt=" state = MISSOURI  
+ COL1 = 0 " title=" state = MISSOURI  
+ COL1 = 0 " href="State/29-Crop_Damage.html " target="_BLANK" coords="413,228,408,224,408,218,399,212,401,204,398,202,396,203,395,198,388,193,387,184,384,181,344,182,349,190,352,191,353,193,351,196,356,201,356,230,356,236,396,235,396,235,403,235,404,237,401,241,407,241,409,234,409,234,409,233,410,234,410,234,413,232,413,228,413,228,"/>
+<Area shape="poly" alt=" state = MISSISSIPPI  
+ COL1 = 0 " title=" state = MISSISSIPPI  
+ COL1 = 0 " href="State/28-Crop_Damage.html " target="_BLANK" coords="425,294,427,315,417,315,415,318,414,317,411,312,412,307,390,308,390,305,393,301,391,300,394,298,393,297,397,293,395,292,398,290,395,288,397,288,396,286,395,287,394,282,395,278,395,276,393,276,393,273,395,273,394,269,397,266,396,265,400,263,400,258,402,257,402,255,424,253,426,254,425,294,425,294,"/>
+<Area shape="poly" alt=" state = MINNESOTA  
+ COL1 = 2500 " title=" state = MINNESOTA  
+ COL1 = 2500 " href="State/27-Crop_Damage.html " target="_BLANK" coords="388,89,377,100,378,101,375,101,376,109,371,114,373,118,372,120,372,120,372,127,385,136,387,143,338,144,338,120,334,116,337,112,331,72,349,72,349,67,351,67,354,75,361,76,361,78,369,76,371,77,374,81,377,79,381,83,387,80,388,82,399,83,388,89,388,89,"/>
+<Area shape="poly" alt=" state = MICHIGAN  
+ COL1 = 1E6 " title=" state = MICHIGAN  
+ COL1 = 1E6 " href="State/26-Crop_Damage.html " target="_BLANK" coords="471,146,469,148,469,146,468,146,463,159,450,161,431,162,435,151,431,137,432,123,438,116,439,122,440,115,444,113,442,112,443,109,444,108,457,112,459,116,458,116,460,120,460,125,455,130,456,134,458,135,460,130,464,128,467,130,471,141,471,146,471,146,"/>
+<Area shape="poly" alt=" state = MICHIGAN  
+ COL1 = 1E6 " title=" state = MICHIGAN  
+ COL1 = 1E6 " href="State/26-Crop_Damage.html " target="_BLANK" coords="448,102,448,98,441,99,441,95,431,97,427,101,420,101,415,96,412,95,410,98,411,92,416,89,413,88,405,95,392,102,396,105,414,109,414,110,417,112,417,116,419,116,420,119,424,108,425,111,428,108,428,112,431,107,436,106,437,104,445,107,445,104,452,104,448,102,448,102,"/>
+<Area shape="poly" alt=" state = MASSACHUSETTS  
+ COL1 = 0 " title=" state = MASSACHUSETTS  
+ COL1 = 0 " href="State/25-Crop_Damage.html " target="_BLANK" coords="589,129,588,129,591,132,588,134,583,131,582,128,579,128,582,123,580,123,579,121,576,124,565,126,557,128,557,137,573,134,577,133,579,136,579,136,579,136,579,136,580,136,580,137,581,137,581,137,581,139,585,134,586,137,592,134,591,132,589,129,589,129,"/>
+<Area shape="poly" alt=" state = MARYLAND  
+ COL1 = 0 " title=" state = MARYLAND  
+ COL1 = 0 " href="State/24-Crop_Damage.html " target="_BLANK" coords="552,187,546,189,542,172,506,180,507,186,513,179,516,180,519,178,522,178,524,182,531,185,533,186,532,187,531,193,535,193,534,192,541,195,540,192,536,191,536,189,540,191,536,184,537,184,538,183,535,180,537,181,538,177,539,178,539,175,541,174,540,176,540,177,542,178,540,178,539,181,539,180,541,180,540,183,541,185,540,185,540,185,541,187,542,186,542,188,540,188,542,189,540,190,541,191,543,190,545,190,547,193,546,195,548,195,551,194,552,187,552,187,"/>
+<Area shape="poly" alt=" state = LOUISIANA  
+ COL1 = 2.2E6 " title=" state = LOUISIANA  
+ COL1 = 2.2E6 " href="State/22-Crop_Damage.html " target="_BLANK" coords="421,330,415,328,413,324,415,325,418,323,418,318,413,322,411,321,413,319,412,318,408,320,404,319,407,316,414,317,411,312,412,307,390,308,390,305,393,301,391,300,394,298,393,297,397,293,395,292,398,290,395,288,397,288,396,286,395,287,394,282,363,282,363,296,369,309,367,322,366,326,373,325,389,329,390,327,385,325,389,324,388,325,391,325,392,328,396,329,397,331,396,330,394,330,395,331,400,333,405,329,407,333,409,331,409,328,407,327,406,325,407,322,408,327,410,327,410,325,412,330,414,329,417,332,418,331,418,332,420,333,421,330,421,330,"/>
+<Area shape="poly" alt=" state = KENTUCKY  
+ COL1 = 0 " title=" state = KENTUCKY  
+ COL1 = 0 " href="State/21-Crop_Damage.html " target="_BLANK" coords="479,208,477,201,474,198,470,200,466,200,460,199,458,195,454,195,455,200,448,201,449,204,443,212,440,209,437,214,435,212,433,215,428,213,427,215,424,214,423,216,423,220,419,222,420,226,414,224,413,228,413,232,410,234,424,233,424,231,470,227,475,224,485,212,479,208,479,208,"/>
+<Area shape="poly" alt=" state = KANSAS  
+ COL1 = 1.83E6 " title=" state = KANSAS  
+ COL1 = 1.83E6 " href="State/20-Crop_Damage.html " target="_BLANK" coords="356,230,279,228,282,188,349,190,352,191,353,193,351,196,356,201,356,230,356,230,"/>
+<Area shape="poly" alt=" state = IOWA  
+ COL1 = 40000 " title=" state = IOWA  
+ COL1 = 40000 " href="State/19-Crop_Damage.html " target="_BLANK" coords="398,160,393,155,389,152,387,143,338,144,336,144,338,149,336,154,338,157,341,170,343,171,344,182,384,181,387,184,391,176,390,170,396,168,398,164,398,160,398,160,"/>
+<Area shape="poly" alt=" state = INDIANA  
+ COL1 = 0 " title=" state = INDIANA  
+ COL1 = 0 " href="State/18-Crop_Damage.html " target="_BLANK" coords="455,200,448,201,449,204,443,212,440,209,437,214,435,212,433,215,428,213,427,215,424,214,423,216,423,210,428,203,426,198,424,164,426,165,431,162,450,161,454,195,455,200,455,200,"/>
+<Area shape="poly" alt=" state = ILLINOIS  
+ COL1 = 0 " title=" state = ILLINOIS  
+ COL1 = 0 " href="State/17-Crop_Damage.html " target="_BLANK" coords="426,198,424,164,420,154,393,155,398,160,398,164,396,168,390,170,391,176,387,184,388,193,395,198,396,203,398,202,401,204,399,212,408,218,408,224,413,228,414,224,420,226,419,222,423,220,423,216,423,210,428,203,426,198,426,198,"/>
+<Area shape="poly" alt=" state = IDAHO  
+ COL1 = 385000 " title=" state = IDAHO  
+ COL1 = 385000 " href="State/16-Crop_Damage.html " target="_BLANK" coords="202,119,200,115,198,118,191,116,185,118,184,112,181,111,178,99,174,101,172,100,177,86,174,85,170,76,167,73,168,70,166,66,168,53,160,51,152,85,153,89,156,95,145,109,148,113,140,141,168,147,197,152,202,119,202,119,"/>
+<Area shape="poly" alt=" state = GEORGIA  
+ COL1 = 0 " title=" state = GEORGIA  
+ COL1 = 0 " href="State/13-Crop_Damage.html " target="_BLANK" coords="504,281,499,271,486,260,482,254,476,252,478,247,465,249,452,251,459,278,464,286,461,292,464,302,466,306,496,304,497,307,498,306,498,301,504,301,504,298,502,298,503,297,502,296,505,289,505,284,507,284,504,281,504,281,"/>
+<Area shape="poly" alt=" state = FLORIDA  
+ COL1 = 0 " title=" state = FLORIDA  
+ COL1 = 0 " href="State/12-Crop_Damage.html " target="_BLANK" coords="528,349,519,334,518,327,509,314,504,301,498,301,498,306,497,307,496,304,466,306,464,302,435,305,438,312,438,314,440,314,440,310,441,312,442,310,444,312,441,314,451,310,453,312,448,312,457,315,455,313,459,312,457,314,461,315,458,315,462,318,462,320,465,321,473,316,472,314,474,313,481,315,489,324,492,324,495,331,493,340,496,342,497,340,495,338,497,340,499,339,497,344,499,344,496,345,502,353,504,353,502,351,505,350,505,356,508,354,506,357,508,357,511,365,516,366,519,373,528,369,529,362,528,349,528,349,"/>
+<Area shape="poly" alt=" state = DELAWARE  
+ COL1 = 0 " title=" state = DELAWARE  
+ COL1 = 0 " href="State/10-Crop_Damage.html " target="_BLANK" coords="552,185,552,185,551,183,544,175,545,171,545,171,542,172,546,189,552,187,553,187,553,187,552,185,552,185,"/>
+<Area shape="poly" alt=" state = CONNECTICUT  
+ COL1 = 0 " title=" state = CONNECTICUT  
+ COL1 = 0 " href="State/09-Crop_Damage.html " target="_BLANK" coords="573,134,557,137,560,148,558,150,559,151,565,146,570,145,571,145,575,141,573,134,573,134,"/>
+<Area shape="poly" alt=" state = COLORADO  
+ COL1 = 25000 " title=" state = COLORADO  
+ COL1 = 25000 " href="State/08-Crop_Damage.html " target="_BLANK" coords="282,188,283,175,263,173,214,168,207,220,269,227,279,228,282,188,282,188,"/>
+<Area shape="poly" alt=" state = CALIFORNIA  
+ COL1 = 1.68E8 " title=" state = CALIFORNIA  
+ COL1 = 1.68E8 " href="State/06-Crop_Damage.html " target="_BLANK" coords="145,237,103,172,112,134,73,123,70,135,65,142,68,151,66,163,71,174,70,177,74,181,75,177,78,178,75,179,77,187,74,184,74,181,73,189,77,194,75,202,82,216,81,219,83,220,81,228,83,230,92,233,96,238,102,240,102,244,105,245,110,252,112,263,138,266,141,265,140,259,142,256,143,251,148,247,145,237,145,237,"/>
+<Area shape="poly" alt=" state = ARKANSAS  
+ COL1 = 1.01E6 " title=" state = ARKANSAS  
+ COL1 = 1.01E6 " href="State/05-Crop_Damage.html " target="_BLANK" coords="407,241,401,241,404,237,403,235,396,235,396,235,356,236,358,251,358,274,363,275,363,282,394,282,395,278,395,276,393,276,393,273,395,273,394,269,397,266,396,265,400,263,400,258,402,257,402,255,405,253,403,249,406,247,405,245,408,242,407,241,407,241,"/>
+<Area shape="poly" alt=" state = ARIZONA  
+ COL1 = 0 " title=" state = ARIZONA  
+ COL1 = 0 " href="State/04-Crop_Damage.html " target="_BLANK" coords="207,220,156,212,153,224,150,222,147,222,145,237,148,247,143,251,142,256,140,259,141,265,138,266,137,269,175,291,197,295,207,220,207,220,"/>
+<Area shape="poly" alt=" state = ALABAMA  
+ COL1 = 0 " title=" state = ALABAMA  
+ COL1 = 0 " href="State/01-Crop_Damage.html " target="_BLANK" coords="461,292,464,302,435,305,438,312,438,314,431,316,434,315,431,310,430,315,427,315,425,294,426,254,424,253,452,251,459,278,464,286,461,292,461,292,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot22.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot22" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<div>
+<map name="SGPlot23">
+<Area shape="poly" alt=" begin_date_time = Sep 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="591,339,594,339,594,340,591,340,591,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="589,339,592,339,592,340,589,340,589,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="588,339,590,339,590,340,588,340,588,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="586,339,588,339,588,340,586,340,586,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="584,339,586,339,586,340,584,340,584,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="582,339,585,339,585,340,582,340,582,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="580,339,583,339,583,340,580,340,580,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="578,339,581,339,581,340,578,340,578,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="576,339,579,339,579,340,576,340,576,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="575,339,577,339,577,340,575,340,575,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2017 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" title=" begin_date_time = Nov 2017 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" coords="573,336,575,336,575,340,573,340,573,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="571,339,573,339,573,340,571,340,571,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="569,339,572,339,572,340,569,340,569,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="567,339,570,339,570,340,567,340,567,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="565,339,568,339,568,340,565,340,565,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="563,339,566,339,566,340,563,340,563,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="562,339,564,339,564,340,562,340,562,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="560,339,562,339,562,340,560,340,560,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2017 
+ Crop_Damage (Sum) = $800,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2017 
+ Crop_Damage (Sum) = $800,000 
+ event_type = Wildfire" coords="558,337,560,337,560,340,558,340,558,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="556,339,559,339,559,340,556,340,556,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="554,339,557,339,557,340,554,340,554,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2016 
+ Crop_Damage (Sum) = $1,000 
+ event_type = Wildfire" title=" begin_date_time = Dec 2016 
+ Crop_Damage (Sum) = $1,000 
+ event_type = Wildfire" coords="552,339,555,339,555,340,552,340,552,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="550,339,553,339,553,340,550,340,550,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="549,339,551,339,551,340,549,340,549,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="547,339,549,339,549,340,547,340,547,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="545,339,547,339,547,340,545,340,545,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="543,339,546,339,546,340,543,340,543,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="541,339,544,339,544,340,541,340,541,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="539,339,542,339,542,340,539,340,539,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2016 
+ Crop_Damage (Sum) = $2,330,000 
+ event_type = Wildfire" title=" begin_date_time = Apr 2016 
+ Crop_Damage (Sum) = $2,330,000 
+ event_type = Wildfire" coords="538,332,540,332,540,340,538,340,538,332,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2016 
+ Crop_Damage (Sum) = $25,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2016 
+ Crop_Damage (Sum) = $25,000 
+ event_type = Wildfire" coords="536,339,538,339,538,340,536,340,536,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2016 
+ Crop_Damage (Sum) = $60,000 
+ event_type = Wildfire" title=" begin_date_time = Feb 2016 
+ Crop_Damage (Sum) = $60,000 
+ event_type = Wildfire" coords="534,339,536,339,536,340,534,340,534,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="532,339,535,339,535,340,532,340,532,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="530,339,533,339,533,340,530,340,530,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="528,339,531,339,531,340,528,340,528,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="526,339,529,339,529,340,526,340,526,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2015 
+ Crop_Damage (Sum) = $15,000 
+ event_type = Wildfire" title=" begin_date_time = Sep 2015 
+ Crop_Damage (Sum) = $15,000 
+ event_type = Wildfire" coords="525,339,527,339,527,340,525,340,525,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="523,339,525,339,525,340,523,340,523,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="521,339,523,339,523,340,521,340,521,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="519,339,522,339,522,340,519,340,519,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="517,339,520,339,520,340,517,340,517,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="515,339,518,339,518,340,515,340,515,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="513,339,516,339,516,340,513,340,513,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="512,339,514,339,514,340,512,340,512,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="510,339,512,339,512,340,510,340,510,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="508,339,510,339,510,340,508,340,508,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="506,339,509,339,509,340,506,340,506,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="504,339,507,339,507,340,504,340,504,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2014 
+ Crop_Damage (Sum) = $70,000 
+ event_type = Wildfire" title=" begin_date_time = Aug 2014 
+ Crop_Damage (Sum) = $70,000 
+ event_type = Wildfire" coords="502,339,505,339,505,340,502,340,502,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2014 
+ Crop_Damage (Sum) = $1,020,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2014 
+ Crop_Damage (Sum) = $1,020,000 
+ event_type = Wildfire" coords="500,336,503,336,503,340,500,340,500,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2014 
+ Crop_Damage (Sum) = $100,000 
+ event_type = Wildfire" title=" begin_date_time = Jun 2014 
+ Crop_Damage (Sum) = $100,000 
+ event_type = Wildfire" coords="499,339,501,339,501,340,499,340,499,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="497,339,499,339,499,340,497,340,497,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="495,339,497,339,497,340,495,340,495,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="493,339,496,339,496,340,493,340,493,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="491,339,494,339,494,340,491,340,491,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="489,339,492,339,492,340,489,340,489,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="487,339,490,339,490,340,487,340,487,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2013 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" title=" begin_date_time = Nov 2013 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" coords="486,339,488,339,488,340,486,340,486,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="484,339,486,339,486,340,484,340,484,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="482,339,484,339,484,340,482,340,482,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="480,339,483,339,483,340,480,340,480,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2013 
+ Crop_Damage (Sum) = $350,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2013 
+ Crop_Damage (Sum) = $350,000 
+ event_type = Wildfire" coords="478,338,481,338,481,340,478,340,478,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="476,339,479,339,479,340,476,340,476,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2013 
+ Crop_Damage (Sum) = $14,000 
+ event_type = Wildfire" title=" begin_date_time = May 2013 
+ Crop_Damage (Sum) = $14,000 
+ event_type = Wildfire" coords="474,339,477,339,477,340,474,340,474,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="473,339,475,339,475,340,473,340,473,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2013 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2013 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Wildfire" coords="471,339,473,339,473,340,471,340,471,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="469,339,471,339,471,340,469,340,469,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2012 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Wildfire" title=" begin_date_time = Dec 2012 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Wildfire" coords="467,339,470,339,470,340,467,340,467,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="465,339,468,339,468,340,465,340,465,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2012 
+ Crop_Damage (Sum) = $1,250,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 2012 
+ Crop_Damage (Sum) = $1,250,000 
+ event_type = Wildfire" coords="463,335,466,335,466,340,463,340,463,335,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="461,339,464,339,464,340,461,340,461,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2012 
+ Crop_Damage (Sum) = $450,500 
+ event_type = Wildfire" title=" begin_date_time = Aug 2012 
+ Crop_Damage (Sum) = $450,500 
+ event_type = Wildfire" coords="460,338,462,338,462,340,460,340,460,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2012 
+ Crop_Damage (Sum) = $2,582,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2012 
+ Crop_Damage (Sum) = $2,582,000 
+ event_type = Wildfire" coords="458,331,460,331,460,340,458,340,458,331,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2012 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" title=" begin_date_time = Jun 2012 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" coords="456,339,458,339,458,340,456,340,456,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2012 
+ Crop_Damage (Sum) = $21,000 
+ event_type = Wildfire" title=" begin_date_time = May 2012 
+ Crop_Damage (Sum) = $21,000 
+ event_type = Wildfire" coords="454,339,457,339,457,340,454,340,454,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="452,339,455,339,455,340,452,340,452,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="450,339,453,339,453,340,450,340,450,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="449,339,451,339,451,340,449,340,449,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="447,339,449,339,449,340,447,340,447,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="445,339,447,339,447,340,445,340,445,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2011 
+ Crop_Damage (Sum) = $10,002,500 
+ event_type = Wildfire" title=" begin_date_time = Oct 2011 
+ Crop_Damage (Sum) = $10,002,500 
+ event_type = Wildfire" coords="443,307,446,307,446,340,443,340,443,307,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2011 
+ Crop_Damage (Sum) = $419,000 
+ event_type = Wildfire" title=" begin_date_time = Sep 2011 
+ Crop_Damage (Sum) = $419,000 
+ event_type = Wildfire" coords="441,338,444,338,444,340,441,340,441,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2011 
+ Crop_Damage (Sum) = $46,500 
+ event_type = Wildfire" title=" begin_date_time = Aug 2011 
+ Crop_Damage (Sum) = $46,500 
+ event_type = Wildfire" coords="439,339,442,339,442,340,439,340,439,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2011 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2011 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Wildfire" coords="437,339,440,339,440,340,437,340,437,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2011 
+ Crop_Damage (Sum) = $2,275,000 
+ event_type = Wildfire" title=" begin_date_time = Jun 2011 
+ Crop_Damage (Sum) = $2,275,000 
+ event_type = Wildfire" coords="436,332,438,332,438,340,436,340,436,332,"/>
+<Area shape="poly" alt=" begin_date_time = May 2011 
+ Crop_Damage (Sum) = $100,000 
+ event_type = Wildfire" title=" begin_date_time = May 2011 
+ Crop_Damage (Sum) = $100,000 
+ event_type = Wildfire" coords="434,339,436,339,436,340,434,340,434,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2011 
+ Crop_Damage (Sum) = $1,743,000 
+ event_type = Wildfire" title=" begin_date_time = Apr 2011 
+ Crop_Damage (Sum) = $1,743,000 
+ event_type = Wildfire" coords="432,334,434,334,434,340,432,340,432,334,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2011 
+ Crop_Damage (Sum) = $4,019,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2011 
+ Crop_Damage (Sum) = $4,019,000 
+ event_type = Wildfire" coords="430,326,433,326,433,340,430,340,430,326,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2011 
+ Crop_Damage (Sum) = $29,000 
+ event_type = Wildfire" title=" begin_date_time = Feb 2011 
+ Crop_Damage (Sum) = $29,000 
+ event_type = Wildfire" coords="428,339,431,339,431,340,428,340,428,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2011 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" title=" begin_date_time = Jan 2011 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" coords="426,339,429,339,429,340,426,340,426,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2010 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" title=" begin_date_time = Dec 2010 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" coords="424,339,427,339,427,340,424,340,424,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="423,339,425,339,425,340,423,340,423,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2010 
+ Crop_Damage (Sum) = $1,900,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 2010 
+ Crop_Damage (Sum) = $1,900,000 
+ event_type = Wildfire" coords="421,333,423,333,423,340,421,340,421,333,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="419,339,421,339,421,340,419,340,419,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2010 
+ Crop_Damage (Sum) = $25,000 
+ event_type = Wildfire" title=" begin_date_time = Aug 2010 
+ Crop_Damage (Sum) = $25,000 
+ event_type = Wildfire" coords="417,339,420,339,420,340,417,340,417,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="415,339,418,339,418,340,415,340,415,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="413,339,416,339,416,340,413,340,413,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="411,339,414,339,414,340,411,340,411,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="410,339,412,339,412,340,410,340,410,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="408,339,410,339,410,340,408,340,408,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="406,339,408,339,408,340,406,340,406,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="404,339,407,339,407,340,404,340,404,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="402,339,405,339,405,340,402,340,402,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="400,339,403,339,403,340,400,340,400,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="398,339,401,339,401,340,398,340,398,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="397,339,399,339,399,340,397,340,397,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="395,339,397,339,397,340,395,340,395,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="393,339,395,339,395,340,393,340,393,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="391,339,394,339,394,340,391,340,391,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="389,339,392,339,392,340,389,340,389,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2009 
+ Crop_Damage (Sum) = $1,372,000 
+ event_type = Wildfire" title=" begin_date_time = Apr 2009 
+ Crop_Damage (Sum) = $1,372,000 
+ event_type = Wildfire" coords="387,335,390,335,390,340,387,340,387,335,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2009 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2009 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" coords="385,339,388,339,388,340,385,340,385,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="384,339,386,339,386,340,384,340,384,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="382,339,384,339,384,340,382,340,382,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="380,339,382,339,382,340,380,340,380,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="378,339,381,339,381,340,378,340,378,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="376,339,379,339,379,340,376,340,376,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="374,339,377,339,377,340,374,340,374,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="372,339,375,339,375,340,372,340,372,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="371,339,373,339,373,340,371,340,371,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2008 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Wildfire" title=" begin_date_time = Jun 2008 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Wildfire" coords="369,339,371,339,371,340,369,340,369,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="367,339,369,339,369,340,367,340,367,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="365,339,368,339,368,340,365,340,365,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2008 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2008 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Wildfire" coords="363,339,366,339,366,340,363,340,363,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="361,339,364,339,364,340,361,340,361,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2008 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Wildfire" title=" begin_date_time = Jan 2008 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Wildfire" coords="360,333,362,333,362,340,360,340,360,333,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="358,339,360,339,360,340,358,340,358,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="356,339,358,339,358,340,356,340,356,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2007 
+ Crop_Damage (Sum) = $42,600,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 2007 
+ Crop_Damage (Sum) = $42,600,000 
+ event_type = Wildfire" coords="354,200,357,200,357,340,354,340,354,200,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="352,339,355,339,355,340,352,340,352,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="350,339,353,339,353,340,350,340,350,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="348,339,351,339,351,340,348,340,348,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2007 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Wildfire" title=" begin_date_time = Jun 2007 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Wildfire" coords="347,339,349,339,349,340,347,340,347,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="345,339,347,339,347,340,345,340,345,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="343,339,345,339,345,340,343,340,343,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="341,339,344,339,344,340,341,340,341,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="339,339,342,339,342,340,339,340,339,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="337,339,340,339,340,340,337,340,337,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2006 
+ Crop_Damage (Sum) = $3,000 
+ event_type = Wildfire" title=" begin_date_time = Dec 2006 
+ Crop_Damage (Sum) = $3,000 
+ event_type = Wildfire" coords="335,339,338,339,338,340,335,340,335,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="334,339,336,339,336,340,334,340,334,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2006 
+ Crop_Damage (Sum) = $77,000,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 2006 
+ Crop_Damage (Sum) = $77,000,000 
+ event_type = Wildfire" coords="332,88,334,88,334,340,332,340,332,88,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="330,339,332,339,332,340,330,340,330,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="328,339,331,339,331,340,328,340,328,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="326,339,329,339,329,340,326,340,326,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2006 
+ Crop_Damage (Sum) = $15,277,400 
+ event_type = Wildfire" title=" begin_date_time = Jun 2006 
+ Crop_Damage (Sum) = $15,277,400 
+ event_type = Wildfire" coords="324,289,327,289,327,340,324,340,324,289,"/>
+<Area shape="poly" alt=" begin_date_time = May 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="322,339,325,339,325,340,322,340,322,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2006 
+ Crop_Damage (Sum) = $92,320,000 
+ event_type = Wildfire" title=" begin_date_time = Apr 2006 
+ Crop_Damage (Sum) = $92,320,000 
+ event_type = Wildfire" coords="321,38,323,38,323,340,321,340,321,38,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2006 
+ Crop_Damage (Sum) = $45,700,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2006 
+ Crop_Damage (Sum) = $45,700,000 
+ event_type = Wildfire" coords="319,190,321,190,321,340,319,340,319,190,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2006 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Wildfire" title=" begin_date_time = Feb 2006 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Wildfire" coords="317,339,319,339,319,340,317,340,317,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2006 
+ Crop_Damage (Sum) = $2,310,000 
+ event_type = Wildfire" title=" begin_date_time = Jan 2006 
+ Crop_Damage (Sum) = $2,310,000 
+ event_type = Wildfire" coords="315,332,318,332,318,340,315,340,315,332,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="313,339,316,339,316,340,313,340,313,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="311,339,314,339,314,340,311,340,311,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="309,339,312,339,312,340,309,340,309,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="308,339,310,339,310,340,308,340,308,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="306,339,308,339,308,340,306,340,306,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2005 
+ Crop_Damage (Sum) = $106,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2005 
+ Crop_Damage (Sum) = $106,000 
+ event_type = Wildfire" coords="304,339,306,339,306,340,304,340,304,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2005 
+ Crop_Damage (Sum) = $113,900 
+ event_type = Wildfire" title=" begin_date_time = Jun 2005 
+ Crop_Damage (Sum) = $113,900 
+ event_type = Wildfire" coords="302,339,305,339,305,340,302,340,302,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="300,339,303,339,303,340,300,340,300,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="298,339,301,339,301,340,298,340,298,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2005 
+ Crop_Damage (Sum) = $3,000 
+ event_type = Wildfire" title=" begin_date_time = Mar 2005 
+ Crop_Damage (Sum) = $3,000 
+ event_type = Wildfire" coords="296,339,299,339,299,340,296,340,296,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="295,339,297,339,297,340,295,340,295,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="293,339,295,339,295,340,293,340,293,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="291,339,293,339,293,340,291,340,291,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="289,339,292,339,292,340,289,340,289,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2004 
+ Crop_Damage (Sum) = $300,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2004 
+ Crop_Damage (Sum) = $300,000 
+ event_type = Wildfire" coords="287,338,290,338,290,340,287,340,287,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="285,339,288,339,288,340,285,340,285,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="283,339,286,339,286,340,283,340,283,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="282,339,284,339,284,340,282,340,282,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="280,339,282,339,282,340,280,340,280,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="278,339,280,339,280,340,278,340,278,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2003 
+ Crop_Damage (Sum) = $500 
+ event_type = Wildfire" title=" begin_date_time = Nov 2003 
+ Crop_Damage (Sum) = $500 
+ event_type = Wildfire" coords="276,339,279,339,279,340,276,340,276,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2003 
+ Crop_Damage (Sum) = $28,700,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 2003 
+ Crop_Damage (Sum) = $28,700,000 
+ event_type = Wildfire" coords="274,246,277,246,277,340,274,340,274,246,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="272,339,275,339,275,340,272,340,272,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2003 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Wildfire" title=" begin_date_time = Aug 2003 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Wildfire" coords="271,338,273,338,273,340,271,340,271,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2003 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2003 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" coords="269,336,271,336,271,340,269,340,269,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="267,339,269,339,269,340,267,340,267,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="265,339,268,339,268,340,265,340,265,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="263,339,266,339,266,340,263,340,263,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="261,339,264,339,264,340,261,340,261,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="259,339,262,339,262,340,259,340,259,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="258,339,260,339,260,340,258,340,258,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="256,339,258,339,258,340,256,340,256,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="254,339,256,339,256,340,254,340,254,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="252,339,255,339,255,340,252,340,252,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="250,339,253,339,253,340,250,340,250,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="248,339,251,339,251,340,248,340,248,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="246,339,249,339,249,340,246,340,246,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="245,339,247,339,247,340,245,340,245,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="243,339,245,339,245,340,243,340,243,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="241,339,243,339,243,340,241,340,241,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2002 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Wildfire" title=" begin_date_time = Feb 2002 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Wildfire" coords="239,333,242,333,242,340,239,340,239,333,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="237,339,240,339,240,340,237,340,237,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="235,339,238,339,238,340,235,340,235,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="233,339,236,339,236,340,233,340,233,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="232,339,234,339,234,340,232,340,232,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="230,339,232,339,232,340,230,340,230,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="228,339,230,339,230,340,228,340,228,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="226,339,229,339,229,340,226,340,226,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="224,339,227,339,227,340,224,340,224,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="222,339,225,339,225,340,222,340,222,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="220,339,223,339,223,340,220,340,220,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="219,339,221,339,221,340,219,340,219,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="217,339,219,339,219,340,217,340,217,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="215,339,217,339,217,340,215,340,215,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="213,339,216,339,216,340,213,340,213,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="211,339,214,339,214,340,211,340,211,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="209,339,212,339,212,340,209,340,209,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2000 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Wildfire" title=" begin_date_time = Aug 2000 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Wildfire" coords="207,338,210,338,210,340,207,340,207,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2000 
+ Crop_Damage (Sum) = $5,820,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 2000 
+ Crop_Damage (Sum) = $5,820,000 
+ event_type = Wildfire" coords="206,320,208,320,208,340,206,340,206,320,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="204,339,206,339,206,340,204,340,204,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="202,339,204,339,204,340,202,340,202,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="200,339,203,339,203,340,200,340,200,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="198,339,201,339,201,340,198,340,198,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="196,339,199,339,199,340,196,340,196,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="194,339,197,339,197,340,194,340,194,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="193,339,195,339,195,340,193,340,193,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="191,339,193,339,193,340,191,340,191,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1999 
+ Crop_Damage (Sum) = $97,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 1999 
+ Crop_Damage (Sum) = $97,000 
+ event_type = Wildfire" coords="189,339,191,339,191,340,189,340,189,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1999 
+ Crop_Damage (Sum) = $500,000 
+ event_type = Wildfire" title=" begin_date_time = Sep 1999 
+ Crop_Damage (Sum) = $500,000 
+ event_type = Wildfire" coords="187,338,190,338,190,340,187,340,187,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="185,339,188,339,188,340,185,340,185,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1999 
+ Crop_Damage (Sum) = $6,700 
+ event_type = Wildfire" title=" begin_date_time = Jul 1999 
+ Crop_Damage (Sum) = $6,700 
+ event_type = Wildfire" coords="183,339,186,339,186,340,183,340,183,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="182,339,184,339,184,340,182,340,182,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1999 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" title=" begin_date_time = May 1999 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" coords="180,336,182,336,182,340,180,340,180,336,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1999 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" title=" begin_date_time = Apr 1999 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Wildfire" coords="178,339,180,339,180,340,178,340,178,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="176,339,179,339,179,340,176,340,176,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="174,339,177,339,177,340,174,340,174,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jan 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="172,339,175,339,175,340,172,340,172,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Dec 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="170,339,173,339,173,340,170,340,170,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1998 
+ Crop_Damage (Sum) = $95,000 
+ event_type = Wildfire" title=" begin_date_time = Nov 1998 
+ Crop_Damage (Sum) = $95,000 
+ event_type = Wildfire" coords="169,339,171,339,171,340,169,340,169,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1998 
+ Crop_Damage (Sum) = $16,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 1998 
+ Crop_Damage (Sum) = $16,000 
+ event_type = Wildfire" coords="167,339,169,339,169,340,167,340,167,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="165,339,167,339,167,340,165,340,165,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1998 
+ Crop_Damage (Sum) = $82,286,000 
+ event_type = Wildfire" title=" begin_date_time = Aug 1998 
+ Crop_Damage (Sum) = $82,286,000 
+ event_type = Wildfire" coords="163,71,166,71,166,340,163,340,163,71,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1998 
+ Crop_Damage (Sum) = $575,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 1998 
+ Crop_Damage (Sum) = $575,000 
+ event_type = Wildfire" coords="161,337,164,337,164,340,161,340,161,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="159,339,162,339,162,340,159,340,159,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="157,339,160,339,160,340,157,340,157,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Apr 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="156,339,158,339,158,340,156,340,156,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Nov 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="154,339,156,339,156,340,154,340,154,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Oct 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="152,339,154,339,154,340,152,340,152,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="150,339,153,339,153,340,150,340,150,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="148,339,151,339,151,340,148,340,148,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1997 
+ Crop_Damage (Sum) = $10,040,000 
+ event_type = Wildfire" title=" begin_date_time = Jul 1997 
+ Crop_Damage (Sum) = $10,040,000 
+ event_type = Wildfire" coords="146,307,149,307,149,340,146,340,146,307,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="144,339,147,339,147,340,144,340,144,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = May 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="143,339,145,339,145,340,143,340,143,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="141,339,143,339,143,340,141,340,141,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1996 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" title=" begin_date_time = Oct 1996 
+ Crop_Damage (Sum) = $1,000,000 
+ event_type = Wildfire" coords="139,336,141,336,141,340,139,340,139,336,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Sep 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="137,339,140,339,140,340,137,340,137,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Aug 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="135,339,138,339,138,340,135,340,135,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jul 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="133,339,136,339,136,340,133,340,133,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Jun 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="131,339,134,339,134,340,131,340,131,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1996 
+ Crop_Damage (Sum) = $500,000 
+ event_type = Wildfire" title=" begin_date_time = May 1996 
+ Crop_Damage (Sum) = $500,000 
+ event_type = Wildfire" coords="130,338,132,338,132,340,130,340,130,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1996 
+ Crop_Damage (Sum) = $1,575,000 
+ event_type = Wildfire" title=" begin_date_time = Apr 1996 
+ Crop_Damage (Sum) = $1,575,000 
+ event_type = Wildfire" coords="128,334,130,334,130,340,128,340,128,334,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Mar 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="126,339,128,339,128,340,126,340,126,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" title=" begin_date_time = Feb 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Wildfire" coords="124,339,127,339,127,340,124,340,124,339,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot23.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot23" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

@@ -1,0 +1,1802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX78"></a>
+<div>
+<map name="SGPlot647">
+<Area shape="poly" alt=" county = Washington 
+ Crop_Damage = 120000" title=" county = Washington 
+ Crop_Damage = 120000" coords="224,244,225,243,225,240,228,238,233,230,238,229,240,226,249,228,247,236,247,239,250,239,248,245,252,248,255,248,253,254,251,261,247,261,233,257,233,256,231,255,231,253,229,252,228,253,227,250,225,250,224,248,225,247,224,244,"/>
+<Area shape="poly" alt=" county = Valley 
+ Crop_Damage = 120000" title=" county = Valley 
+ Crop_Damage = 120000" coords="263,238,262,234,263,229,265,227,267,226,266,224,268,222,267,221,267,220,268,218,271,218,274,216,315,225,314,227,312,239,310,239,310,241,308,242,302,245,300,245,301,244,299,242,296,244,295,246,294,248,291,248,290,249,289,251,291,252,291,255,290,257,288,260,286,259,285,261,283,263,280,263,260,259,259,263,255,262,257,254,259,255,261,247,261,243,263,238,263,238,"/>
+<Area shape="poly" alt=" county = Twin Falls 
+ Crop_Damage = 0" title=" county = Twin Falls 
+ Crop_Damage = 0" coords="285,333,287,335,287,337,288,337,288,339,295,341,307,348,309,351,314,351,312,351,311,355,304,354,300,373,274,368,281,333,283,326,285,327,286,329,287,330,285,332,285,333,285,333,"/>
+<Area shape="poly" alt=" county = Teton 
+ Crop_Damage = 0" title=" county = Teton 
+ Crop_Damage = 0" coords="423,324,422,322,418,321,417,317,412,316,414,303,416,302,417,303,420,302,421,303,426,302,423,324,423,324,"/>
+<Area shape="poly" alt=" county = Shoshone 
+ Crop_Damage = 0" title=" county = Shoshone 
+ Crop_Damage = 0" coords="280,132,284,115,289,93,290,88,292,86,293,86,295,89,296,88,298,91,301,98,303,99,303,103,304,103,306,106,305,108,306,109,306,111,303,112,305,114,304,114,305,116,307,116,306,117,303,117,302,118,307,122,308,125,309,126,314,129,314,132,319,137,320,143,322,143,323,145,279,136,280,132,280,132,"/>
+<Area shape="poly" alt=" county = Power 
+ Crop_Damage = 0" title=" county = Power 
+ Crop_Damage = 0" coords="368,351,369,351,369,353,370,354,370,355,371,355,368,362,366,361,365,365,360,364,359,368,347,366,349,354,343,353,343,351,341,351,342,349,344,349,344,346,343,345,345,329,353,330,351,342,358,343,361,339,361,340,361,341,367,339,368,342,368,351,368,351,"/>
+<Area shape="poly" alt=" county = Owyhee 
+ Crop_Damage = 0" title=" county = Owyhee 
+ Crop_Damage = 0" coords="234,295,235,298,237,299,240,300,241,302,240,304,242,308,243,309,245,311,245,312,247,313,246,314,249,316,250,318,252,318,252,317,254,316,256,318,258,319,258,320,258,320,263,320,264,321,269,323,267,330,281,333,274,368,207,354,206,354,224,278,225,279,227,282,230,284,230,286,230,289,234,295,234,295,"/>
+<Area shape="poly" alt=" county = Oneida 
+ Crop_Damage = 0" title=" county = Oneida 
+ Crop_Damage = 0" coords="378,379,376,379,375,387,373,386,344,381,347,366,359,368,360,364,365,365,366,361,368,362,370,362,371,365,372,365,372,367,370,370,372,371,373,370,375,370,376,372,377,373,378,376,378,379,378,379,"/>
+<Area shape="poly" alt=" county = Nez Perce 
+ Crop_Damage = 0" title=" county = Nez Perce 
+ Crop_Damage = 0" coords="267,148,272,149,271,155,274,155,273,157,272,157,273,159,272,162,261,161,261,165,260,165,258,176,256,178,256,180,253,181,252,179,251,174,251,171,250,170,252,166,251,165,252,163,252,160,250,157,251,154,253,149,263,151,264,149,267,148,267,148,"/>
+<Area shape="poly" alt=" county = Minidoka 
+ Crop_Damage = 0" title=" county = Minidoka 
+ Crop_Damage = 0" coords="327,338,330,322,340,324,337,340,335,339,334,348,330,348,327,352,325,353,322,351,317,351,319,340,325,342,325,338,327,338,327,338,"/>
+<Area shape="poly" alt=" county = Madison 
+ Crop_Damage = 0" title=" county = Madison 
+ Crop_Damage = 0" coords="412,316,404,315,404,314,400,312,396,307,393,307,395,299,399,300,399,301,404,302,404,303,408,303,411,302,414,303,412,316,412,316,"/>
+<Area shape="poly" alt=" county = Lincoln 
+ Crop_Damage = 0" title=" county = Lincoln 
+ Crop_Damage = 0" coords="325,342,319,340,315,340,315,338,305,336,305,334,297,332,300,316,308,318,330,322,327,338,325,338,325,342,325,342,"/>
+<Area shape="poly" alt=" county = Lewis 
+ Crop_Damage = 0" title=" county = Lewis 
+ Crop_Damage = 0" coords="276,172,269,168,268,169,266,172,265,171,263,177,261,174,260,175,259,176,258,176,260,165,261,165,261,161,272,162,273,159,272,157,273,157,275,160,278,160,279,163,279,166,282,170,278,170,276,172,276,172,"/>
+<Area shape="poly" alt=" county = Lemhi 
+ Crop_Damage = 0" title=" county = Lemhi 
+ Crop_Damage = 0" coords="363,279,352,277,352,274,350,267,348,268,346,267,338,263,333,254,331,249,329,250,327,249,329,245,328,243,323,246,322,248,321,248,322,249,321,251,317,254,316,253,314,254,313,253,313,252,312,250,309,250,307,245,308,243,308,242,310,241,310,239,312,239,314,227,315,225,319,221,314,214,315,211,316,210,319,213,321,211,323,210,326,210,327,213,330,216,332,215,333,212,335,213,339,211,340,210,342,209,342,207,345,207,345,210,345,211,348,212,348,213,347,216,349,216,347,221,349,222,348,225,349,228,349,229,351,232,352,235,354,236,353,237,355,239,354,244,352,244,353,248,355,250,356,252,360,251,363,254,364,259,365,261,363,262,365,266,364,267,365,269,368,272,369,274,370,274,369,281,363,279,363,279,"/>
+<Area shape="poly" alt=" county = Latah 
+ Crop_Damage = 0" title=" county = Latah 
+ Crop_Damage = 0" coords="280,132,279,136,276,150,272,149,267,148,264,149,263,151,253,149,259,123,260,123,261,126,263,126,264,128,280,132,280,132,"/>
+<Area shape="poly" alt=" county = Kootenai 
+ Crop_Damage = 0" title=" county = Kootenai 
+ Crop_Damage = 0" coords="283,92,289,93,284,115,276,113,274,113,274,115,270,113,268,114,261,112,267,85,284,88,283,92,283,92,"/>
+<Area shape="poly" alt=" county = Jerome 
+ Crop_Damage = 0" title=" county = Jerome 
+ Crop_Damage = 0" coords="295,341,296,332,297,332,305,334,305,336,315,338,315,340,319,340,317,351,314,351,309,351,307,348,295,341,295,341,"/>
+<Area shape="poly" alt=" county = Jefferson 
+ Crop_Damage = 0" title=" county = Jefferson 
+ Crop_Damage = 0" coords="368,309,371,293,372,289,390,292,389,296,395,297,395,299,393,307,396,307,400,312,404,314,404,315,374,310,368,309,368,309,"/>
+<Area shape="poly" alt=" county = Idaho 
+ Crop_Damage = 0" title=" county = Idaho 
+ Crop_Damage = 0" coords="315,225,274,216,271,218,268,218,267,220,262,218,263,217,262,211,251,209,253,205,257,201,259,197,262,194,260,190,260,188,257,186,256,183,254,183,253,181,256,180,256,178,258,176,259,176,260,175,261,174,263,177,265,171,266,172,268,169,269,168,276,172,278,170,282,170,279,166,279,163,282,164,285,168,290,170,291,169,293,166,297,163,297,162,332,161,340,161,339,168,337,168,337,171,335,173,334,178,332,178,332,183,330,183,330,183,330,184,331,186,329,189,330,189,330,191,332,192,331,194,332,196,331,197,327,197,325,200,326,204,326,206,324,206,324,208,323,210,321,211,319,213,316,210,315,211,314,214,319,221,315,225,315,225,"/>
+<Area shape="poly" alt=" county = Gooding 
+ Crop_Damage = 0" title=" county = Gooding 
+ Crop_Damage = 0" coords="300,316,297,332,296,332,295,341,288,339,288,337,287,337,287,335,285,333,285,332,287,330,286,329,285,327,283,326,281,326,281,325,284,313,300,316,300,316,"/>
+<Area shape="poly" alt=" county = Gem 
+ Crop_Damage = 120000" title=" county = Gem 
+ Crop_Damage = 120000" coords="235,274,237,266,242,267,242,266,243,266,244,264,247,264,247,261,251,261,253,254,255,248,258,248,259,246,261,247,259,255,257,254,255,262,253,262,250,277,242,276,235,274,235,274,"/>
+<Area shape="poly" alt=" county = Fremont 
+ Crop_Damage = 0" title=" county = Fremont 
+ Crop_Damage = 0" coords="411,302,408,303,404,303,404,302,399,301,399,300,395,299,395,297,389,296,390,292,394,293,395,289,399,290,399,288,401,288,402,282,404,282,405,279,410,279,412,273,417,274,415,271,416,269,417,268,417,267,418,266,420,266,421,265,423,266,424,269,424,270,425,272,425,272,425,273,426,274,428,278,430,279,426,302,421,303,420,302,417,303,416,302,414,303,411,302,411,302,"/>
+<Area shape="poly" alt=" county = Franklin 
+ Crop_Damage = 0" title=" county = Franklin 
+ Crop_Damage = 0" coords="377,373,382,374,381,375,384,376,386,369,386,369,392,369,396,370,397,374,395,375,396,377,394,378,393,380,394,383,393,385,396,387,396,390,375,387,376,379,378,379,378,376,377,373,377,373,"/>
+<Area shape="poly" alt=" county = Elmore 
+ Crop_Damage = 0" title=" county = Elmore 
+ Crop_Damage = 0" coords="291,280,294,280,295,280,294,281,294,283,293,284,290,289,291,290,290,292,289,296,288,295,284,313,281,325,281,326,283,326,281,333,267,330,269,323,264,321,263,320,258,320,258,320,258,319,256,318,254,316,252,317,252,318,250,318,249,316,246,314,247,313,245,312,245,311,243,309,253,311,258,289,259,289,261,290,265,288,268,288,271,285,271,285,272,283,275,282,275,280,276,279,284,278,288,273,287,271,289,272,290,277,291,278,291,280,291,280,"/>
+<Area shape="poly" alt=" county = Custer 
+ Crop_Damage = 0" title=" county = Custer 
+ Crop_Damage = 0" coords="314,254,316,253,317,254,321,251,322,249,321,248,322,248,323,246,328,243,329,245,327,249,329,250,331,249,333,254,338,263,346,267,348,268,350,267,352,274,352,277,349,277,348,285,346,284,345,293,346,294,347,297,345,296,342,299,332,302,331,305,329,301,328,300,326,297,325,294,324,294,323,295,321,295,321,293,317,290,317,287,314,287,310,285,309,287,307,287,305,283,300,282,300,279,298,279,295,280,294,280,295,279,295,277,293,275,295,273,294,272,295,271,295,270,291,267,291,263,289,262,288,260,290,257,291,255,291,252,289,251,290,249,291,248,294,248,295,246,296,244,299,242,301,244,300,245,302,245,308,242,308,243,307,245,309,250,312,250,313,252,313,253,314,254,314,254,"/>
+<Area shape="poly" alt=" county = Clearwater 
+ Crop_Damage = 0" title=" county = Clearwater 
+ Crop_Damage = 0" coords="282,164,279,163,278,160,275,160,273,157,274,155,271,155,272,149,276,150,279,136,323,145,324,146,323,148,324,151,325,151,327,154,326,157,327,157,329,156,330,156,332,158,331,159,332,161,297,162,297,163,293,166,291,169,290,170,285,168,282,164,282,164,"/>
+<Area shape="poly" alt=" county = Clark 
+ Crop_Damage = 0" title=" county = Clark 
+ Crop_Damage = 0" coords="385,273,387,269,390,268,395,271,403,271,405,273,409,272,412,273,410,279,405,279,404,282,402,282,401,288,399,288,399,290,395,289,394,293,390,292,372,289,371,293,361,291,363,279,369,281,370,274,370,272,372,269,375,269,381,272,383,271,385,273,385,273,"/>
+<Area shape="poly" alt=" county = Cassia 
+ Crop_Damage = 0" title=" county = Cassia 
+ Crop_Damage = 0" coords="322,351,325,353,327,352,330,348,334,348,337,348,339,351,341,351,343,351,343,353,349,354,347,366,344,381,308,375,300,373,304,354,311,355,312,351,314,351,317,351,322,351,322,351,"/>
+<Area shape="poly" alt=" county = Caribou 
+ Crop_Damage = 0" title=" county = Caribou 
+ Crop_Damage = 0" coords="397,370,396,370,392,369,386,369,386,364,386,363,386,359,386,358,385,355,382,354,381,355,380,352,380,350,381,349,381,345,382,343,383,343,383,342,385,342,385,340,401,343,419,346,415,369,412,370,409,369,408,368,410,365,409,364,408,366,405,363,397,362,396,363,397,370,397,370,"/>
+<Area shape="poly" alt=" county = Camas 
+ Crop_Damage = 0" title=" county = Camas 
+ Crop_Damage = 0" coords="308,318,300,316,284,313,288,295,289,296,290,292,291,290,290,289,293,284,297,287,297,288,302,288,302,291,303,291,302,293,302,295,301,298,304,300,303,301,304,303,306,304,304,306,304,311,308,312,308,318,308,318,"/>
+<Area shape="poly" alt=" county = Butte 
+ Crop_Damage = 0" title=" county = Butte 
+ Crop_Damage = 0" coords="331,305,332,302,342,299,345,296,347,297,346,294,345,293,346,284,348,285,349,277,352,277,363,279,361,291,371,293,368,309,367,313,363,312,363,316,359,315,357,323,355,322,343,320,343,317,334,315,335,309,334,309,334,305,331,305,331,305,"/>
+<Area shape="poly" alt=" county = Boundary 
+ Crop_Damage = 0" title=" county = Boundary 
+ Crop_Damage = 0" coords="308,46,303,68,280,63,284,48,276,46,278,39,308,46,308,46,"/>
+<Area shape="poly" alt=" county = Bonneville 
+ Crop_Damage = 0" title=" county = Bonneville 
+ Crop_Damage = 0" coords="404,315,412,316,417,317,418,321,422,322,423,324,421,332,419,346,401,343,403,331,395,329,396,326,388,324,388,322,372,319,374,310,404,315,404,315,"/>
+<Area shape="poly" alt=" county = Bonner 
+ Crop_Damage = 0" title=" county = Bonner 
+ Crop_Damage = 0" coords="293,86,292,86,290,88,289,93,283,92,284,88,267,85,268,82,276,46,284,48,280,63,303,68,301,81,298,91,296,88,295,89,293,86,293,86,"/>
+<Area shape="poly" alt=" county = Boise 
+ Crop_Damage = 0" title=" county = Boise 
+ Crop_Damage = 0" coords="291,267,295,270,295,271,294,272,295,273,293,275,295,277,295,279,294,280,291,280,291,278,290,277,289,272,287,271,288,273,284,278,276,279,275,280,275,282,272,283,271,285,271,285,268,288,265,288,261,290,259,289,258,289,250,277,253,262,255,262,259,263,260,259,280,263,283,263,285,261,286,259,288,260,289,262,291,263,291,267,291,267,"/>
+<Area shape="poly" alt=" county = Blaine 
+ Crop_Damage = 0" title=" county = Blaine 
+ Crop_Damage = 0" coords="321,293,321,295,323,295,324,294,325,294,326,297,328,300,329,301,331,305,334,305,334,309,335,309,334,315,343,317,343,320,355,322,353,330,345,329,343,345,344,346,344,349,342,349,341,351,339,351,337,348,334,348,335,339,337,340,340,324,330,322,308,318,308,312,304,311,304,306,306,304,304,303,303,301,304,300,301,298,302,295,302,293,303,291,302,291,302,288,297,288,297,287,293,284,294,283,294,281,295,280,298,279,300,279,300,282,305,283,307,287,309,287,310,285,314,287,317,287,317,290,321,293,321,293,"/>
+<Area shape="poly" alt=" county = Bingham 
+ Crop_Damage = 0" title=" county = Bingham 
+ Crop_Damage = 0" coords="361,337,361,339,358,343,351,342,353,330,355,322,357,323,359,315,363,316,363,312,367,313,368,309,374,310,372,319,388,322,388,324,396,326,395,329,403,331,401,343,385,340,364,336,361,337,361,337,"/>
+<Area shape="poly" alt=" county = Benewah 
+ Crop_Damage = 0" title=" county = Benewah 
+ Crop_Damage = 0" coords="280,132,264,128,263,126,261,126,260,123,259,123,260,117,261,112,268,114,270,113,274,115,274,113,276,113,284,115,280,132,280,132,"/>
+<Area shape="poly" alt=" county = Bear Lake 
+ Crop_Damage = 250000" title=" county = Bear Lake 
+ Crop_Damage = 250000" coords="396,390,396,387,393,385,394,383,393,380,394,378,396,377,395,375,397,374,396,370,397,370,396,363,397,362,405,363,408,366,409,364,410,365,408,368,409,369,412,370,415,369,412,392,396,390,396,390,"/>
+<Area shape="poly" alt=" county = Bannock 
+ Crop_Damage = 0" title=" county = Bannock 
+ Crop_Damage = 0" coords="361,341,361,340,361,339,361,337,364,336,385,340,385,342,383,342,383,343,382,343,381,345,381,349,380,350,380,352,381,355,382,354,385,355,386,358,386,359,386,363,386,364,386,369,386,369,384,376,381,375,382,374,377,373,376,372,375,370,373,370,372,371,370,370,372,367,372,365,371,365,370,362,368,362,371,355,370,355,370,354,369,353,369,351,368,351,368,342,367,339,361,341,361,341,"/>
+<Area shape="poly" alt=" county = Adams 
+ Crop_Damage = 120000" title=" county = Adams 
+ Crop_Damage = 120000" coords="265,227,263,229,262,234,263,238,261,243,261,247,259,246,258,248,255,248,252,248,248,245,250,239,247,239,247,236,249,228,240,226,243,223,242,221,243,220,242,220,243,218,246,216,248,214,251,209,262,211,263,217,262,218,267,220,267,221,268,222,266,224,267,226,265,227,265,227,"/>
+<Area shape="poly" alt=" county = Ada 
+ Crop_Damage = 0" title=" county = Ada 
+ Crop_Damage = 0" coords="250,277,258,289,253,311,243,309,242,308,240,304,241,302,240,300,237,299,238,291,240,292,241,284,240,283,242,276,250,277,250,277,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot647.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot647" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX79"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">&nbsp;</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.BACK_A_LEVEL">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">Back_a_Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data"><a href='..\wf_Crop_Damage.html'> Back To Wild Fire Crop_Damage </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

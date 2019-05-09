@@ -1,0 +1,3580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Effects due to Tornadoes</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.EFFECTS_ABREVIATION">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data"><a href='torr_Deaths.html'> Deaths </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='torr_Injuries.html'> Injuries </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='torr_Property_Damage.html'> Property Damage </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='torr_Crop_Damage.html'> Crop Damage </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter"><a href='..\Storm_Home_Page.html'> Storm Home Page </a></td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<div>
+<map name="SGPlot14">
+<Area shape="poly" alt=" state = WYOMING  
+ COL1 = 0 " title=" state = WYOMING  
+ COL1 = 0 " href="State/56-Crop_Damage.html " target="_BLANK" coords="244,147,246,121,186,113,185,120,180,152,178,165,196,168,242,174,244,147,"/>
+<Area shape="poly" alt=" state = WISCONSIN  
+ COL1 = 1.66E7 " title=" state = WISCONSIN  
+ COL1 = 1.66E7 " href="State/55-Crop_Damage.html " target="_BLANK" coords="395,116,392,121,395,116,395,116,"/>
+<Area shape="poly" alt=" state = WISCONSIN  
+ COL1 = 1.66E7 " title=" state = WISCONSIN  
+ COL1 = 1.66E7 " href="State/55-Crop_Damage.html " target="_BLANK" coords="389,144,391,154,365,156,361,153,360,143,357,136,345,127,345,121,345,120,346,118,344,114,349,109,348,102,351,101,361,97,360,102,361,100,365,102,368,105,385,109,385,111,388,112,387,116,389,116,390,119,387,126,388,127,392,122,393,123,389,144,389,144,"/>
+<Area shape="poly" alt=" state = WEST VIRGINIA  
+ COL1 = 2.32E6 " title=" state = WEST VIRGINIA  
+ COL1 = 2.32E6 " href="State/54-Crop_Damage.html " target="_BLANK" coords="489,185,483,181,483,185,480,191,478,191,476,197,473,195,467,212,456,217,453,213,447,208,445,202,449,199,449,193,452,194,452,189,459,184,460,174,459,171,460,170,462,182,472,180,473,187,479,180,482,181,484,178,487,179,489,182,489,185,489,185,"/>
+<Area shape="poly" alt=" state = WASHINGTON  
+ COL1 = 0 " title=" state = WASHINGTON  
+ COL1 = 0 " href="State/53-Crop_Damage.html " target="_BLANK" coords="138,85,145,51,99,38,100,44,98,46,100,47,98,50,99,51,100,53,97,56,97,60,91,63,90,61,93,58,93,61,95,59,96,58,95,57,96,55,97,55,97,52,91,58,93,58,90,58,94,53,96,49,95,51,94,48,86,46,81,41,80,61,81,59,83,61,81,61,81,63,82,64,80,68,80,65,79,69,80,70,80,70,82,70,84,72,86,73,88,75,88,80,91,83,96,82,101,85,108,86,120,85,138,90,138,85,138,85,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 2.3E6 " title=" state = VIRGINIA  
+ COL1 = 2.3E6 " href="State/51-Crop_Damage.html " target="_BLANK" coords="514,194,512,195,510,201,511,207,514,194,514,194,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 2.3E6 " title=" state = VIRGINIA  
+ COL1 = 2.3E6 " href="State/51-Crop_Damage.html " target="_BLANK" coords="511,210,508,210,508,211,506,213,506,210,502,208,502,206,507,211,508,208,506,207,507,206,506,204,508,205,507,203,505,203,507,202,504,202,500,197,506,202,506,199,507,198,503,197,502,195,499,195,495,194,495,190,496,186,496,186,489,182,489,185,483,181,483,185,480,191,478,191,476,197,473,195,467,212,456,217,453,213,443,225,438,228,457,225,511,215,511,215,512,215,511,213,512,215,512,215,512,212,513,214,513,214,511,210,511,210,"/>
+<Area shape="poly" alt=" state = VERMONT  
+ COL1 = 75000 " title=" state = VERMONT  
+ COL1 = 75000 " href="State/50-Crop_Damage.html " target="_BLANK" coords="530,102,527,105,526,115,528,127,520,128,517,115,515,104,515,99,529,95,530,102,530,102,"/>
+<Area shape="poly" alt=" state = UTAH  
+ COL1 = 607700 " title=" state = UTAH  
+ COL1 = 607700 " href="State/49-Crop_Damage.html " target="_BLANK" coords="196,168,178,165,180,152,153,147,141,212,189,221,196,168,196,168,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 8.3E7 " title=" state = TEXAS  
+ COL1 = 8.3E7 " href="State/48-Crop_Damage.html " target="_BLANK" coords="307,349,301,360,303,354,307,349,307,349,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 8.3E7 " title=" state = TEXAS  
+ COL1 = 8.3E7 " href="State/48-Crop_Damage.html " target="_BLANK" coords="337,297,337,283,337,276,332,275,324,271,315,272,313,274,311,272,309,273,307,271,305,274,304,271,302,273,300,270,296,272,295,268,292,269,284,267,283,264,279,264,276,262,277,236,248,234,243,294,206,290,207,293,222,311,226,325,238,334,242,331,245,324,249,323,259,325,266,334,270,345,278,355,278,362,282,370,292,375,298,375,300,378,304,377,299,365,301,359,298,359,297,357,299,359,300,356,299,359,301,359,303,354,302,354,300,351,304,351,305,348,304,349,304,348,308,347,308,343,309,345,312,344,309,341,311,341,311,342,315,340,314,342,317,341,313,345,326,336,324,337,325,334,328,332,327,328,330,326,329,329,333,329,330,332,340,328,338,326,340,323,343,309,337,297,337,297,"/>
+<Area shape="poly" alt=" state = TENNESSEE  
+ COL1 = 6.85E6 " title=" state = TENNESSEE  
+ COL1 = 6.85E6 " href="State/47-Crop_Damage.html " target="_BLANK" coords="457,225,457,228,454,231,450,234,449,233,446,237,437,242,436,246,434,247,434,250,421,251,395,254,374,255,376,253,375,250,377,248,377,245,380,243,379,242,380,235,381,235,381,235,395,234,394,231,438,228,457,225,457,225,"/>
+<Area shape="poly" alt=" state = SOUTH DAKOTA  
+ COL1 = 640100 " title=" state = SOUTH DAKOTA  
+ COL1 = 640100 " href="State/46-Crop_Damage.html " target="_BLANK" coords="311,154,313,157,306,152,299,153,294,150,244,147,246,121,247,108,312,112,309,116,313,120,313,144,311,144,313,149,311,154,311,154,"/>
+<Area shape="poly" alt=" state = SOUTH CAROLINA  
+ COL1 = 6.27E6 " title=" state = SOUTH CAROLINA  
+ COL1 = 6.27E6 " href="State/45-Crop_Damage.html " target="_BLANK" coords="493,255,480,245,469,247,466,243,452,244,446,248,444,252,449,254,453,261,465,272,471,281,473,283,474,276,478,277,479,273,480,275,481,274,480,275,482,273,481,271,483,272,488,266,487,262,488,261,489,263,493,255,493,255,"/>
+<Area shape="poly" alt=" state = RHODE ISLAND  
+ COL1 = 0 " title=" state = RHODE ISLAND  
+ COL1 = 0 " href="State/44-Crop_Damage.html " target="_BLANK" coords="542,137,543,137,543,137,543,139,542,137,542,137,"/>
+<Area shape="poly" alt=" state = RHODE ISLAND  
+ COL1 = 0 " title=" state = RHODE ISLAND  
+ COL1 = 0 " href="State/44-Crop_Damage.html " target="_BLANK" coords="541,136,539,133,536,134,537,142,537,143,540,142,541,136,541,136,"/>
+<Area shape="poly" alt=" state = PENNSYLVANIA  
+ COL1 = 7.13E6 " title=" state = PENNSYLVANIA  
+ COL1 = 7.13E6 " href="State/42-Crop_Damage.html " target="_BLANK" coords="509,148,507,144,504,142,464,151,464,147,458,152,460,170,462,182,472,180,506,173,509,171,515,165,509,159,509,155,512,149,509,148,509,148,"/>
+<Area shape="poly" alt=" state = OREGON  
+ COL1 = 123000 " title=" state = OREGON  
+ COL1 = 123000 " href="State/41-Crop_Damage.html " target="_BLANK" coords="138,90,120,85,108,86,101,85,96,82,91,83,88,80,88,75,86,73,84,72,82,70,79,70,70,99,62,111,63,123,100,134,126,141,133,113,131,110,141,96,138,90,138,90,"/>
+<Area shape="poly" alt=" state = OKLAHOMA  
+ COL1 = 5.06E7 " title=" state = OKLAHOMA  
+ COL1 = 5.06E7 " href="State/40-Crop_Damage.html " target="_BLANK" coords="332,275,324,271,315,272,313,274,311,272,309,273,307,271,305,274,304,271,302,273,300,270,296,272,295,268,292,269,284,267,283,264,279,264,276,262,277,236,248,234,248,228,258,228,330,230,330,237,332,252,332,275,332,275,"/>
+<Area shape="poly" alt=" state = OHIO  
+ COL1 = 5.49E6 " title=" state = OHIO  
+ COL1 = 5.49E6 " href="State/39-Crop_Damage.html " target="_BLANK" coords="458,152,448,160,441,163,436,163,439,161,436,162,432,159,419,162,423,196,426,195,429,199,434,201,438,201,442,198,445,202,449,199,449,193,452,194,452,189,459,184,460,174,459,171,460,170,458,152,458,152,"/>
+<Area shape="poly" alt=" state = NORTH DAKOTA  
+ COL1 = 1.41E7 " title=" state = NORTH DAKOTA  
+ COL1 = 1.41E7 " href="State/38-Crop_Damage.html " target="_BLANK" coords="312,112,247,108,251,69,307,72,312,112,312,112,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 4.73E6 " title=" state = NORTH CAROLINA  
+ COL1 = 4.73E6 " href="State/37-Crop_Damage.html " target="_BLANK" coords="513,214,513,214,515,218,513,214,513,214,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 4.73E6 " title=" state = NORTH CAROLINA  
+ COL1 = 4.73E6 " href="State/37-Crop_Damage.html " target="_BLANK" coords="515,222,514,226,513,222,507,225,506,219,508,223,510,221,509,220,513,220,511,218,514,219,513,218,515,220,512,215,511,215,511,215,457,225,457,228,454,231,450,234,449,233,446,237,437,242,436,246,434,247,434,250,446,248,452,244,466,243,469,247,480,245,493,255,499,254,499,250,500,253,501,247,504,244,503,241,504,244,506,240,510,240,510,239,511,240,510,239,512,240,513,237,514,235,512,237,511,235,511,237,510,236,507,238,505,235,508,237,511,232,508,233,508,232,505,232,504,230,509,231,508,230,510,229,510,231,514,231,517,226,515,222,515,222,"/>
+<Area shape="poly" alt=" state = NEW YORK  
+ COL1 = 820000 " title=" state = NEW YORK  
+ COL1 = 820000 " href="State/36-Crop_Damage.html " target="_BLANK" coords="520,128,521,138,523,148,521,150,522,152,520,156,520,154,520,153,520,152,512,149,509,148,507,144,504,142,464,151,464,147,471,139,468,133,473,130,487,129,492,124,491,120,493,118,491,117,491,119,490,117,500,103,513,99,517,115,520,128,520,128,"/>
+<Area shape="poly" alt=" state = NEW MEXICO  
+ COL1 = 260000 " title=" state = NEW MEXICO  
+ COL1 = 260000 " href="State/35-Crop_Damage.html " target="_BLANK" coords="248,228,189,221,180,296,188,297,189,291,207,293,206,290,243,294,248,234,248,228,248,228,"/>
+<Area shape="poly" alt=" state = NEW JERSEY  
+ COL1 = 200000 " title=" state = NEW JERSEY  
+ COL1 = 200000 " href="State/34-Crop_Damage.html " target="_BLANK" coords="520,153,520,154,518,160,521,160,521,168,520,165,521,170,517,180,516,181,516,178,509,176,509,171,509,171,515,165,509,159,509,155,512,149,520,152,520,153,520,153,"/>
+<Area shape="poly" alt=" state = NEW HAMPSHIRE  
+ COL1 = 0 " title=" state = NEW HAMPSHIRE  
+ COL1 = 0 " href="State/33-Crop_Damage.html " target="_BLANK" coords="538,114,532,90,529,92,529,95,530,102,527,105,526,115,528,127,538,124,541,121,542,118,538,114,538,114,"/>
+<Area shape="poly" alt=" state = NEVADA  
+ COL1 = 0 " title=" state = NEVADA  
+ COL1 = 0 " href="State/32-Crop_Damage.html " target="_BLANK" coords="141,212,138,225,136,223,132,223,131,237,90,173,100,134,126,141,153,147,141,212,141,212,"/>
+<Area shape="poly" alt=" state = NEBRASKA  
+ COL1 = 3.16E7 " title=" state = NEBRASKA  
+ COL1 = 3.16E7 " href="State/31-Crop_Damage.html " target="_BLANK" coords="323,190,260,188,261,175,242,174,244,147,294,150,299,153,306,152,313,157,316,170,317,171,319,183,323,190,323,190,"/>
+<Area shape="poly" alt=" state = MONTANA  
+ COL1 = 130000 " title=" state = MONTANA  
+ COL1 = 130000 " href="State/30-Crop_Damage.html " target="_BLANK" coords="247,108,251,69,191,61,153,53,150,66,152,70,151,74,154,77,158,85,161,86,157,100,158,101,162,99,165,111,167,112,169,118,174,116,181,118,182,115,185,120,186,113,246,121,247,108,247,108,"/>
+<Area shape="poly" alt=" state = MISSOURI  
+ COL1 = 2.23E7 " title=" state = MISSOURI  
+ COL1 = 2.23E7 " href="State/29-Crop_Damage.html " target="_BLANK" coords="384,228,380,225,379,219,371,213,373,204,370,203,368,204,367,199,360,193,360,184,356,181,319,183,323,190,327,192,327,194,325,196,330,202,330,230,330,237,368,236,368,236,374,235,375,238,372,242,379,242,380,235,380,234,380,234,381,235,381,235,384,232,384,228,384,228,"/>
+<Area shape="poly" alt=" state = MISSISSIPPI  
+ COL1 = 6.94E7 " title=" state = MISSISSIPPI  
+ COL1 = 6.94E7 " href="State/28-Crop_Damage.html " target="_BLANK" coords="395,295,397,315,387,316,386,319,385,318,382,312,383,308,363,309,362,306,365,301,364,301,366,299,365,298,369,294,367,293,370,291,367,289,369,289,368,287,367,287,366,282,367,279,367,276,365,277,365,273,367,273,367,269,369,267,368,266,371,263,371,258,374,257,374,255,395,254,396,255,395,295,395,295,"/>
+<Area shape="poly" alt=" state = MINNESOTA  
+ COL1 = 1.64E7 " title=" state = MINNESOTA  
+ COL1 = 1.64E7 " href="State/27-Crop_Damage.html " target="_BLANK" coords="361,89,350,100,351,101,348,102,349,109,344,114,346,118,345,120,345,121,345,127,357,136,360,143,313,144,313,120,309,116,312,112,307,72,324,72,324,67,325,67,328,75,335,76,335,78,342,76,345,77,347,81,350,79,354,83,360,80,361,82,371,83,361,89,361,89,"/>
+<Area shape="poly" alt=" state = MICHIGAN  
+ COL1 = 1.51E6 " title=" state = MICHIGAN  
+ COL1 = 1.51E6 " href="State/26-Crop_Damage.html " target="_BLANK" coords="439,146,437,148,437,146,436,147,432,159,419,162,401,163,405,151,401,138,402,124,408,116,409,122,409,115,413,113,411,112,412,109,414,108,425,112,428,116,426,116,428,120,428,125,424,131,424,135,427,135,429,131,432,128,435,131,439,142,439,146,439,146,"/>
+<Area shape="poly" alt=" state = MICHIGAN  
+ COL1 = 1.51E6 " title=" state = MICHIGAN  
+ COL1 = 1.51E6 " href="State/26-Crop_Damage.html " target="_BLANK" coords="417,102,417,98,411,99,411,95,401,98,397,101,391,101,386,96,384,95,381,98,383,92,387,89,384,89,376,96,365,102,368,105,385,109,385,111,388,112,387,116,389,116,390,119,395,108,395,111,398,108,398,112,401,107,406,106,407,104,414,107,414,104,421,105,417,102,417,102,"/>
+<Area shape="poly" alt=" state = MASSACHUSETTS  
+ COL1 = 0 " title=" state = MASSACHUSETTS  
+ COL1 = 0 " href="State/25-Crop_Damage.html " target="_BLANK" coords="551,129,549,130,552,132,550,134,545,132,544,128,541,129,544,123,542,123,541,121,538,124,528,127,520,128,521,138,536,134,539,133,541,136,541,136,541,136,541,136,542,137,542,137,543,137,543,137,543,139,547,134,547,138,553,134,553,133,551,129,551,129,"/>
+<Area shape="poly" alt=" state = MARYLAND  
+ COL1 = 563500 " title=" state = MARYLAND  
+ COL1 = 563500 " href="State/24-Crop_Damage.html " target="_BLANK" coords="516,188,510,189,506,173,472,180,473,187,479,180,482,181,484,178,487,179,489,182,496,186,498,186,497,187,496,193,499,194,499,192,505,196,504,193,501,191,501,189,504,192,500,184,502,185,502,183,499,181,501,181,503,177,503,178,503,175,505,175,505,177,505,177,506,178,504,178,503,181,504,181,506,181,504,184,505,186,504,185,504,186,505,187,506,186,506,188,504,188,506,189,504,190,505,191,507,191,509,191,510,193,509,196,512,195,514,194,516,188,516,188,"/>
+<Area shape="poly" alt=" state = MAINE  
+ COL1 = 0 " title=" state = MAINE  
+ COL1 = 0 " href="State/23-Crop_Damage.html " target="_BLANK" coords="559,95,558,95,558,97,557,96,558,94,559,95,559,95,"/>
+<Area shape="poly" alt=" state = MAINE  
+ COL1 = 0 " title=" state = MAINE  
+ COL1 = 0 " href="State/23-Crop_Damage.html " target="_BLANK" coords="566,86,566,85,567,84,566,82,562,82,561,77,558,77,553,60,548,57,544,61,540,58,536,70,537,81,534,87,535,88,534,88,534,91,532,90,538,114,542,118,544,107,546,106,546,105,546,104,549,106,550,102,551,103,552,101,552,96,554,94,554,97,557,97,556,94,557,95,558,92,560,95,562,91,564,91,563,89,566,89,568,86,566,86,566,86,"/>
+<Area shape="poly" alt=" state = LOUISIANA  
+ COL1 = 3.85E6 " title=" state = LOUISIANA  
+ COL1 = 3.85E6 " href="State/22-Crop_Damage.html " target="_BLANK" coords="392,331,386,329,384,325,386,326,388,324,389,319,384,323,382,322,384,319,383,319,379,321,376,320,378,316,385,318,382,312,383,308,363,309,362,306,365,301,364,301,366,299,365,298,369,294,367,293,370,291,367,289,369,289,368,287,367,287,366,282,337,283,337,297,343,309,340,323,340,327,347,326,361,329,363,328,357,326,361,325,361,326,363,326,364,329,368,330,369,332,368,330,366,331,367,332,372,334,376,330,379,334,381,332,381,329,378,328,377,326,378,323,380,328,381,328,381,326,383,330,385,330,388,333,389,332,389,333,390,334,392,331,392,331,"/>
+<Area shape="poly" alt=" state = KENTUCKY  
+ COL1 = 2.02E6 " title=" state = KENTUCKY  
+ COL1 = 2.02E6 " href="State/21-Crop_Damage.html " target="_BLANK" coords="447,208,445,202,442,198,438,201,434,201,429,199,426,195,423,196,423,200,418,202,418,204,413,212,409,210,407,215,405,213,403,216,398,214,398,216,395,215,394,216,394,221,390,222,390,226,385,225,384,228,384,232,381,235,395,234,394,231,438,228,443,225,453,213,447,208,447,208,"/>
+<Area shape="poly" alt=" state = KANSAS  
+ COL1 = 1.58E7 " title=" state = KANSAS  
+ COL1 = 1.58E7 " href="State/20-Crop_Damage.html " target="_BLANK" coords="330,230,258,228,260,188,323,190,327,192,327,194,325,196,330,202,330,230,330,230,"/>
+<Area shape="poly" alt=" state = IOWA  
+ COL1 = 6.81E6 " title=" state = IOWA  
+ COL1 = 6.81E6 " href="State/19-Crop_Damage.html " target="_BLANK" coords="370,161,365,156,361,153,360,143,313,144,311,144,313,149,311,154,313,157,316,170,317,171,319,183,356,181,360,184,364,176,362,170,368,169,370,165,370,161,370,161,"/>
+<Area shape="poly" alt=" state = INDIANA  
+ COL1 = 545750 " title=" state = INDIANA  
+ COL1 = 545750 " href="State/18-Crop_Damage.html " target="_BLANK" coords="423,200,418,202,418,204,413,212,409,210,407,215,405,213,403,216,398,214,398,216,395,215,394,216,394,210,398,203,396,198,394,164,397,165,401,163,419,162,423,196,423,200,423,200,"/>
+<Area shape="poly" alt=" state = ILLINOIS  
+ COL1 = 2.78E6 " title=" state = ILLINOIS  
+ COL1 = 2.78E6 " href="State/17-Crop_Damage.html " target="_BLANK" coords="396,198,394,164,391,154,365,156,370,161,370,165,368,169,362,170,364,176,360,184,360,193,367,199,368,204,370,203,373,204,371,213,379,219,380,225,384,228,385,225,390,226,390,222,394,221,394,216,394,210,398,203,396,198,396,198,"/>
+<Area shape="poly" alt=" state = IDAHO  
+ COL1 = 10000 " title=" state = IDAHO  
+ COL1 = 10000 " href="State/16-Crop_Damage.html " target="_BLANK" coords="185,120,182,115,181,118,174,116,169,118,167,112,165,111,162,99,158,101,157,100,161,86,158,85,154,77,151,74,152,70,150,66,153,53,145,51,138,85,138,90,141,96,131,110,133,113,126,141,153,147,180,152,185,120,185,120,"/>
+<Area shape="poly" alt=" state = GEORGIA  
+ COL1 = 1.84E7 " title=" state = GEORGIA  
+ COL1 = 1.84E7 " href="State/13-Crop_Damage.html " target="_BLANK" coords="471,281,465,272,453,261,449,254,444,252,446,248,434,250,421,251,428,279,432,286,430,292,432,303,434,307,462,305,463,308,465,307,464,302,470,302,470,298,468,298,469,298,468,296,471,290,471,285,473,285,471,281,471,281,"/>
+<Area shape="poly" alt=" state = FLORIDA  
+ COL1 = 2.66E6 " title=" state = FLORIDA  
+ COL1 = 2.66E6 " href="State/12-Crop_Damage.html " target="_BLANK" coords="493,350,485,334,483,328,475,315,470,302,464,302,465,307,463,308,462,305,434,307,432,303,405,306,408,313,407,315,409,314,410,311,411,313,412,311,413,313,410,314,420,311,422,313,417,313,426,316,424,313,427,313,426,315,430,316,426,316,431,319,430,321,433,321,441,317,440,315,442,314,448,316,456,325,459,324,461,332,460,341,462,343,463,341,462,339,464,341,465,339,463,345,465,345,463,346,468,354,470,354,468,351,471,351,471,357,474,355,472,358,474,358,476,365,481,367,484,374,492,370,494,363,493,350,493,350,"/>
+<Area shape="poly" alt=" state = DISTRICT OF COLUMBIA  
+ COL1 = 0 " title=" state = DISTRICT OF COLUMBIA  
+ COL1 = 0 " href="State/11-Crop_Damage.html " target="_BLANK" coords="497,187,496,186,496,186,498,186,497,187,497,187,"/>
+<Area shape="poly" alt=" state = DELAWARE  
+ COL1 = 5000 " title=" state = DELAWARE  
+ COL1 = 5000 " href="State/10-Crop_Damage.html " target="_BLANK" coords="516,186,516,186,515,183,508,176,509,171,509,171,506,173,510,189,516,188,516,188,516,188,516,186,516,186,"/>
+<Area shape="poly" alt=" state = CONNECTICUT  
+ COL1 = 0 " title=" state = CONNECTICUT  
+ COL1 = 0 " href="State/09-Crop_Damage.html " target="_BLANK" coords="536,134,521,138,523,148,521,150,522,152,528,146,533,145,533,145,537,142,536,134,536,134,"/>
+<Area shape="poly" alt=" state = COLORADO  
+ COL1 = 6.62E6 " title=" state = COLORADO  
+ COL1 = 6.62E6 " href="State/08-Crop_Damage.html " target="_BLANK" coords="260,188,261,175,242,174,196,168,189,221,248,228,258,228,260,188,260,188,"/>
+<Area shape="poly" alt=" state = CALIFORNIA  
+ COL1 = 1.49E6 " title=" state = CALIFORNIA  
+ COL1 = 1.49E6 " href="State/06-Crop_Damage.html " target="_BLANK" coords="131,237,90,173,100,134,63,123,60,136,55,142,58,152,56,164,60,174,59,177,63,181,64,178,67,179,65,180,67,187,64,184,64,181,62,189,66,194,64,202,71,216,70,219,72,221,70,228,72,230,81,233,84,238,90,241,90,245,93,246,98,252,99,264,124,267,127,266,126,259,128,256,129,251,134,248,131,237,131,237,"/>
+<Area shape="poly" alt=" state = ARKANSAS  
+ COL1 = 1.56E6 " title=" state = ARKANSAS  
+ COL1 = 1.56E6 " href="State/05-Crop_Damage.html " target="_BLANK" coords="379,242,372,242,375,238,374,235,368,236,368,236,330,237,332,252,332,275,337,276,337,283,366,282,367,279,367,276,365,277,365,273,367,273,367,269,369,267,368,266,371,263,371,258,374,257,374,255,376,253,375,250,377,248,377,245,380,243,379,242,379,242,"/>
+<Area shape="poly" alt=" state = ARIZONA  
+ COL1 = 30000 " title=" state = ARIZONA  
+ COL1 = 30000 " href="State/04-Crop_Damage.html " target="_BLANK" coords="189,221,141,212,138,225,136,223,132,223,131,237,134,248,129,251,128,256,126,259,127,266,124,267,123,270,159,292,180,296,189,221,189,221,"/>
+<Area shape="poly" alt=" state = ALABAMA  
+ COL1 = 5.68E7 " title=" state = ALABAMA  
+ COL1 = 5.68E7 " href="State/01-Crop_Damage.html " target="_BLANK" coords="430,292,432,303,405,306,408,313,407,315,401,317,404,316,401,311,400,316,397,315,395,295,396,255,395,254,421,251,428,279,432,286,430,292,430,292,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot14.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot14" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<div>
+<map name="SGPlot15">
+<Area shape="poly" alt=" begin_date_time = Sep 2018 
+ Crop_Damage (Sum) = $70,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2018 
+ Crop_Damage (Sum) = $70,000 
+ event_type = Tornado" coords="591,339,594,339,594,340,591,340,591,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2018 
+ Crop_Damage (Sum) = $1,005,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2018 
+ Crop_Damage (Sum) = $1,005,000 
+ event_type = Tornado" coords="590,335,592,335,592,340,590,340,590,335,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2018 
+ Crop_Damage (Sum) = $49,750 
+ event_type = Tornado" title=" begin_date_time = Jul 2018 
+ Crop_Damage (Sum) = $49,750 
+ event_type = Tornado" coords="589,339,591,339,591,340,589,340,589,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2018 
+ Crop_Damage (Sum) = $501,400 
+ event_type = Tornado" title=" begin_date_time = Jun 2018 
+ Crop_Damage (Sum) = $501,400 
+ event_type = Tornado" coords="587,337,590,337,590,340,587,340,587,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2018 
+ Crop_Damage (Sum) = $200 
+ event_type = Tornado" title=" begin_date_time = May 2018 
+ Crop_Damage (Sum) = $200 
+ event_type = Tornado" coords="586,339,588,339,588,340,586,340,586,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2018 
+ Crop_Damage (Sum) = $36,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2018 
+ Crop_Damage (Sum) = $36,000 
+ event_type = Tornado" coords="585,339,587,339,587,340,585,340,585,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="583,339,585,339,585,340,583,340,583,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="582,339,584,339,584,340,582,340,582,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2018 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="581,339,583,339,583,340,581,340,581,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2017 
+ Crop_Damage (Sum) = $4,000 
+ event_type = Tornado" title=" begin_date_time = Dec 2017 
+ Crop_Damage (Sum) = $4,000 
+ event_type = Tornado" coords="579,339,581,339,581,340,579,340,579,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2017 
+ Crop_Damage (Sum) = $40,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2017 
+ Crop_Damage (Sum) = $40,000 
+ event_type = Tornado" coords="578,339,580,339,580,340,578,340,578,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="576,339,579,339,579,340,576,340,576,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2017 
+ Crop_Damage (Sum) = $12,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2017 
+ Crop_Damage (Sum) = $12,000 
+ event_type = Tornado" coords="575,339,577,339,577,340,575,340,575,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2017 
+ Crop_Damage (Sum) = $428,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2017 
+ Crop_Damage (Sum) = $428,000 
+ event_type = Tornado" coords="574,337,576,337,576,340,574,340,574,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2017 
+ Crop_Damage (Sum) = $2,327,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2017 
+ Crop_Damage (Sum) = $2,327,000 
+ event_type = Tornado" coords="572,329,574,329,574,340,572,340,572,329,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2017 
+ Crop_Damage (Sum) = $2,164,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2017 
+ Crop_Damage (Sum) = $2,164,000 
+ event_type = Tornado" coords="571,330,573,330,573,340,571,340,571,330,"/>
+<Area shape="poly" alt=" begin_date_time = May 2017 
+ Crop_Damage (Sum) = $41,000 
+ event_type = Tornado" title=" begin_date_time = May 2017 
+ Crop_Damage (Sum) = $41,000 
+ event_type = Tornado" coords="570,339,572,339,572,340,570,340,570,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2017 
+ Crop_Damage (Sum) = $3,772,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2017 
+ Crop_Damage (Sum) = $3,772,000 
+ event_type = Tornado" coords="568,323,570,323,570,340,568,340,568,323,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2017 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2017 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" coords="567,339,569,339,569,340,567,340,567,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2017 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="565,339,568,339,568,340,565,340,565,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2017 
+ Crop_Damage (Sum) = $8,499,500 
+ event_type = Tornado" title=" begin_date_time = Jan 2017 
+ Crop_Damage (Sum) = $8,499,500 
+ event_type = Tornado" coords="564,303,566,303,566,340,564,340,564,303,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="563,339,565,339,565,340,563,340,563,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="561,339,563,339,563,340,561,340,561,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2016 
+ Crop_Damage (Sum) = $25,100 
+ event_type = Tornado" title=" begin_date_time = Oct 2016 
+ Crop_Damage (Sum) = $25,100 
+ event_type = Tornado" coords="560,339,562,339,562,340,560,340,560,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2016 
+ Crop_Damage (Sum) = $123,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2016 
+ Crop_Damage (Sum) = $123,000 
+ event_type = Tornado" coords="559,339,561,339,561,340,559,340,559,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2016 
+ Crop_Damage (Sum) = $434,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2016 
+ Crop_Damage (Sum) = $434,000 
+ event_type = Tornado" coords="557,337,559,337,559,340,557,340,557,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2016 
+ Crop_Damage (Sum) = $31,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2016 
+ Crop_Damage (Sum) = $31,000 
+ event_type = Tornado" coords="556,339,558,339,558,340,556,340,556,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2016 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2016 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="554,339,557,339,557,340,554,340,554,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = May 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="553,339,555,339,555,340,553,340,553,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="552,339,554,339,554,340,552,340,552,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 2016 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="550,339,553,339,553,340,550,340,550,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2016 
+ Crop_Damage (Sum) = $1,580,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2016 
+ Crop_Damage (Sum) = $1,580,000 
+ event_type = Tornado" coords="549,333,551,333,551,340,549,340,549,333,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2016 
+ Crop_Damage (Sum) = $75,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2016 
+ Crop_Damage (Sum) = $75,000 
+ event_type = Tornado" coords="548,339,550,339,550,340,548,340,548,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2015 
+ Crop_Damage (Sum) = $2,170,000 
+ event_type = Tornado" title=" begin_date_time = Dec 2015 
+ Crop_Damage (Sum) = $2,170,000 
+ event_type = Tornado" coords="546,330,548,330,548,340,546,340,546,330,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2015 
+ Crop_Damage (Sum) = $201,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2015 
+ Crop_Damage (Sum) = $201,000 
+ event_type = Tornado" coords="545,338,547,338,547,340,545,340,545,338,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="544,339,546,339,546,340,544,340,544,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="542,339,544,339,544,340,542,340,542,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2015 
+ Crop_Damage (Sum) = $143,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2015 
+ Crop_Damage (Sum) = $143,000 
+ event_type = Tornado" coords="541,339,543,339,543,340,541,340,541,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2015 
+ Crop_Damage (Sum) = $139,750 
+ event_type = Tornado" title=" begin_date_time = Jul 2015 
+ Crop_Damage (Sum) = $139,750 
+ event_type = Tornado" coords="539,339,542,339,542,340,539,340,539,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2015 
+ Crop_Damage (Sum) = $328,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2015 
+ Crop_Damage (Sum) = $328,000 
+ event_type = Tornado" coords="538,338,540,338,540,340,538,340,538,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 2015 
+ Crop_Damage (Sum) = $259,000 
+ event_type = Tornado" title=" begin_date_time = May 2015 
+ Crop_Damage (Sum) = $259,000 
+ event_type = Tornado" coords="537,338,539,338,539,340,537,340,537,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="535,339,537,339,537,340,535,340,535,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="534,339,536,339,536,340,534,340,534,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="533,339,535,339,535,340,533,340,533,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2015 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="531,339,533,339,533,340,531,340,531,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="530,339,532,339,532,340,530,340,530,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2014 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2014 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="528,339,531,339,531,340,528,340,528,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2014 
+ Crop_Damage (Sum) = $255,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2014 
+ Crop_Damage (Sum) = $255,000 
+ event_type = Tornado" coords="527,338,529,338,529,340,527,340,527,338,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2014 
+ Crop_Damage (Sum) = $312,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2014 
+ Crop_Damage (Sum) = $312,000 
+ event_type = Tornado" coords="526,338,528,338,528,340,526,340,526,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2014 
+ Crop_Damage (Sum) = $206,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2014 
+ Crop_Damage (Sum) = $206,000 
+ event_type = Tornado" coords="524,338,527,338,527,340,524,340,524,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2014 
+ Crop_Damage (Sum) = $335,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2014 
+ Crop_Damage (Sum) = $335,000 
+ event_type = Tornado" coords="523,338,525,338,525,340,523,340,523,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2014 
+ Crop_Damage (Sum) = $2,936,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2014 
+ Crop_Damage (Sum) = $2,936,000 
+ event_type = Tornado" coords="522,327,524,327,524,340,522,340,522,327,"/>
+<Area shape="poly" alt=" begin_date_time = May 2014 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" title=" begin_date_time = May 2014 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" coords="520,339,522,339,522,340,520,340,520,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2014 
+ Crop_Damage (Sum) = $10,190,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2014 
+ Crop_Damage (Sum) = $10,190,000 
+ event_type = Tornado" coords="519,296,521,296,521,340,519,340,519,296,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="517,339,520,339,520,340,517,340,517,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2014 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2014 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" coords="516,339,518,339,518,340,516,340,516,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2014 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="515,339,517,339,517,340,515,340,515,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="513,339,516,339,516,340,513,340,513,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2013 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2013 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" coords="512,339,514,339,514,340,512,340,512,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2013 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2013 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" coords="511,339,513,339,513,340,511,340,511,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="509,339,511,339,511,340,509,340,509,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2013 
+ Crop_Damage (Sum) = $7,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2013 
+ Crop_Damage (Sum) = $7,000 
+ event_type = Tornado" coords="508,339,510,339,510,340,508,340,508,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2013 
+ Crop_Damage (Sum) = $612,500 
+ event_type = Tornado" title=" begin_date_time = Jul 2013 
+ Crop_Damage (Sum) = $612,500 
+ event_type = Tornado" coords="507,337,509,337,509,340,507,340,507,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2013 
+ Crop_Damage (Sum) = $462,500 
+ event_type = Tornado" title=" begin_date_time = Jun 2013 
+ Crop_Damage (Sum) = $462,500 
+ event_type = Tornado" coords="505,337,507,337,507,340,505,340,505,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2013 
+ Crop_Damage (Sum) = $3,708,000 
+ event_type = Tornado" title=" begin_date_time = May 2013 
+ Crop_Damage (Sum) = $3,708,000 
+ event_type = Tornado" coords="504,324,506,324,506,340,504,340,504,324,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2013 
+ Crop_Damage (Sum) = $7,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2013 
+ Crop_Damage (Sum) = $7,000 
+ event_type = Tornado" coords="502,339,505,339,505,340,502,340,502,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="501,339,503,339,503,340,501,340,501,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2013 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="500,339,502,339,502,340,500,340,500,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2013 
+ Crop_Damage (Sum) = $1,785,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2013 
+ Crop_Damage (Sum) = $1,785,000 
+ event_type = Tornado" coords="498,332,500,332,500,340,498,340,498,332,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2012 
+ Crop_Damage (Sum) = $530,000 
+ event_type = Tornado" title=" begin_date_time = Dec 2012 
+ Crop_Damage (Sum) = $530,000 
+ event_type = Tornado" coords="497,337,499,337,499,340,497,340,497,337,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="496,339,498,339,498,340,496,340,496,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2012 
+ Crop_Damage (Sum) = $500 
+ event_type = Tornado" title=" begin_date_time = Oct 2012 
+ Crop_Damage (Sum) = $500 
+ event_type = Tornado" coords="494,339,496,339,496,340,494,340,494,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2012 
+ Crop_Damage (Sum) = $22,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2012 
+ Crop_Damage (Sum) = $22,000 
+ event_type = Tornado" coords="493,339,495,339,495,340,493,340,493,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2012 
+ Crop_Damage (Sum) = $1,500 
+ event_type = Tornado" title=" begin_date_time = Aug 2012 
+ Crop_Damage (Sum) = $1,500 
+ event_type = Tornado" coords="491,339,494,339,494,340,491,340,491,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jul 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="490,339,492,339,492,340,490,340,490,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2012 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2012 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" coords="489,339,491,339,491,340,489,340,489,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2012 
+ Crop_Damage (Sum) = $7,500 
+ event_type = Tornado" title=" begin_date_time = May 2012 
+ Crop_Damage (Sum) = $7,500 
+ event_type = Tornado" coords="487,339,490,339,490,340,487,340,487,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2012 
+ Crop_Damage (Sum) = $58,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2012 
+ Crop_Damage (Sum) = $58,000 
+ event_type = Tornado" coords="486,339,488,339,488,340,486,340,486,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2012 
+ Crop_Damage (Sum) = $397,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2012 
+ Crop_Damage (Sum) = $397,000 
+ event_type = Tornado" coords="485,338,487,338,487,340,485,340,485,338,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2012 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="483,339,485,339,485,340,483,340,483,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2012 
+ Crop_Damage (Sum) = $35,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2012 
+ Crop_Damage (Sum) = $35,000 
+ event_type = Tornado" coords="482,339,484,339,484,340,482,340,482,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="480,339,483,339,483,340,480,340,480,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2011 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2011 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="479,339,481,339,481,340,479,340,479,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="478,339,480,339,480,340,478,340,478,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2011 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2011 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="476,339,479,339,479,340,476,340,476,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2011 
+ Crop_Damage (Sum) = $91,200 
+ event_type = Tornado" title=" begin_date_time = Aug 2011 
+ Crop_Damage (Sum) = $91,200 
+ event_type = Tornado" coords="475,339,477,339,477,340,475,340,475,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2011 
+ Crop_Damage (Sum) = $3,435,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2011 
+ Crop_Damage (Sum) = $3,435,000 
+ event_type = Tornado" coords="474,325,476,325,476,340,474,340,474,325,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2011 
+ Crop_Damage (Sum) = $4,883,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2011 
+ Crop_Damage (Sum) = $4,883,000 
+ event_type = Tornado" coords="472,319,474,319,474,340,472,340,472,319,"/>
+<Area shape="poly" alt=" begin_date_time = May 2011 
+ Crop_Damage (Sum) = $415,000 
+ event_type = Tornado" title=" begin_date_time = May 2011 
+ Crop_Damage (Sum) = $415,000 
+ event_type = Tornado" coords="471,338,473,338,473,340,471,340,471,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2011 
+ Crop_Damage (Sum) = $18,647,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2011 
+ Crop_Damage (Sum) = $18,647,000 
+ event_type = Tornado" coords="470,260,472,260,472,340,470,340,470,260,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2011 
+ Crop_Damage (Sum) = $120,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2011 
+ Crop_Damage (Sum) = $120,000 
+ event_type = Tornado" coords="468,339,470,339,470,340,468,340,468,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2011 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="467,339,469,339,469,340,467,340,467,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2011 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2011 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Tornado" coords="465,331,468,331,468,340,465,340,465,331,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="464,339,466,339,466,340,464,340,464,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2010 
+ Crop_Damage (Sum) = $560,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2010 
+ Crop_Damage (Sum) = $560,000 
+ event_type = Tornado" coords="463,337,465,337,465,340,463,340,463,337,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2010 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2010 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" coords="461,339,463,339,463,340,461,340,461,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2010 
+ Crop_Damage (Sum) = $4,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2010 
+ Crop_Damage (Sum) = $4,000 
+ event_type = Tornado" coords="460,339,462,339,462,340,460,340,460,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2010 
+ Crop_Damage (Sum) = $274,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2010 
+ Crop_Damage (Sum) = $274,000 
+ event_type = Tornado" coords="459,338,461,338,461,340,459,340,459,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2010 
+ Crop_Damage (Sum) = $1,517,600 
+ event_type = Tornado" title=" begin_date_time = Jul 2010 
+ Crop_Damage (Sum) = $1,517,600 
+ event_type = Tornado" coords="457,333,459,333,459,340,457,340,457,333,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2010 
+ Crop_Damage (Sum) = $270,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2010 
+ Crop_Damage (Sum) = $270,000 
+ event_type = Tornado" coords="456,338,458,338,458,340,456,340,456,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 2010 
+ Crop_Damage (Sum) = $56,000 
+ event_type = Tornado" title=" begin_date_time = May 2010 
+ Crop_Damage (Sum) = $56,000 
+ event_type = Tornado" coords="454,339,457,339,457,340,454,340,454,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2010 
+ Crop_Damage (Sum) = $24,606,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2010 
+ Crop_Damage (Sum) = $24,606,000 
+ event_type = Tornado" coords="453,235,455,235,455,340,453,340,453,235,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2010 
+ Crop_Damage (Sum) = $347,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2010 
+ Crop_Damage (Sum) = $347,000 
+ event_type = Tornado" coords="452,338,454,338,454,340,452,340,452,338,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="450,339,453,339,453,340,450,340,450,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2010 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="449,339,451,339,451,340,449,340,449,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="448,339,450,339,450,340,448,340,448,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2009 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="446,339,448,339,448,340,446,340,446,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2009 
+ Crop_Damage (Sum) = $425,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2009 
+ Crop_Damage (Sum) = $425,000 
+ event_type = Tornado" coords="445,337,447,337,447,340,445,340,445,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2009 
+ Crop_Damage (Sum) = $1,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2009 
+ Crop_Damage (Sum) = $1,000 
+ event_type = Tornado" coords="443,339,446,339,446,340,443,340,443,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2009 
+ Crop_Damage (Sum) = $2,249,500 
+ event_type = Tornado" title=" begin_date_time = Aug 2009 
+ Crop_Damage (Sum) = $2,249,500 
+ event_type = Tornado" coords="442,330,444,330,444,340,442,340,442,330,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2009 
+ Crop_Damage (Sum) = $475,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2009 
+ Crop_Damage (Sum) = $475,000 
+ event_type = Tornado" coords="441,337,443,337,443,340,441,340,441,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2009 
+ Crop_Damage (Sum) = $430,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2009 
+ Crop_Damage (Sum) = $430,000 
+ event_type = Tornado" coords="439,337,442,337,442,340,439,340,439,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2009 
+ Crop_Damage (Sum) = $13,262,000 
+ event_type = Tornado" title=" begin_date_time = May 2009 
+ Crop_Damage (Sum) = $13,262,000 
+ event_type = Tornado" coords="438,283,440,283,440,340,438,340,438,283,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2009 
+ Crop_Damage (Sum) = $1,052,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2009 
+ Crop_Damage (Sum) = $1,052,000 
+ event_type = Tornado" coords="437,335,439,335,439,340,437,340,437,335,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2009 
+ Crop_Damage (Sum) = $531,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2009 
+ Crop_Damage (Sum) = $531,000 
+ event_type = Tornado" coords="435,337,437,337,437,340,435,340,435,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2009 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2009 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="434,339,436,339,436,340,434,340,434,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2009 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2009 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="433,339,435,339,435,340,433,340,433,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2008 
+ Crop_Damage (Sum) = $500,000 
+ event_type = Tornado" title=" begin_date_time = Dec 2008 
+ Crop_Damage (Sum) = $500,000 
+ event_type = Tornado" coords="431,337,433,337,433,340,431,340,431,337,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2008 
+ Crop_Damage (Sum) = $425,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2008 
+ Crop_Damage (Sum) = $425,000 
+ event_type = Tornado" coords="430,337,432,337,432,340,430,340,430,337,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 2008 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="428,339,431,339,431,340,428,340,428,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2008 
+ Crop_Damage (Sum) = $105,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2008 
+ Crop_Damage (Sum) = $105,000 
+ event_type = Tornado" coords="427,339,429,339,429,340,427,340,427,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2008 
+ Crop_Damage (Sum) = $180,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2008 
+ Crop_Damage (Sum) = $180,000 
+ event_type = Tornado" coords="426,339,428,339,428,340,426,340,426,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2008 
+ Crop_Damage (Sum) = $1,535,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2008 
+ Crop_Damage (Sum) = $1,535,000 
+ event_type = Tornado" coords="424,333,426,333,426,340,424,340,424,333,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2008 
+ Crop_Damage (Sum) = $2,845,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2008 
+ Crop_Damage (Sum) = $2,845,000 
+ event_type = Tornado" coords="423,327,425,327,425,340,423,340,423,327,"/>
+<Area shape="poly" alt=" begin_date_time = May 2008 
+ Crop_Damage (Sum) = $6,053,000 
+ event_type = Tornado" title=" begin_date_time = May 2008 
+ Crop_Damage (Sum) = $6,053,000 
+ event_type = Tornado" coords="422,314,424,314,424,340,422,340,422,314,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2008 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2008 
+ Crop_Damage (Sum) = $2,000,000 
+ event_type = Tornado" coords="420,331,422,331,422,340,420,340,420,331,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2008 
+ Crop_Damage (Sum) = $965,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2008 
+ Crop_Damage (Sum) = $965,000 
+ event_type = Tornado" coords="419,335,421,335,421,340,419,340,419,335,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2008 
+ Crop_Damage (Sum) = $1,920,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2008 
+ Crop_Damage (Sum) = $1,920,000 
+ event_type = Tornado" coords="417,331,420,331,420,340,417,340,417,331,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2008 
+ Crop_Damage (Sum) = $3,475,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2008 
+ Crop_Damage (Sum) = $3,475,000 
+ event_type = Tornado" coords="416,325,418,325,418,340,416,340,416,325,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="415,339,417,339,417,340,415,340,415,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="413,339,416,339,416,340,413,340,413,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2007 
+ Crop_Damage (Sum) = $269,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2007 
+ Crop_Damage (Sum) = $269,000 
+ event_type = Tornado" coords="412,338,414,338,414,340,412,340,412,338,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2007 
+ Crop_Damage (Sum) = $2,138,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2007 
+ Crop_Damage (Sum) = $2,138,000 
+ event_type = Tornado" coords="411,330,413,330,413,340,411,340,411,330,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2007 
+ Crop_Damage (Sum) = $2,135,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2007 
+ Crop_Damage (Sum) = $2,135,000 
+ event_type = Tornado" coords="409,330,411,330,411,340,409,340,409,330,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2007 
+ Crop_Damage (Sum) = $752,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2007 
+ Crop_Damage (Sum) = $752,000 
+ event_type = Tornado" coords="408,336,410,336,410,340,408,340,408,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2007 
+ Crop_Damage (Sum) = $42,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2007 
+ Crop_Damage (Sum) = $42,000 
+ event_type = Tornado" coords="406,339,409,339,409,340,406,340,406,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2007 
+ Crop_Damage (Sum) = $56,000 
+ event_type = Tornado" title=" begin_date_time = May 2007 
+ Crop_Damage (Sum) = $56,000 
+ event_type = Tornado" coords="405,339,407,339,407,340,405,340,405,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2007 
+ Crop_Damage (Sum) = $105,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2007 
+ Crop_Damage (Sum) = $105,000 
+ event_type = Tornado" coords="404,339,406,339,406,340,404,340,404,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2007 
+ Crop_Damage (Sum) = $750,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2007 
+ Crop_Damage (Sum) = $750,000 
+ event_type = Tornado" coords="402,336,405,336,405,340,402,340,402,336,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2007 
+ Crop_Damage (Sum) = $517,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2007 
+ Crop_Damage (Sum) = $517,000 
+ event_type = Tornado" coords="401,337,403,337,403,340,401,340,401,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2007 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="400,339,402,339,402,340,400,340,400,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2006 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Tornado" title=" begin_date_time = Dec 2006 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Tornado" coords="398,338,400,338,400,340,398,340,398,338,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="397,339,399,339,399,340,397,340,397,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2006 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2006 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="396,339,398,339,398,340,396,340,396,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2006 
+ Crop_Damage (Sum) = $28,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2006 
+ Crop_Damage (Sum) = $28,000 
+ event_type = Tornado" coords="394,339,396,339,396,340,394,340,394,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2006 
+ Crop_Damage (Sum) = $4,639,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2006 
+ Crop_Damage (Sum) = $4,639,000 
+ event_type = Tornado" coords="393,320,395,320,395,340,393,340,393,320,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2006 
+ Crop_Damage (Sum) = $18,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2006 
+ Crop_Damage (Sum) = $18,000 
+ event_type = Tornado" coords="391,339,394,339,394,340,391,340,391,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2006 
+ Crop_Damage (Sum) = $14,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2006 
+ Crop_Damage (Sum) = $14,000 
+ event_type = Tornado" coords="390,339,392,339,392,340,390,340,390,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2006 
+ Crop_Damage (Sum) = $1,606,000 
+ event_type = Tornado" title=" begin_date_time = May 2006 
+ Crop_Damage (Sum) = $1,606,000 
+ event_type = Tornado" coords="389,332,391,332,391,340,389,340,389,332,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2006 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2006 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="387,339,389,339,389,340,387,340,387,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2006 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2006 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="386,339,388,339,388,340,386,340,386,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2006 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="385,339,387,339,387,340,385,340,385,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2006 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Tornado" title=" begin_date_time = Jan 2006 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Tornado" coords="383,339,385,339,385,340,383,340,383,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="382,339,384,339,384,340,382,340,382,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="380,339,383,339,383,340,380,340,380,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="379,339,381,339,381,340,379,340,379,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2005 
+ Crop_Damage (Sum) = $3,504,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2005 
+ Crop_Damage (Sum) = $3,504,000 
+ event_type = Tornado" coords="378,324,380,324,380,340,378,340,378,324,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2005 
+ Crop_Damage (Sum) = $3,338,900 
+ event_type = Tornado" title=" begin_date_time = Aug 2005 
+ Crop_Damage (Sum) = $3,338,900 
+ event_type = Tornado" coords="376,325,379,325,379,340,376,340,376,325,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2005 
+ Crop_Damage (Sum) = $464,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2005 
+ Crop_Damage (Sum) = $464,000 
+ event_type = Tornado" coords="375,337,377,337,377,340,375,340,375,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2005 
+ Crop_Damage (Sum) = $71,138,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2005 
+ Crop_Damage (Sum) = $71,138,000 
+ event_type = Tornado" coords="374,38,376,38,376,340,374,340,374,38,"/>
+<Area shape="poly" alt=" begin_date_time = May 2005 
+ Crop_Damage (Sum) = $280,000 
+ event_type = Tornado" title=" begin_date_time = May 2005 
+ Crop_Damage (Sum) = $280,000 
+ event_type = Tornado" coords="372,338,374,338,374,340,372,340,372,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2005 
+ Crop_Damage (Sum) = $3,360,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2005 
+ Crop_Damage (Sum) = $3,360,000 
+ event_type = Tornado" coords="371,325,373,325,373,340,371,340,371,325,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2005 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2005 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" coords="370,339,372,339,372,340,370,340,370,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="368,339,370,339,370,340,368,340,368,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2005 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="367,339,369,339,369,340,367,340,367,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="365,339,368,339,368,340,365,340,365,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2004 
+ Crop_Damage (Sum) = $4,000,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2004 
+ Crop_Damage (Sum) = $4,000,000 
+ event_type = Tornado" coords="364,322,366,322,366,340,364,340,364,322,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2004 
+ Crop_Damage (Sum) = $4,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2004 
+ Crop_Damage (Sum) = $4,000 
+ event_type = Tornado" coords="363,339,365,339,365,340,363,340,363,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2004 
+ Crop_Damage (Sum) = $28,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2004 
+ Crop_Damage (Sum) = $28,000 
+ event_type = Tornado" coords="361,339,363,339,363,340,361,340,361,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2004 
+ Crop_Damage (Sum) = $112,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2004 
+ Crop_Damage (Sum) = $112,000 
+ event_type = Tornado" coords="360,339,362,339,362,340,360,340,360,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2004 
+ Crop_Damage (Sum) = $209,500 
+ event_type = Tornado" title=" begin_date_time = Jul 2004 
+ Crop_Damage (Sum) = $209,500 
+ event_type = Tornado" coords="359,338,361,338,361,340,359,340,359,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2004 
+ Crop_Damage (Sum) = $3,388,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2004 
+ Crop_Damage (Sum) = $3,388,000 
+ event_type = Tornado" coords="357,325,359,325,359,340,357,340,357,325,"/>
+<Area shape="poly" alt=" begin_date_time = May 2004 
+ Crop_Damage (Sum) = $4,340,000 
+ event_type = Tornado" title=" begin_date_time = May 2004 
+ Crop_Damage (Sum) = $4,340,000 
+ event_type = Tornado" coords="356,321,358,321,358,340,356,340,356,321,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="354,339,357,339,357,340,354,340,354,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2004 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2004 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="353,339,355,339,355,340,353,340,353,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="352,339,354,339,354,340,352,340,352,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2004 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="350,339,352,339,352,340,350,340,350,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="349,339,351,339,351,340,349,340,349,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2003 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="348,339,350,339,350,340,348,340,348,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2003 
+ Crop_Damage (Sum) = $25,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2003 
+ Crop_Damage (Sum) = $25,000 
+ event_type = Tornado" coords="346,339,348,339,348,340,346,340,346,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2003 
+ Crop_Damage (Sum) = $65,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2003 
+ Crop_Damage (Sum) = $65,000 
+ event_type = Tornado" coords="345,339,347,339,347,340,345,340,345,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2003 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2003 
+ Crop_Damage (Sum) = $250,000 
+ event_type = Tornado" coords="343,338,346,338,346,340,343,340,343,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2003 
+ Crop_Damage (Sum) = $364,500 
+ event_type = Tornado" title=" begin_date_time = Jul 2003 
+ Crop_Damage (Sum) = $364,500 
+ event_type = Tornado" coords="342,338,344,338,344,340,342,340,342,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2003 
+ Crop_Damage (Sum) = $4,518,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2003 
+ Crop_Damage (Sum) = $4,518,000 
+ event_type = Tornado" coords="341,320,343,320,343,340,341,340,341,320,"/>
+<Area shape="poly" alt=" begin_date_time = May 2003 
+ Crop_Damage (Sum) = $10,664,000 
+ event_type = Tornado" title=" begin_date_time = May 2003 
+ Crop_Damage (Sum) = $10,664,000 
+ event_type = Tornado" coords="339,294,342,294,342,340,339,340,339,294,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2003 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2003 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" coords="338,339,340,339,340,340,338,340,338,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2003 
+ Crop_Damage (Sum) = $14,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2003 
+ Crop_Damage (Sum) = $14,000 
+ event_type = Tornado" coords="337,339,339,339,339,340,337,340,337,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2003 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2003 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="335,339,337,339,337,340,335,340,335,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2002 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" title=" begin_date_time = Dec 2002 
+ Crop_Damage (Sum) = $5,000 
+ event_type = Tornado" coords="334,339,336,339,336,340,334,340,334,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2002 
+ Crop_Damage (Sum) = $53,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2002 
+ Crop_Damage (Sum) = $53,000 
+ event_type = Tornado" coords="333,339,335,339,335,340,333,340,333,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="331,339,333,339,333,340,331,340,331,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2002 
+ Crop_Damage (Sum) = $275,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2002 
+ Crop_Damage (Sum) = $275,000 
+ event_type = Tornado" coords="330,338,332,338,332,340,330,340,330,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2002 
+ Crop_Damage (Sum) = $119,500 
+ event_type = Tornado" title=" begin_date_time = Aug 2002 
+ Crop_Damage (Sum) = $119,500 
+ event_type = Tornado" coords="328,339,331,339,331,340,328,340,328,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2002 
+ Crop_Damage (Sum) = $220,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2002 
+ Crop_Damage (Sum) = $220,000 
+ event_type = Tornado" coords="327,338,329,338,329,340,327,340,327,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2002 
+ Crop_Damage (Sum) = $32,500 
+ event_type = Tornado" title=" begin_date_time = Jun 2002 
+ Crop_Damage (Sum) = $32,500 
+ event_type = Tornado" coords="326,339,328,339,328,340,326,340,326,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = May 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="324,339,326,339,326,340,324,340,324,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2002 
+ Crop_Damage (Sum) = $44,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2002 
+ Crop_Damage (Sum) = $44,000 
+ event_type = Tornado" coords="323,339,325,339,325,340,323,340,323,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2002 
+ Crop_Damage (Sum) = $50,010 
+ event_type = Tornado" title=" begin_date_time = Mar 2002 
+ Crop_Damage (Sum) = $50,010 
+ event_type = Tornado" coords="322,339,324,339,324,340,322,340,322,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="320,339,322,339,322,340,320,340,320,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2002 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="319,339,321,339,321,340,319,340,319,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="317,339,320,339,320,340,317,340,317,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2001 
+ Crop_Damage (Sum) = $862,000 
+ event_type = Tornado" title=" begin_date_time = Nov 2001 
+ Crop_Damage (Sum) = $862,000 
+ event_type = Tornado" coords="316,336,318,336,318,340,316,340,316,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2001 
+ Crop_Damage (Sum) = $1,560,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2001 
+ Crop_Damage (Sum) = $1,560,000 
+ event_type = Tornado" coords="315,333,317,333,317,340,315,340,315,333,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2001 
+ Crop_Damage (Sum) = $1,876,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2001 
+ Crop_Damage (Sum) = $1,876,000 
+ event_type = Tornado" coords="313,331,315,331,315,340,313,340,313,331,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2001 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Tornado" title=" begin_date_time = Aug 2001 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Tornado" coords="312,339,314,339,314,340,312,340,312,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2001 
+ Crop_Damage (Sum) = $112,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2001 
+ Crop_Damage (Sum) = $112,000 
+ event_type = Tornado" coords="311,339,313,339,313,340,311,340,311,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2001 
+ Crop_Damage (Sum) = $2,582,500 
+ event_type = Tornado" title=" begin_date_time = Jun 2001 
+ Crop_Damage (Sum) = $2,582,500 
+ event_type = Tornado" coords="309,328,311,328,311,340,309,340,309,328,"/>
+<Area shape="poly" alt=" begin_date_time = May 2001 
+ Crop_Damage (Sum) = $385,000 
+ event_type = Tornado" title=" begin_date_time = May 2001 
+ Crop_Damage (Sum) = $385,000 
+ event_type = Tornado" coords="308,338,310,338,310,340,308,340,308,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="306,339,309,339,309,340,306,340,306,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="305,339,307,339,307,340,305,340,305,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2001 
+ Crop_Damage (Sum) = $3,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2001 
+ Crop_Damage (Sum) = $3,000 
+ event_type = Tornado" coords="304,339,306,339,306,340,304,340,304,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2001 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="302,339,305,339,305,340,302,340,302,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="301,339,303,339,303,340,301,340,301,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="300,339,302,339,302,340,300,340,300,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2000 
+ Crop_Damage (Sum) = $35,000 
+ event_type = Tornado" title=" begin_date_time = Oct 2000 
+ Crop_Damage (Sum) = $35,000 
+ event_type = Tornado" coords="298,339,300,339,300,340,298,340,298,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2000 
+ Crop_Damage (Sum) = $171,000 
+ event_type = Tornado" title=" begin_date_time = Sep 2000 
+ Crop_Damage (Sum) = $171,000 
+ event_type = Tornado" coords="297,339,299,339,299,340,297,340,297,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Aug 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="296,339,298,339,298,340,296,340,296,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2000 
+ Crop_Damage (Sum) = $402,000 
+ event_type = Tornado" title=" begin_date_time = Jul 2000 
+ Crop_Damage (Sum) = $402,000 
+ event_type = Tornado" coords="294,338,296,338,296,340,294,340,294,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2000 
+ Crop_Damage (Sum) = $1,067,000 
+ event_type = Tornado" title=" begin_date_time = Jun 2000 
+ Crop_Damage (Sum) = $1,067,000 
+ event_type = Tornado" coords="293,335,295,335,295,340,293,340,293,335,"/>
+<Area shape="poly" alt=" begin_date_time = May 2000 
+ Crop_Damage (Sum) = $83,100 
+ event_type = Tornado" title=" begin_date_time = May 2000 
+ Crop_Damage (Sum) = $83,100 
+ event_type = Tornado" coords="291,339,294,339,294,340,291,340,291,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2000 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" title=" begin_date_time = Apr 2000 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" coords="290,339,292,339,292,340,290,340,290,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2000 
+ Crop_Damage (Sum) = $80,000 
+ event_type = Tornado" title=" begin_date_time = Mar 2000 
+ Crop_Damage (Sum) = $80,000 
+ event_type = Tornado" coords="289,339,291,339,291,340,289,340,289,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2000 
+ Crop_Damage (Sum) = $5,025,000 
+ event_type = Tornado" title=" begin_date_time = Feb 2000 
+ Crop_Damage (Sum) = $5,025,000 
+ event_type = Tornado" coords="287,318,289,318,289,340,287,340,287,318,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 2000 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="286,339,288,339,288,340,286,340,286,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="285,339,287,339,287,340,285,340,285,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="283,339,285,339,285,340,283,340,283,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="282,339,284,339,284,340,282,340,282,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1999 
+ Crop_Damage (Sum) = $12,000 
+ event_type = Tornado" title=" begin_date_time = Sep 1999 
+ Crop_Damage (Sum) = $12,000 
+ event_type = Tornado" coords="280,339,283,339,283,340,280,340,280,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1999 
+ Crop_Damage (Sum) = $519,000 
+ event_type = Tornado" title=" begin_date_time = Aug 1999 
+ Crop_Damage (Sum) = $519,000 
+ event_type = Tornado" coords="279,337,281,337,281,340,279,340,279,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1999 
+ Crop_Damage (Sum) = $3,651,000 
+ event_type = Tornado" title=" begin_date_time = Jul 1999 
+ Crop_Damage (Sum) = $3,651,000 
+ event_type = Tornado" coords="278,324,280,324,280,340,278,340,278,324,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1999 
+ Crop_Damage (Sum) = $2,104,000 
+ event_type = Tornado" title=" begin_date_time = Jun 1999 
+ Crop_Damage (Sum) = $2,104,000 
+ event_type = Tornado" coords="276,330,278,330,278,340,276,340,276,330,"/>
+<Area shape="poly" alt=" begin_date_time = May 1999 
+ Crop_Damage (Sum) = $556,000 
+ event_type = Tornado" title=" begin_date_time = May 1999 
+ Crop_Damage (Sum) = $556,000 
+ event_type = Tornado" coords="275,337,277,337,277,340,275,340,275,337,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1999 
+ Crop_Damage (Sum) = $1,426,000 
+ event_type = Tornado" title=" begin_date_time = Apr 1999 
+ Crop_Damage (Sum) = $1,426,000 
+ event_type = Tornado" coords="274,333,276,333,276,340,274,340,274,333,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="272,339,274,339,274,340,272,340,272,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1999 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" title=" begin_date_time = Feb 1999 
+ Crop_Damage (Sum) = $2,000 
+ event_type = Tornado" coords="271,339,273,339,273,340,271,340,271,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 1999 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="269,339,272,339,272,340,269,340,269,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="268,339,270,339,270,340,268,340,268,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 1998 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="267,339,269,339,269,340,267,340,267,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1998 
+ Crop_Damage (Sum) = $1,800,000 
+ event_type = Tornado" title=" begin_date_time = Oct 1998 
+ Crop_Damage (Sum) = $1,800,000 
+ event_type = Tornado" coords="265,332,268,332,268,340,265,340,265,332,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1998 
+ Crop_Damage (Sum) = $46,000 
+ event_type = Tornado" title=" begin_date_time = Sep 1998 
+ Crop_Damage (Sum) = $46,000 
+ event_type = Tornado" coords="264,339,266,339,266,340,264,340,264,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1998 
+ Crop_Damage (Sum) = $1,772,000 
+ event_type = Tornado" title=" begin_date_time = Aug 1998 
+ Crop_Damage (Sum) = $1,772,000 
+ event_type = Tornado" coords="263,332,265,332,265,340,263,340,263,332,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1998 
+ Crop_Damage (Sum) = $130,700 
+ event_type = Tornado" title=" begin_date_time = Jul 1998 
+ Crop_Damage (Sum) = $130,700 
+ event_type = Tornado" coords="261,339,263,339,263,340,261,340,261,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1998 
+ Crop_Damage (Sum) = $11,388,100 
+ event_type = Tornado" title=" begin_date_time = Jun 1998 
+ Crop_Damage (Sum) = $11,388,100 
+ event_type = Tornado" coords="260,291,262,291,262,340,260,340,260,291,"/>
+<Area shape="poly" alt=" begin_date_time = May 1998 
+ Crop_Damage (Sum) = $2,427,800 
+ event_type = Tornado" title=" begin_date_time = May 1998 
+ Crop_Damage (Sum) = $2,427,800 
+ event_type = Tornado" coords="259,329,261,329,261,340,259,340,259,329,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1998 
+ Crop_Damage (Sum) = $4,155,100 
+ event_type = Tornado" title=" begin_date_time = Apr 1998 
+ Crop_Damage (Sum) = $4,155,100 
+ event_type = Tornado" coords="257,322,259,322,259,340,257,340,257,322,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1998 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Tornado" title=" begin_date_time = Mar 1998 
+ Crop_Damage (Sum) = $30,000 
+ event_type = Tornado" coords="256,339,258,339,258,340,256,340,256,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1998 
+ Crop_Damage (Sum) = $40,000 
+ event_type = Tornado" title=" begin_date_time = Feb 1998 
+ Crop_Damage (Sum) = $40,000 
+ event_type = Tornado" coords="254,339,257,339,257,340,254,340,254,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1998 
+ Crop_Damage (Sum) = $230,000 
+ event_type = Tornado" title=" begin_date_time = Jan 1998 
+ Crop_Damage (Sum) = $230,000 
+ event_type = Tornado" coords="253,338,255,338,255,340,253,340,253,338,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="252,339,254,339,254,340,252,340,252,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1997 
+ Crop_Damage (Sum) = $70,000 
+ event_type = Tornado" title=" begin_date_time = Nov 1997 
+ Crop_Damage (Sum) = $70,000 
+ event_type = Tornado" coords="250,339,252,339,252,340,250,340,250,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1997 
+ Crop_Damage (Sum) = $15,000 
+ event_type = Tornado" title=" begin_date_time = Oct 1997 
+ Crop_Damage (Sum) = $15,000 
+ event_type = Tornado" coords="249,339,251,339,251,340,249,340,249,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1997 
+ Crop_Damage (Sum) = $6,000 
+ event_type = Tornado" title=" begin_date_time = Sep 1997 
+ Crop_Damage (Sum) = $6,000 
+ event_type = Tornado" coords="248,339,250,339,250,340,248,340,248,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1997 
+ Crop_Damage (Sum) = $92,000 
+ event_type = Tornado" title=" begin_date_time = Aug 1997 
+ Crop_Damage (Sum) = $92,000 
+ event_type = Tornado" coords="246,339,248,339,248,340,246,340,246,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1997 
+ Crop_Damage (Sum) = $3,124,100 
+ event_type = Tornado" title=" begin_date_time = Jul 1997 
+ Crop_Damage (Sum) = $3,124,100 
+ event_type = Tornado" coords="245,326,247,326,247,340,245,340,245,326,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1997 
+ Crop_Damage (Sum) = $244,000 
+ event_type = Tornado" title=" begin_date_time = Jun 1997 
+ Crop_Damage (Sum) = $244,000 
+ event_type = Tornado" coords="243,338,246,338,246,340,243,340,243,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 1997 
+ Crop_Damage (Sum) = $315,000 
+ event_type = Tornado" title=" begin_date_time = May 1997 
+ Crop_Damage (Sum) = $315,000 
+ event_type = Tornado" coords="242,338,244,338,244,340,242,340,242,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1997 
+ Crop_Damage (Sum) = $721,000 
+ event_type = Tornado" title=" begin_date_time = Apr 1997 
+ Crop_Damage (Sum) = $721,000 
+ event_type = Tornado" coords="241,336,243,336,243,340,241,340,241,336,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1997 
+ Crop_Damage (Sum) = $1,145,000 
+ event_type = Tornado" title=" begin_date_time = Mar 1997 
+ Crop_Damage (Sum) = $1,145,000 
+ event_type = Tornado" coords="239,334,241,334,241,340,239,340,239,334,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 1997 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="238,339,240,339,240,340,238,340,238,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1997 
+ Crop_Damage (Sum) = $20,500 
+ event_type = Tornado" title=" begin_date_time = Jan 1997 
+ Crop_Damage (Sum) = $20,500 
+ event_type = Tornado" coords="237,339,239,339,239,340,237,340,237,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1996 
+ Crop_Damage (Sum) = $7,500 
+ event_type = Tornado" title=" begin_date_time = Dec 1996 
+ Crop_Damage (Sum) = $7,500 
+ event_type = Tornado" coords="235,339,237,339,237,340,235,340,235,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1996 
+ Crop_Damage (Sum) = $35,000 
+ event_type = Tornado" title=" begin_date_time = Nov 1996 
+ Crop_Damage (Sum) = $35,000 
+ event_type = Tornado" coords="234,339,236,339,236,340,234,340,234,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1996 
+ Crop_Damage (Sum) = $1,000 
+ event_type = Tornado" title=" begin_date_time = Oct 1996 
+ Crop_Damage (Sum) = $1,000 
+ event_type = Tornado" coords="232,339,235,339,235,340,232,340,232,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1996 
+ Crop_Damage (Sum) = $112,000 
+ event_type = Tornado" title=" begin_date_time = Sep 1996 
+ Crop_Damage (Sum) = $112,000 
+ event_type = Tornado" coords="231,339,233,339,233,340,231,340,231,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1996 
+ Crop_Damage (Sum) = $401,500 
+ event_type = Tornado" title=" begin_date_time = Aug 1996 
+ Crop_Damage (Sum) = $401,500 
+ event_type = Tornado" coords="230,338,232,338,232,340,230,340,230,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1996 
+ Crop_Damage (Sum) = $8,659,700 
+ event_type = Tornado" title=" begin_date_time = Jul 1996 
+ Crop_Damage (Sum) = $8,659,700 
+ event_type = Tornado" coords="228,303,231,303,231,340,228,340,228,303,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1996 
+ Crop_Damage (Sum) = $118,500 
+ event_type = Tornado" title=" begin_date_time = Jun 1996 
+ Crop_Damage (Sum) = $118,500 
+ event_type = Tornado" coords="227,339,229,339,229,340,227,340,227,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1996 
+ Crop_Damage (Sum) = $915,000 
+ event_type = Tornado" title=" begin_date_time = May 1996 
+ Crop_Damage (Sum) = $915,000 
+ event_type = Tornado" coords="226,335,228,335,228,340,226,340,226,335,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1996 
+ Crop_Damage (Sum) = $9,000 
+ event_type = Tornado" title=" begin_date_time = Apr 1996 
+ Crop_Damage (Sum) = $9,000 
+ event_type = Tornado" coords="224,339,226,339,226,340,224,340,224,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1996 
+ Crop_Damage (Sum) = $2,250,000 
+ event_type = Tornado" title=" begin_date_time = Mar 1996 
+ Crop_Damage (Sum) = $2,250,000 
+ event_type = Tornado" coords="223,330,225,330,225,340,223,340,223,330,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="222,339,224,339,224,340,222,340,222,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 1996 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="220,339,222,339,222,340,220,340,220,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1995 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1995 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="219,339,221,339,221,340,219,340,219,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1995 
+ Crop_Damage (Sum) = $10,500 
+ event_type = Tornado" title=" begin_date_time = Nov 1995 
+ Crop_Damage (Sum) = $10,500 
+ event_type = Tornado" coords="217,339,220,339,220,340,217,340,217,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1995 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" title=" begin_date_time = Oct 1995 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" coords="216,339,218,339,218,340,216,340,216,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1995 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 1995 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="215,339,217,339,217,340,215,340,215,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1995 
+ Crop_Damage (Sum) = $52,000 
+ event_type = Tornado" title=" begin_date_time = Aug 1995 
+ Crop_Damage (Sum) = $52,000 
+ event_type = Tornado" coords="213,339,215,339,215,340,213,340,213,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1995 
+ Crop_Damage (Sum) = $5,657,750 
+ event_type = Tornado" title=" begin_date_time = Jul 1995 
+ Crop_Damage (Sum) = $5,657,750 
+ event_type = Tornado" coords="212,315,214,315,214,340,212,340,212,315,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1995 
+ Crop_Damage (Sum) = $3,029,000 
+ event_type = Tornado" title=" begin_date_time = Jun 1995 
+ Crop_Damage (Sum) = $3,029,000 
+ event_type = Tornado" coords="211,326,213,326,213,340,211,340,211,326,"/>
+<Area shape="poly" alt=" begin_date_time = May 1995 
+ Crop_Damage (Sum) = $4,382,660 
+ event_type = Tornado" title=" begin_date_time = May 1995 
+ Crop_Damage (Sum) = $4,382,660 
+ event_type = Tornado" coords="209,321,211,321,211,340,209,340,209,321,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1995 
+ Crop_Damage (Sum) = $50 
+ event_type = Tornado" title=" begin_date_time = Apr 1995 
+ Crop_Damage (Sum) = $50 
+ event_type = Tornado" coords="208,339,210,339,210,340,208,340,208,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1995 
+ Crop_Damage (Sum) = $500 
+ event_type = Tornado" title=" begin_date_time = Mar 1995 
+ Crop_Damage (Sum) = $500 
+ event_type = Tornado" coords="206,339,209,339,209,340,206,340,206,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1995 
+ Crop_Damage (Sum) = $5,500 
+ event_type = Tornado" title=" begin_date_time = Feb 1995 
+ Crop_Damage (Sum) = $5,500 
+ event_type = Tornado" coords="205,339,207,339,207,340,205,340,205,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1995 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" title=" begin_date_time = Jan 1995 
+ Crop_Damage (Sum) = $20,000 
+ event_type = Tornado" coords="204,339,206,339,206,340,204,340,204,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1994 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1994 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="202,339,204,339,204,340,202,340,202,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1994 
+ Crop_Damage (Sum) = $15,000 
+ event_type = Tornado" title=" begin_date_time = Nov 1994 
+ Crop_Damage (Sum) = $15,000 
+ event_type = Tornado" coords="201,339,203,339,203,340,201,340,201,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1994 
+ Crop_Damage (Sum) = $3,700 
+ event_type = Tornado" title=" begin_date_time = Oct 1994 
+ Crop_Damage (Sum) = $3,700 
+ event_type = Tornado" coords="200,339,202,339,202,340,200,340,200,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1994 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 1994 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="198,339,200,339,200,340,198,340,198,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1994 
+ Crop_Damage (Sum) = $84,000 
+ event_type = Tornado" title=" begin_date_time = Aug 1994 
+ Crop_Damage (Sum) = $84,000 
+ event_type = Tornado" coords="197,339,199,339,199,340,197,340,197,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1994 
+ Crop_Damage (Sum) = $2,323,350 
+ event_type = Tornado" title=" begin_date_time = Jul 1994 
+ Crop_Damage (Sum) = $2,323,350 
+ event_type = Tornado" coords="195,329,198,329,198,340,195,340,195,329,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1994 
+ Crop_Damage (Sum) = $5,344,100 
+ event_type = Tornado" title=" begin_date_time = Jun 1994 
+ Crop_Damage (Sum) = $5,344,100 
+ event_type = Tornado" coords="194,317,196,317,196,340,194,340,194,317,"/>
+<Area shape="poly" alt=" begin_date_time = May 1994 
+ Crop_Damage (Sum) = $676,000 
+ event_type = Tornado" title=" begin_date_time = May 1994 
+ Crop_Damage (Sum) = $676,000 
+ event_type = Tornado" coords="193,336,195,336,195,340,193,340,193,336,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1994 
+ Crop_Damage (Sum) = $1,623,100 
+ event_type = Tornado" title=" begin_date_time = Apr 1994 
+ Crop_Damage (Sum) = $1,623,100 
+ event_type = Tornado" coords="191,332,194,332,194,340,191,340,191,332,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1994 
+ Crop_Damage (Sum) = $55,150,500 
+ event_type = Tornado" title=" begin_date_time = Mar 1994 
+ Crop_Damage (Sum) = $55,150,500 
+ event_type = Tornado" coords="190,106,192,106,192,340,190,340,190,106,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1994 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 1994 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="189,339,191,339,191,340,189,340,189,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1994 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" title=" begin_date_time = Jan 1994 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" coords="187,339,189,339,189,340,187,340,187,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1993 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Dec 1993 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="186,339,188,339,188,340,186,340,186,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1993 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" title=" begin_date_time = Nov 1993 
+ Crop_Damage (Sum) = $10,000 
+ event_type = Tornado" coords="185,339,187,339,187,340,185,340,185,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1993 
+ Crop_Damage (Sum) = $55,000 
+ event_type = Tornado" title=" begin_date_time = Oct 1993 
+ Crop_Damage (Sum) = $55,000 
+ event_type = Tornado" coords="183,339,185,339,185,340,183,340,183,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1993 
+ Crop_Damage (Sum) = $630,000 
+ event_type = Tornado" title=" begin_date_time = Sep 1993 
+ Crop_Damage (Sum) = $630,000 
+ event_type = Tornado" coords="182,337,184,337,184,340,182,340,182,337,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1993 
+ Crop_Damage (Sum) = $76,200 
+ event_type = Tornado" title=" begin_date_time = Aug 1993 
+ Crop_Damage (Sum) = $76,200 
+ event_type = Tornado" coords="180,339,183,339,183,340,180,340,180,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1993 
+ Crop_Damage (Sum) = $1,646,550 
+ event_type = Tornado" title=" begin_date_time = May 1993 
+ Crop_Damage (Sum) = $1,646,550 
+ event_type = Tornado" coords="179,332,181,332,181,340,179,340,179,332,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1993 
+ Crop_Damage (Sum) = $50,556,050 
+ event_type = Tornado" title=" begin_date_time = Apr 1993 
+ Crop_Damage (Sum) = $50,556,050 
+ event_type = Tornado" coords="178,125,180,125,180,340,178,340,178,125,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1993 
+ Crop_Damage (Sum) = $2,555,000 
+ event_type = Tornado" title=" begin_date_time = Mar 1993 
+ Crop_Damage (Sum) = $2,555,000 
+ event_type = Tornado" coords="176,328,178,328,178,340,176,340,176,328,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1993 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" title=" begin_date_time = Feb 1993 
+ Crop_Damage (Sum) = $50,000 
+ event_type = Tornado" coords="175,339,177,339,177,340,175,340,175,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1993 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 1993 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="174,339,176,339,176,340,174,340,174,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="172,339,174,339,174,340,172,340,172,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="171,339,173,339,173,340,171,340,171,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="169,339,172,339,172,340,169,340,169,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="168,339,170,339,170,340,168,340,168,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Aug 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="167,339,169,339,169,340,167,340,167,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jul 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="165,339,168,339,168,340,165,340,165,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jun 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="164,339,166,339,166,340,164,340,164,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = May 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="163,339,165,339,165,340,163,340,163,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="161,339,163,339,163,340,161,340,161,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="160,339,162,339,162,340,160,340,160,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="158,339,161,339,161,340,158,340,158,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 1992 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="157,339,159,339,159,340,157,340,157,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="156,339,158,339,158,340,156,340,156,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="154,339,157,339,157,340,154,340,154,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="153,339,155,339,155,340,153,340,153,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="152,339,154,339,154,340,152,340,152,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Aug 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="150,339,152,339,152,340,150,340,150,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jul 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="149,339,151,339,151,340,149,340,149,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jun 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="148,339,150,339,150,340,148,340,148,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = May 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="146,339,148,339,148,340,146,340,146,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="145,339,147,339,147,340,145,340,145,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="143,339,146,339,146,340,143,340,143,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="142,339,144,339,144,340,142,340,142,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 1991 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="141,339,143,339,143,340,141,340,141,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Dec 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="139,339,141,339,141,340,139,340,139,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Nov 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="138,339,140,339,140,340,138,340,138,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Oct 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="137,339,139,339,139,340,137,340,137,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Sep 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="135,339,137,339,137,340,135,340,135,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Aug 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="134,339,136,339,136,340,134,340,134,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jul 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="132,339,135,339,135,340,132,340,132,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jun 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="131,339,133,339,133,340,131,340,131,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = May 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="130,339,132,339,132,340,130,340,130,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Apr 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="128,339,131,339,131,340,128,340,128,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Mar 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="127,339,129,339,129,340,127,340,127,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Feb 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="126,339,128,339,128,340,126,340,126,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" title=" begin_date_time = Jan 1990 
+ Crop_Damage (Sum) = $0 
+ event_type = Tornado" coords="124,339,126,339,126,340,124,340,124,339,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot15.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot15" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

@@ -1,0 +1,1913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<map name="SGPlot99">
+<Area shape="poly" alt=" county = Yazoo 
+ Injuries = 0" title=" county = Yazoo 
+ Injuries = 0" coords="300,213,297,217,290,220,286,225,285,225,284,223,282,222,279,222,278,219,276,219,276,217,274,217,276,216,274,214,275,212,276,214,277,212,273,209,273,208,276,207,274,205,275,203,272,204,271,202,277,195,289,195,289,189,294,188,295,187,317,196,315,200,313,206,310,209,300,213,"/>
+<Area shape="poly" alt=" county = Winston 
+ Injuries = 1" title=" county = Winston 
+ Injuries = 1" coords="384,188,378,189,355,190,354,177,360,177,360,171,366,170,365,164,367,164,383,163,384,188,384,188,"/>
+<Area shape="poly" alt=" county = Wilkinson 
+ Injuries = 0" title=" county = Wilkinson 
+ Injuries = 0" coords="234,318,233,314,235,314,235,312,237,312,246,308,253,309,257,311,259,316,260,333,253,334,226,335,230,331,226,326,228,321,230,318,232,319,234,318,234,318,"/>
+<Area shape="poly" alt=" county = Webster 
+ Injuries = 0" title=" county = Webster 
+ Injuries = 0" coords="340,138,340,135,358,133,358,132,367,131,369,144,365,144,365,146,355,148,349,153,342,153,340,138,340,138,"/>
+<Area shape="poly" alt=" county = Wayne 
+ Injuries = 0" title=" county = Wayne 
+ Injuries = 0" coords="384,267,401,263,410,260,411,274,414,292,390,294,384,295,382,267,384,267,384,267,"/>
+<Area shape="poly" alt=" county = Washington 
+ Injuries = 0" title=" county = Washington 
+ Injuries = 0" coords="275,176,274,181,275,183,274,183,261,184,262,190,247,191,249,187,244,183,251,181,251,176,253,172,251,171,249,174,247,167,252,160,250,159,249,163,247,164,244,164,243,162,247,161,248,159,245,156,245,160,242,161,244,156,242,154,268,153,269,171,272,171,271,174,275,176,275,176,"/>
+<Area shape="poly" alt=" county = Warren 
+ Injuries = 0" title=" county = Warren 
+ Injuries = 0" coords="275,245,272,249,273,250,270,252,269,250,269,252,267,254,265,253,265,256,258,254,258,254,259,251,256,249,257,253,254,252,253,254,250,253,250,249,252,248,256,247,257,245,260,248,261,244,260,241,262,242,264,240,266,235,264,238,259,237,261,231,256,231,252,228,253,224,256,227,259,227,254,224,254,222,256,221,260,221,261,233,262,230,267,230,266,221,274,221,274,217,276,217,276,219,278,219,279,222,282,222,284,223,285,225,282,227,283,229,280,234,281,237,276,237,277,240,275,245,275,245,"/>
+<Area shape="poly" alt=" county = Walthall 
+ Injuries = 0" title=" county = Walthall 
+ Injuries = 0" coords="320,306,321,317,322,317,323,320,327,320,328,324,333,324,333,329,308,331,306,306,307,306,320,306,320,306,"/>
+<Area shape="poly" alt=" county = Union 
+ Injuries = 0" title=" county = Union 
+ Injuries = 0" coords="351,72,351,71,360,71,380,69,381,75,378,77,378,84,376,84,376,86,352,87,352,79,351,72,351,72,"/>
+<Area shape="poly" alt=" county = Tunica 
+ Injuries = 0" title=" county = Tunica 
+ Injuries = 0" coords="296,71,294,75,297,78,297,81,291,81,292,87,286,88,276,81,277,78,274,73,275,69,277,70,276,72,277,74,281,70,281,68,275,68,276,66,277,61,279,63,278,66,282,65,280,62,281,60,279,55,282,55,282,59,284,59,290,56,295,56,296,66,295,67,296,71,296,71,"/>
+<Area shape="poly" alt=" county = Tishomingo 
+ Injuries = 0" title=" county = Tishomingo 
+ Injuries = 0" coords="415,45,414,68,414,76,404,77,403,57,400,56,399,39,409,38,411,43,415,45,415,45,"/>
+<Area shape="poly" alt=" county = Tippah 
+ Injuries = 0" title=" county = Tippah 
+ Injuries = 0" coords="360,71,359,55,362,55,362,52,363,52,362,42,373,41,374,51,378,51,378,58,380,58,381,69,380,69,360,71,360,71,"/>
+<Area shape="poly" alt=" county = Tate 
+ Injuries = 0" title=" county = Tate 
+ Injuries = 0" coords="306,66,310,65,312,61,323,61,324,67,327,67,327,76,324,76,297,78,294,75,296,71,295,67,296,66,298,63,300,63,306,66,306,66,"/>
+<Area shape="poly" alt=" county = Tallahatchie 
+ Injuries = 0" title=" county = Tallahatchie 
+ Injuries = 0" coords="294,138,294,135,301,134,301,131,285,132,285,119,284,113,303,112,302,106,314,105,315,124,316,129,304,131,304,137,298,136,296,139,294,138,294,138,"/>
+<Area shape="poly" alt=" county = Sunflower 
+ Injuries = 0" title=" county = Sunflower 
+ Injuries = 0" coords="273,120,285,119,285,132,287,166,281,166,282,170,272,171,269,171,268,153,268,146,274,146,273,120,273,120,"/>
+<Area shape="poly" alt=" county = Stone 
+ Injuries = 0" title=" county = Stone 
+ Injuries = 0" coords="364,352,363,333,375,333,390,331,391,344,392,348,370,350,371,352,364,352,364,352,"/>
+<Area shape="poly" alt=" county = Smith 
+ Injuries = 0" title=" county = Smith 
+ Injuries = 0" coords="335,254,334,242,358,240,360,270,355,271,341,273,339,256,339,254,335,254,335,254,"/>
+<Area shape="poly" alt=" county = Simpson 
+ Injuries = 0" title=" county = Simpson 
+ Injuries = 0" coords="308,264,306,259,306,258,304,257,305,256,335,254,339,254,339,256,341,273,335,274,322,276,313,277,314,274,311,274,312,271,310,270,312,269,311,267,308,264,308,264,"/>
+<Area shape="poly" alt=" county = Sharkey 
+ Injuries = 0" title=" county = Sharkey 
+ Injuries = 0" coords="262,195,262,190,261,184,274,183,276,183,277,195,271,202,272,204,275,203,274,205,276,207,273,208,273,209,277,212,276,214,275,212,274,214,260,215,260,202,262,195,262,195,"/>
+<Area shape="poly" alt=" county = Scott 
+ Injuries = 0" title=" county = Scott 
+ Injuries = 0" coords="356,215,358,240,334,242,334,233,329,216,332,213,333,217,356,215,356,215,"/>
+<Area shape="poly" alt=" county = Rankin 
+ Injuries = 40" title=" county = Rankin 
+ Injuries = 40" coords="307,246,307,244,306,242,314,231,313,228,321,222,325,217,329,216,334,233,334,242,335,254,305,256,304,247,307,246,307,246,"/>
+<Area shape="poly" alt=" county = Prentiss 
+ Injuries = 0" title=" county = Prentiss 
+ Injuries = 0" coords="392,78,392,75,381,75,380,69,381,69,380,58,400,56,403,57,404,77,392,78,392,78,"/>
+<Area shape="poly" alt=" county = Pontotoc 
+ Injuries = 0" title=" county = Pontotoc 
+ Injuries = 0" coords="360,108,354,108,353,102,352,87,376,86,378,107,360,108,360,108,"/>
+<Area shape="poly" alt=" county = Pike 
+ Injuries = 0" title=" county = Pike 
+ Injuries = 0" coords="308,331,303,331,291,332,289,307,306,306,308,331,308,331,"/>
+<Area shape="poly" alt=" county = Perry 
+ Injuries = 0" title=" county = Perry 
+ Injuries = 0" coords="384,295,390,294,393,325,394,331,390,331,375,333,375,323,373,308,372,296,384,295,384,295,"/>
+<Area shape="poly" alt=" county = Pearl River 
+ Injuries = 1" title=" county = Pearl River 
+ Injuries = 1" coords="364,352,352,353,353,362,347,364,347,367,344,367,337,361,338,360,335,356,336,355,334,353,334,350,336,347,335,345,337,342,337,340,339,334,338,333,340,329,344,328,353,327,355,329,358,329,358,327,362,326,363,333,364,352,364,352,"/>
+<Area shape="poly" alt=" county = Panola 
+ Injuries = 0" title=" county = Panola 
+ Injuries = 0" coords="297,78,324,76,326,102,326,104,314,105,302,106,302,98,298,96,297,81,297,78,297,78,"/>
+<Area shape="poly" alt=" county = Oktibbeha 
+ Injuries = 0" title=" county = Oktibbeha 
+ Injuries = 0" coords="365,146,365,144,369,144,389,142,390,146,391,162,383,163,367,164,365,146,365,146,"/>
+<Area shape="poly" alt=" county = Noxubee 
+ Injuries = 0" title=" county = Noxubee 
+ Injuries = 0" coords="384,188,383,163,391,162,412,160,412,181,411,186,384,188,384,188,"/>
+<Area shape="poly" alt=" county = Newton 
+ Injuries = 2" title=" county = Newton 
+ Injuries = 2" coords="358,240,356,215,357,215,380,213,382,239,358,240,358,240,"/>
+<Area shape="poly" alt=" county = Neshoba 
+ Injuries = 0" title=" county = Neshoba 
+ Injuries = 0" coords="378,189,380,213,357,215,355,190,378,189,378,189,"/>
+<Area shape="poly" alt=" county = Montgomery 
+ Injuries = 1" title=" county = Montgomery 
+ Injuries = 1" coords="345,155,345,165,334,166,334,158,326,157,324,139,340,138,342,153,349,153,347,155,345,155,345,155,"/>
+<Area shape="poly" alt=" county = Monroe 
+ Injuries = 0" title=" county = Monroe 
+ Injuries = 0" coords="398,135,399,133,386,134,385,125,384,106,384,105,394,104,413,103,413,105,413,128,408,128,406,132,398,135,398,135,"/>
+<Area shape="poly" alt=" county = Marshall 
+ Injuries = 0" title=" county = Marshall 
+ Injuries = 0" coords="343,43,344,54,347,54,348,72,351,72,352,79,347,77,341,77,338,75,327,76,327,67,324,67,323,61,322,45,327,44,343,43,343,43,"/>
+<Area shape="poly" alt=" county = Marion 
+ Injuries = 0" title=" county = Marion 
+ Injuries = 0" coords="333,324,328,324,327,320,323,320,322,317,321,317,320,306,319,302,324,302,332,301,332,298,342,298,344,328,340,329,333,329,333,324,333,324,"/>
+<Area shape="poly" alt=" county = Madison 
+ Injuries = 0" title=" county = Madison 
+ Injuries = 0" coords="317,196,331,195,332,213,329,216,325,217,321,222,313,228,314,231,303,231,303,225,291,226,290,220,297,217,300,213,310,209,313,206,315,200,317,196,317,196,"/>
+<Area shape="poly" alt=" county = Lowndes 
+ Injuries = 0" title=" county = Lowndes 
+ Injuries = 0" coords="412,160,391,162,390,146,394,146,398,143,401,144,399,142,400,139,398,138,398,135,406,132,408,128,413,128,412,143,412,160,412,160,"/>
+<Area shape="poly" alt=" county = Lincoln 
+ Injuries = 0" title=" county = Lincoln 
+ Injuries = 0" coords="289,307,284,307,283,289,277,289,277,283,296,281,298,282,298,281,306,281,307,306,306,306,289,307,289,307,"/>
+<Area shape="poly" alt=" county = Leflore 
+ Injuries = 0" title=" county = Leflore 
+ Injuries = 0" coords="294,135,294,138,296,139,298,136,304,137,305,140,306,142,306,145,305,145,306,145,307,155,305,156,305,159,303,159,303,165,295,163,297,165,294,167,292,169,293,172,290,172,287,170,287,166,285,132,301,131,301,134,294,135,294,135,"/>
+<Area shape="poly" alt=" county = Lee 
+ Injuries = 0" title=" county = Lee 
+ Injuries = 0" coords="384,105,384,106,378,107,376,86,376,84,378,84,378,77,381,75,392,75,392,78,394,104,384,105,384,105,"/>
+<Area shape="poly" alt=" county = Leake 
+ Injuries = 0" title=" county = Leake 
+ Injuries = 0" coords="332,213,331,195,331,192,355,190,357,215,356,215,333,217,332,213,332,213,"/>
+<Area shape="poly" alt=" county = Lawrence 
+ Injuries = 0" title=" county = Lawrence 
+ Injuries = 0" coords="306,281,306,280,313,277,322,276,324,302,319,302,320,306,307,306,306,281,306,281,"/>
+<Area shape="poly" alt=" county = Lauderdale 
+ Injuries = 10" title=" county = Lauderdale 
+ Injuries = 10" coords="380,213,411,211,411,230,410,236,382,239,380,213,380,213,"/>
+<Area shape="poly" alt=" county = Lamar 
+ Injuries = 10" title=" county = Lamar 
+ Injuries = 10" coords="353,327,344,328,342,298,346,297,354,297,355,303,361,303,362,326,358,327,358,329,355,329,353,327,353,327,"/>
+<Area shape="poly" alt=" county = Lafayette 
+ Injuries = 0" title=" county = Lafayette 
+ Injuries = 0" coords="353,102,338,103,338,101,326,102,324,76,327,76,338,75,341,77,347,77,352,79,352,87,353,102,353,102,"/>
+<Area shape="poly" alt=" county = Kemper 
+ Injuries = 2" title=" county = Kemper 
+ Injuries = 2" coords="380,213,378,189,384,188,411,186,411,199,411,200,411,211,380,213,380,213,"/>
+<Area shape="poly" alt=" county = Jones 
+ Injuries = 0" title=" county = Jones 
+ Injuries = 0" coords="360,270,382,267,384,295,372,296,357,297,355,271,360,270,360,270,"/>
+<Area shape="poly" alt=" county = Jefferson Davis 
+ Injuries = 0" title=" county = Jefferson Davis 
+ Injuries = 0" coords="346,297,342,298,332,298,332,301,324,302,322,276,335,274,335,285,345,290,346,297,346,297,"/>
+<Area shape="poly" alt=" county = Jefferson 
+ Injuries = 0" title=" county = Jefferson 
+ Injuries = 0" coords="277,276,277,283,277,289,252,290,252,289,248,289,244,286,242,281,246,280,240,280,241,274,243,273,244,276,245,276,246,275,245,273,246,272,260,272,270,274,270,277,277,276,277,276,"/>
+<Area shape="poly" alt=" county = Jasper 
+ Injuries = 2" title=" county = Jasper 
+ Injuries = 2" coords="358,240,382,239,384,267,382,267,360,270,358,240,358,240,"/>
+<Area shape="poly" alt=" county = Jackson 
+ Injuries = 0" title=" county = Jackson 
+ Injuries = 0" coords="392,348,391,344,420,342,423,369,418,372,409,369,403,371,395,367,393,366,392,348,392,348,"/>
+<Area shape="poly" alt=" county = Itawamba 
+ Injuries = 0" title=" county = Itawamba 
+ Injuries = 0" coords="414,76,414,86,413,103,394,104,392,78,404,77,414,76,414,76,"/>
+<Area shape="poly" alt=" county = Issaquena 
+ Injuries = 0" title=" county = Issaquena 
+ Injuries = 0" coords="260,202,260,215,274,214,276,216,274,217,274,221,266,221,267,230,262,230,261,233,260,221,256,221,258,219,257,216,255,219,251,221,249,219,249,217,254,214,254,211,250,210,248,207,249,203,253,198,251,192,249,193,248,198,245,198,247,191,247,191,262,190,262,195,260,202,260,202,"/>
+<Area shape="poly" alt=" county = Humphreys 
+ Injuries = 0" title=" county = Humphreys 
+ Injuries = 0" coords="276,183,274,183,275,183,274,181,275,176,271,174,272,171,282,170,281,166,287,166,287,170,290,172,293,172,292,169,294,167,295,179,294,182,293,180,292,181,293,183,290,181,289,183,290,185,292,186,294,188,289,189,289,195,277,195,276,183,276,183,"/>
+<Area shape="poly" alt=" county = Holmes 
+ Injuries = 0" title=" county = Holmes 
+ Injuries = 0" coords="321,192,317,196,295,187,294,188,292,186,290,185,289,183,290,181,293,183,292,181,293,180,294,182,295,179,294,167,297,165,295,163,303,165,329,172,325,179,325,182,322,188,321,192,321,192,"/>
+<Area shape="poly" alt=" county = Hinds 
+ Injuries = 0" title=" county = Hinds 
+ Injuries = 0" coords="285,225,286,225,290,220,291,226,303,225,303,231,314,231,306,242,307,244,307,246,304,247,305,256,277,258,275,245,277,240,276,237,281,237,280,234,283,229,282,227,285,225,285,225,"/>
+<Area shape="poly" alt=" county = Harrison 
+ Injuries = 0" title=" county = Harrison 
+ Injuries = 0" coords="369,376,370,373,366,372,364,352,371,352,370,350,392,348,393,366,395,367,395,368,397,370,392,368,387,369,369,376,369,376,"/>
+<Area shape="poly" alt=" county = Hancock 
+ Injuries = 0" title=" county = Hancock 
+ Injuries = 0" coords="364,352,366,372,364,373,367,376,361,381,359,386,358,385,353,386,351,384,348,378,349,375,345,370,344,367,347,367,347,364,353,362,352,353,364,352,364,352,"/>
+<Area shape="poly" alt=" county = Grenada 
+ Injuries = 4" title=" county = Grenada 
+ Injuries = 4" coords="305,140,304,137,304,131,316,129,315,124,324,123,324,125,340,124,340,135,340,138,324,139,305,140,305,140,"/>
+<Area shape="poly" alt=" county = Greene 
+ Injuries = 0" title=" county = Greene 
+ Injuries = 0" coords="390,294,414,292,416,315,417,323,393,325,390,294,390,294,"/>
+<Area shape="poly" alt=" county = George 
+ Injuries = 0" title=" county = George 
+ Injuries = 0" coords="417,323,420,342,391,344,390,331,394,331,393,325,417,323,417,323,"/>
+<Area shape="poly" alt=" county = Franklin 
+ Injuries = 0" title=" county = Franklin 
+ Injuries = 0" coords="284,307,262,308,257,311,253,309,252,290,277,289,283,289,284,307,284,307,"/>
+<Area shape="poly" alt=" county = Forrest 
+ Injuries = 0" title=" county = Forrest 
+ Injuries = 0" coords="361,303,355,303,354,297,357,297,372,296,373,308,375,323,375,333,363,333,362,326,361,303,361,303,"/>
+<Area shape="poly" alt=" county = DeSoto 
+ Injuries = 0" title=" county = DeSoto 
+ Injuries = 0" coords="295,56,290,56,293,52,289,47,322,45,323,61,312,61,310,65,306,66,300,63,298,63,296,66,295,56,295,56,"/>
+<Area shape="poly" alt=" county = Covington 
+ Injuries = 10" title=" county = Covington 
+ Injuries = 10" coords="357,297,354,297,346,297,345,290,335,285,335,274,341,273,355,271,357,297,357,297,"/>
+<Area shape="poly" alt=" county = Copiah 
+ Injuries = 20" title=" county = Copiah 
+ Injuries = 20" coords="277,258,305,256,304,257,306,258,306,259,308,264,311,267,312,269,310,270,312,271,311,274,314,274,313,277,306,280,306,281,298,281,298,282,296,281,277,283,277,276,277,272,277,258,277,258,"/>
+<Area shape="poly" alt=" county = Coahoma 
+ Injuries = 0" title=" county = Coahoma 
+ Injuries = 0" coords="272,110,255,111,257,108,261,110,263,109,263,106,258,106,256,103,257,102,261,105,262,100,267,98,265,94,266,93,270,92,270,96,271,96,271,92,276,88,275,84,276,81,286,88,287,99,284,99,284,113,285,119,273,120,272,110,272,110,"/>
+<Area shape="poly" alt=" county = Clay 
+ Injuries = 0" title=" county = Clay 
+ Injuries = 0" coords="398,138,400,139,399,142,401,144,398,143,394,146,390,146,389,142,369,144,367,131,373,130,373,126,385,125,386,134,399,133,398,135,398,138,398,138,"/>
+<Area shape="poly" alt=" county = Clarke 
+ Injuries = 0" title=" county = Clarke 
+ Injuries = 0" coords="410,260,401,263,384,267,382,239,410,236,410,260,410,260,"/>
+<Area shape="poly" alt=" county = Claiborne 
+ Injuries = 0" title=" county = Claiborne 
+ Injuries = 0" coords="277,276,270,277,270,274,260,272,246,272,250,268,250,265,255,262,255,260,251,259,251,257,255,259,255,257,258,254,265,256,265,253,267,254,269,252,269,250,270,252,273,250,272,249,275,245,277,258,277,272,277,276,277,276,"/>
+<Area shape="poly" alt=" county = Choctaw 
+ Injuries = 0" title=" county = Choctaw 
+ Injuries = 0" coords="354,177,353,165,345,165,345,155,347,155,349,153,355,148,365,146,367,164,365,164,366,170,360,171,360,177,354,177,354,177,"/>
+<Area shape="poly" alt=" county = Chickasaw 
+ Injuries = 0" title=" county = Chickasaw 
+ Injuries = 0" coords="360,108,378,107,384,106,385,125,373,126,373,130,367,131,358,132,358,127,361,126,360,108,360,108,"/>
+<Area shape="poly" alt=" county = Carroll 
+ Injuries = 0" title=" county = Carroll 
+ Injuries = 0" coords="329,172,303,165,303,159,305,159,305,156,307,155,306,145,305,145,306,145,306,142,305,140,324,139,326,157,334,158,334,166,331,166,329,172,329,172,"/>
+<Area shape="poly" alt=" county = Calhoun 
+ Injuries = 0" title=" county = Calhoun 
+ Injuries = 0" coords="361,126,358,127,358,132,358,133,340,135,340,124,338,103,353,102,354,108,360,108,361,126,361,126,"/>
+<Area shape="poly" alt=" county = Bolivar 
+ Injuries = 0" title=" county = Bolivar 
+ Injuries = 0" coords="272,110,273,120,274,146,268,146,268,153,242,154,241,152,247,149,246,147,242,144,242,142,245,141,249,145,252,143,251,140,247,141,246,137,247,136,253,137,255,136,250,131,253,125,248,122,254,118,259,118,260,113,255,111,255,111,272,110,272,110,"/>
+<Area shape="poly" alt=" county = Benton 
+ Injuries = 0" title=" county = Benton 
+ Injuries = 0" coords="363,52,362,52,362,55,359,55,360,71,351,71,351,72,348,72,347,54,344,54,343,43,352,43,362,42,363,52,363,52,"/>
+<Area shape="poly" alt=" county = Attala 
+ Injuries = 0" title=" county = Attala 
+ Injuries = 0" coords="331,192,331,195,317,196,321,192,322,188,325,182,325,179,329,172,331,166,334,166,345,165,353,165,354,177,355,190,331,192,331,192,"/>
+<Area shape="poly" alt=" county = Amite 
+ Injuries = 0" title=" county = Amite 
+ Injuries = 0" coords="259,316,257,311,262,308,284,307,289,307,291,332,290,332,274,333,260,333,259,316,259,316,"/>
+<Area shape="poly" alt=" county = Adams 
+ Injuries = 3" title=" county = Adams 
+ Injuries = 3" coords="228,321,224,317,232,315,232,312,228,306,230,304,232,308,234,308,235,306,232,303,231,297,235,296,238,293,237,292,233,293,231,290,232,289,235,291,238,290,239,282,242,281,244,286,248,289,252,289,252,290,253,309,246,308,237,312,235,312,235,314,233,314,234,318,232,319,230,318,228,321,228,321,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot99.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot99" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Injuries in Mississippi due to Hurricanes</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.BACK_A_LEVEL">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">Back_a_Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data"><a href='..\hurr_Injuries.html'> Back To Hurricane Injuries </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

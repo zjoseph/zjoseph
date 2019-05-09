@@ -1,0 +1,4155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Effects due to Tornadoes</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.EFFECTS_ABREVIATION">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data"><a href='torr_Deaths.html'> Deaths </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='torr_Injuries.html'> Injuries </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='torr_Property_Damage.html'> Property Damage </a></td>
+</tr>
+<tr>
+<td class="l data"><a href='torr_Crop_Damage.html'> Crop Damage </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter"><a href='..\Storm_Home_Page.html'> Storm Home Page </a></td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<div>
+<map name="SGPlot8">
+<Area shape="poly" alt=" state = WYOMING  
+ COL1 = 24 " title=" state = WYOMING  
+ COL1 = 24 " href="State/56-Injuries.html " target="_BLANK" coords="244,147,246,121,186,113,185,120,180,152,178,165,196,168,242,174,244,147,"/>
+<Area shape="poly" alt=" state = WISCONSIN  
+ COL1 = 321 " title=" state = WISCONSIN  
+ COL1 = 321 " href="State/55-Injuries.html " target="_BLANK" coords="395,116,392,121,395,116,395,116,"/>
+<Area shape="poly" alt=" state = WISCONSIN  
+ COL1 = 321 " title=" state = WISCONSIN  
+ COL1 = 321 " href="State/55-Injuries.html " target="_BLANK" coords="389,144,391,154,365,156,361,153,360,143,357,136,345,127,345,121,345,120,346,118,344,114,349,109,348,102,351,101,361,97,360,102,361,100,365,102,368,105,385,109,385,111,388,112,387,116,389,116,390,119,387,126,388,127,392,122,393,123,389,144,389,144,"/>
+<Area shape="poly" alt=" state = WEST VIRGINIA  
+ COL1 = 28 " title=" state = WEST VIRGINIA  
+ COL1 = 28 " href="State/54-Injuries.html " target="_BLANK" coords="489,185,483,181,483,185,480,191,478,191,476,197,473,195,467,212,456,217,453,213,447,208,445,202,449,199,449,193,452,194,452,189,459,184,460,174,459,171,460,170,462,182,472,180,473,187,479,180,482,181,484,178,487,179,489,182,489,185,489,185,"/>
+<Area shape="poly" alt=" state = WASHINGTON  
+ COL1 = 0 " title=" state = WASHINGTON  
+ COL1 = 0 " href="State/53-Injuries.html " target="_BLANK" coords="138,85,145,51,99,38,100,44,98,46,100,47,98,50,99,51,100,53,97,56,97,60,91,63,90,61,93,58,93,61,95,59,96,58,95,57,96,55,97,55,97,52,91,58,93,58,90,58,94,53,96,49,95,51,94,48,86,46,81,41,80,61,81,59,83,61,81,61,81,63,82,64,80,68,80,65,79,69,80,70,80,70,82,70,84,72,86,73,88,75,88,80,91,83,96,82,101,85,108,86,120,85,138,90,138,85,138,85,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 759 " title=" state = VIRGINIA  
+ COL1 = 759 " href="State/51-Injuries.html " target="_BLANK" coords="514,194,512,195,510,201,511,207,514,194,514,194,"/>
+<Area shape="poly" alt=" state = VIRGINIA  
+ COL1 = 759 " title=" state = VIRGINIA  
+ COL1 = 759 " href="State/51-Injuries.html " target="_BLANK" coords="511,210,508,210,508,211,506,213,506,210,502,208,502,206,507,211,508,208,506,207,507,206,506,204,508,205,507,203,505,203,507,202,504,202,500,197,506,202,506,199,507,198,503,197,502,195,499,195,495,194,495,190,496,186,496,186,489,182,489,185,483,181,483,185,480,191,478,191,476,197,473,195,467,212,456,217,453,213,443,225,438,228,457,225,511,215,511,215,512,215,511,213,512,215,512,215,512,212,513,214,513,214,511,210,511,210,"/>
+<Area shape="poly" alt=" state = VERMONT  
+ COL1 = 0 " title=" state = VERMONT  
+ COL1 = 0 " href="State/50-Injuries.html " target="_BLANK" coords="530,102,527,105,526,115,528,127,520,128,517,115,515,104,515,99,529,95,530,102,530,102,"/>
+<Area shape="poly" alt=" state = UTAH  
+ COL1 = 94 " title=" state = UTAH  
+ COL1 = 94 " href="State/49-Injuries.html " target="_BLANK" coords="196,168,178,165,180,152,153,147,141,212,189,221,196,168,196,168,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 2015 " title=" state = TEXAS  
+ COL1 = 2015 " href="State/48-Injuries.html " target="_BLANK" coords="307,349,301,360,303,354,307,349,307,349,"/>
+<Area shape="poly" alt=" state = TEXAS  
+ COL1 = 2015 " title=" state = TEXAS  
+ COL1 = 2015 " href="State/48-Injuries.html " target="_BLANK" coords="337,297,337,283,337,276,332,275,324,271,315,272,313,274,311,272,309,273,307,271,305,274,304,271,302,273,300,270,296,272,295,268,292,269,284,267,283,264,279,264,276,262,277,236,248,234,243,294,206,290,207,293,222,311,226,325,238,334,242,331,245,324,249,323,259,325,266,334,270,345,278,355,278,362,282,370,292,375,298,375,300,378,304,377,299,365,301,359,298,359,297,357,299,359,300,356,299,359,301,359,303,354,302,354,300,351,304,351,305,348,304,349,304,348,308,347,308,343,309,345,312,344,309,341,311,341,311,342,315,340,314,342,317,341,313,345,326,336,324,337,325,334,328,332,327,328,330,326,329,329,333,329,330,332,340,328,338,326,340,323,343,309,337,297,337,297,"/>
+<Area shape="poly" alt=" state = TENNESSEE  
+ COL1 = 2066 " title=" state = TENNESSEE  
+ COL1 = 2066 " href="State/47-Injuries.html " target="_BLANK" coords="457,225,457,228,454,231,450,234,449,233,446,237,437,242,436,246,434,247,434,250,421,251,395,254,374,255,376,253,375,250,377,248,377,245,380,243,379,242,380,235,381,235,381,235,395,234,394,231,438,228,457,225,457,225,"/>
+<Area shape="poly" alt=" state = SOUTH DAKOTA  
+ COL1 = 272 " title=" state = SOUTH DAKOTA  
+ COL1 = 272 " href="State/46-Injuries.html " target="_BLANK" coords="311,154,313,157,306,152,299,153,294,150,244,147,246,121,247,108,312,112,309,116,313,120,313,144,311,144,313,149,311,154,311,154,"/>
+<Area shape="poly" alt=" state = SOUTH CAROLINA  
+ COL1 = 387 " title=" state = SOUTH CAROLINA  
+ COL1 = 387 " href="State/45-Injuries.html " target="_BLANK" coords="493,255,480,245,469,247,466,243,452,244,446,248,444,252,449,254,453,261,465,272,471,281,473,283,474,276,478,277,479,273,480,275,481,274,480,275,482,273,481,271,483,272,488,266,487,262,488,261,489,263,493,255,493,255,"/>
+<Area shape="poly" alt=" state = RHODE ISLAND  
+ COL1 = 0 " title=" state = RHODE ISLAND  
+ COL1 = 0 " href="State/44-Injuries.html " target="_BLANK" coords="542,137,543,137,543,137,543,139,542,137,542,137,"/>
+<Area shape="poly" alt=" state = RHODE ISLAND  
+ COL1 = 0 " title=" state = RHODE ISLAND  
+ COL1 = 0 " href="State/44-Injuries.html " target="_BLANK" coords="541,136,539,133,536,134,537,142,537,143,540,142,541,136,541,136,"/>
+<Area shape="poly" alt=" state = PENNSYLVANIA  
+ COL1 = 270 " title=" state = PENNSYLVANIA  
+ COL1 = 270 " href="State/42-Injuries.html " target="_BLANK" coords="509,148,507,144,504,142,464,151,464,147,458,152,460,170,462,182,472,180,506,173,509,171,515,165,509,159,509,155,512,149,509,148,509,148,"/>
+<Area shape="poly" alt=" state = OREGON  
+ COL1 = 5 " title=" state = OREGON  
+ COL1 = 5 " href="State/41-Injuries.html " target="_BLANK" coords="138,90,120,85,108,86,101,85,96,82,91,83,88,80,88,75,86,73,84,72,82,70,79,70,70,99,62,111,63,123,100,134,126,141,133,113,131,110,141,96,138,90,138,90,"/>
+<Area shape="poly" alt=" state = OKLAHOMA  
+ COL1 = 2370 " title=" state = OKLAHOMA  
+ COL1 = 2370 " href="State/40-Injuries.html " target="_BLANK" coords="332,275,324,271,315,272,313,274,311,272,309,273,307,271,305,274,304,271,302,273,300,270,296,272,295,268,292,269,284,267,283,264,279,264,276,262,277,236,248,234,248,228,258,228,330,230,330,237,332,252,332,275,332,275,"/>
+<Area shape="poly" alt=" state = OHIO  
+ COL1 = 437 " title=" state = OHIO  
+ COL1 = 437 " href="State/39-Injuries.html " target="_BLANK" coords="458,152,448,160,441,163,436,163,439,161,436,162,432,159,419,162,423,196,426,195,429,199,434,201,438,201,442,198,445,202,449,199,449,193,452,194,452,189,459,184,460,174,459,171,460,170,458,152,458,152,"/>
+<Area shape="poly" alt=" state = NORTH DAKOTA  
+ COL1 = 84 " title=" state = NORTH DAKOTA  
+ COL1 = 84 " href="State/38-Injuries.html " target="_BLANK" coords="312,112,247,108,251,69,307,72,312,112,312,112,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 1092 " title=" state = NORTH CAROLINA  
+ COL1 = 1092 " href="State/37-Injuries.html " target="_BLANK" coords="513,214,513,214,515,218,513,214,513,214,"/>
+<Area shape="poly" alt=" state = NORTH CAROLINA  
+ COL1 = 1092 " title=" state = NORTH CAROLINA  
+ COL1 = 1092 " href="State/37-Injuries.html " target="_BLANK" coords="515,222,514,226,513,222,507,225,506,219,508,223,510,221,509,220,513,220,511,218,514,219,513,218,515,220,512,215,511,215,511,215,457,225,457,228,454,231,450,234,449,233,446,237,437,242,436,246,434,247,434,250,446,248,452,244,466,243,469,247,480,245,493,255,499,254,499,250,500,253,501,247,504,244,503,241,504,244,506,240,510,240,510,239,511,240,510,239,512,240,513,237,514,235,512,237,511,235,511,237,510,236,507,238,505,235,508,237,511,232,508,233,508,232,505,232,504,230,509,231,508,230,510,229,510,231,514,231,517,226,515,222,515,222,"/>
+<Area shape="poly" alt=" state = NEW YORK  
+ COL1 = 171 " title=" state = NEW YORK  
+ COL1 = 171 " href="State/36-Injuries.html " target="_BLANK" coords="520,128,521,138,523,148,521,150,522,152,520,156,520,154,520,153,520,152,512,149,509,148,507,144,504,142,464,151,464,147,471,139,468,133,473,130,487,129,492,124,491,120,493,118,491,117,491,119,490,117,500,103,513,99,517,115,520,128,520,128,"/>
+<Area shape="poly" alt=" state = NEW MEXICO  
+ COL1 = 84 " title=" state = NEW MEXICO  
+ COL1 = 84 " href="State/35-Injuries.html " target="_BLANK" coords="248,228,189,221,180,296,188,297,189,291,207,293,206,290,243,294,248,234,248,228,248,228,"/>
+<Area shape="poly" alt=" state = NEW JERSEY  
+ COL1 = 14 " title=" state = NEW JERSEY  
+ COL1 = 14 " href="State/34-Injuries.html " target="_BLANK" coords="520,153,520,154,518,160,521,160,521,168,520,165,521,170,517,180,516,181,516,178,509,176,509,171,509,171,515,165,509,159,509,155,512,149,520,152,520,153,520,153,"/>
+<Area shape="poly" alt=" state = NEW HAMPSHIRE  
+ COL1 = 5 " title=" state = NEW HAMPSHIRE  
+ COL1 = 5 " href="State/33-Injuries.html " target="_BLANK" coords="538,114,532,90,529,92,529,95,530,102,527,105,526,115,528,127,538,124,541,121,542,118,538,114,538,114,"/>
+<Area shape="poly" alt=" state = NEVADA  
+ COL1 = 0 " title=" state = NEVADA  
+ COL1 = 0 " href="State/32-Injuries.html " target="_BLANK" coords="141,212,138,225,136,223,132,223,131,237,90,173,100,134,126,141,153,147,141,212,141,212,"/>
+<Area shape="poly" alt=" state = NEBRASKA  
+ COL1 = 198 " title=" state = NEBRASKA  
+ COL1 = 198 " href="State/31-Injuries.html " target="_BLANK" coords="323,190,260,188,261,175,242,174,244,147,294,150,299,153,306,152,313,157,316,170,317,171,319,183,323,190,323,190,"/>
+<Area shape="poly" alt=" state = MONTANA  
+ COL1 = 12 " title=" state = MONTANA  
+ COL1 = 12 " href="State/30-Injuries.html " target="_BLANK" coords="247,108,251,69,191,61,153,53,150,66,152,70,151,74,154,77,158,85,161,86,157,100,158,101,162,99,165,111,167,112,169,118,174,116,181,118,182,115,185,120,186,113,246,121,247,108,247,108,"/>
+<Area shape="poly" alt=" state = MISSOURI  
+ COL1 = 2327 " title=" state = MISSOURI  
+ COL1 = 2327 " href="State/29-Injuries.html " target="_BLANK" coords="384,228,380,225,379,219,371,213,373,204,370,203,368,204,367,199,360,193,360,184,356,181,319,183,323,190,327,192,327,194,325,196,330,202,330,230,330,237,368,236,368,236,374,235,375,238,372,242,379,242,380,235,380,234,380,234,381,235,381,235,384,232,384,228,384,228,"/>
+<Area shape="poly" alt=" state = MISSISSIPPI  
+ COL1 = 1805 " title=" state = MISSISSIPPI  
+ COL1 = 1805 " href="State/28-Injuries.html " target="_BLANK" coords="395,295,397,315,387,316,386,319,385,318,382,312,383,308,363,309,362,306,365,301,364,301,366,299,365,298,369,294,367,293,370,291,367,289,369,289,368,287,367,287,366,282,367,279,367,276,365,277,365,273,367,273,367,269,369,267,368,266,371,263,371,258,374,257,374,255,395,254,396,255,395,295,395,295,"/>
+<Area shape="poly" alt=" state = MINNESOTA  
+ COL1 = 349 " title=" state = MINNESOTA  
+ COL1 = 349 " href="State/27-Injuries.html " target="_BLANK" coords="361,89,350,100,351,101,348,102,349,109,344,114,346,118,345,120,345,121,345,127,357,136,360,143,313,144,313,120,309,116,312,112,307,72,324,72,324,67,325,67,328,75,335,76,335,78,342,76,345,77,347,81,350,79,354,83,360,80,361,82,371,83,361,89,361,89,"/>
+<Area shape="poly" alt=" state = MICHIGAN  
+ COL1 = 220 " title=" state = MICHIGAN  
+ COL1 = 220 " href="State/26-Injuries.html " target="_BLANK" coords="439,146,437,148,437,146,436,147,432,159,419,162,401,163,405,151,401,138,402,124,408,116,409,122,409,115,413,113,411,112,412,109,414,108,425,112,428,116,426,116,428,120,428,125,424,131,424,135,427,135,429,131,432,128,435,131,439,142,439,146,439,146,"/>
+<Area shape="poly" alt=" state = MICHIGAN  
+ COL1 = 220 " title=" state = MICHIGAN  
+ COL1 = 220 " href="State/26-Injuries.html " target="_BLANK" coords="417,102,417,98,411,99,411,95,401,98,397,101,391,101,386,96,384,95,381,98,383,92,387,89,384,89,376,96,365,102,368,105,385,109,385,111,388,112,387,116,389,116,390,119,395,108,395,111,398,108,398,112,401,107,406,106,407,104,414,107,414,104,421,105,417,102,417,102,"/>
+<Area shape="poly" alt=" state = MASSACHUSETTS  
+ COL1 = 236 " title=" state = MASSACHUSETTS  
+ COL1 = 236 " href="State/25-Injuries.html " target="_BLANK" coords="551,129,549,130,552,132,550,134,545,132,544,128,541,129,544,123,542,123,541,121,538,124,528,127,520,128,521,138,536,134,539,133,541,136,541,136,541,136,541,136,542,137,542,137,543,137,543,137,543,139,547,134,547,138,553,134,553,133,551,129,551,129,"/>
+<Area shape="poly" alt=" state = MARYLAND  
+ COL1 = 269 " title=" state = MARYLAND  
+ COL1 = 269 " href="State/24-Injuries.html " target="_BLANK" coords="516,188,510,189,506,173,472,180,473,187,479,180,482,181,484,178,487,179,489,182,496,186,498,186,497,187,496,193,499,194,499,192,505,196,504,193,501,191,501,189,504,192,500,184,502,185,502,183,499,181,501,181,503,177,503,178,503,175,505,175,505,177,505,177,506,178,504,178,503,181,504,181,506,181,504,184,505,186,504,185,504,186,505,187,506,186,506,188,504,188,506,189,504,190,505,191,507,191,509,191,510,193,509,196,512,195,514,194,516,188,516,188,"/>
+<Area shape="poly" alt=" state = MAINE  
+ COL1 = 4 " title=" state = MAINE  
+ COL1 = 4 " href="State/23-Injuries.html " target="_BLANK" coords="559,95,558,95,558,97,557,96,558,94,559,95,559,95,"/>
+<Area shape="poly" alt=" state = MAINE  
+ COL1 = 4 " title=" state = MAINE  
+ COL1 = 4 " href="State/23-Injuries.html " target="_BLANK" coords="566,86,566,85,567,84,566,82,562,82,561,77,558,77,553,60,548,57,544,61,540,58,536,70,537,81,534,87,535,88,534,88,534,91,532,90,538,114,542,118,544,107,546,106,546,105,546,104,549,106,550,102,551,103,552,101,552,96,554,94,554,97,557,97,556,94,557,95,558,92,560,95,562,91,564,91,563,89,566,89,568,86,566,86,566,86,"/>
+<Area shape="poly" alt=" state = LOUISIANA  
+ COL1 = 842 " title=" state = LOUISIANA  
+ COL1 = 842 " href="State/22-Injuries.html " target="_BLANK" coords="392,331,386,329,384,325,386,326,388,324,389,319,384,323,382,322,384,319,383,319,379,321,376,320,378,316,385,318,382,312,383,308,363,309,362,306,365,301,364,301,366,299,365,298,369,294,367,293,370,291,367,289,369,289,368,287,367,287,366,282,337,283,337,297,343,309,340,323,340,327,347,326,361,329,363,328,357,326,361,325,361,326,363,326,364,329,368,330,369,332,368,330,366,331,367,332,372,334,376,330,379,334,381,332,381,329,378,328,377,326,378,323,380,328,381,328,381,326,383,330,385,330,388,333,389,332,389,333,390,334,392,331,392,331,"/>
+<Area shape="poly" alt=" state = KENTUCKY  
+ COL1 = 762 " title=" state = KENTUCKY  
+ COL1 = 762 " href="State/21-Injuries.html " target="_BLANK" coords="447,208,445,202,442,198,438,201,434,201,429,199,426,195,423,196,423,200,418,202,418,204,413,212,409,210,407,215,405,213,403,216,398,214,398,216,395,215,394,216,394,221,390,222,390,226,385,225,384,228,384,232,381,235,395,234,394,231,438,228,443,225,453,213,447,208,447,208,"/>
+<Area shape="poly" alt=" state = KANSAS  
+ COL1 = 930 " title=" state = KANSAS  
+ COL1 = 930 " href="State/20-Injuries.html " target="_BLANK" coords="330,230,258,228,260,188,323,190,327,192,327,194,325,196,330,202,330,230,330,230,"/>
+<Area shape="poly" alt=" state = IOWA  
+ COL1 = 532 " title=" state = IOWA  
+ COL1 = 532 " href="State/19-Injuries.html " target="_BLANK" coords="370,161,365,156,361,153,360,143,313,144,311,144,313,149,311,154,313,157,316,170,317,171,319,183,356,181,360,184,364,176,362,170,368,169,370,165,370,161,370,161,"/>
+<Area shape="poly" alt=" state = INDIANA  
+ COL1 = 1015 " title=" state = INDIANA  
+ COL1 = 1015 " href="State/18-Injuries.html " target="_BLANK" coords="423,200,418,202,418,204,413,212,409,210,407,215,405,213,403,216,398,214,398,216,395,215,394,216,394,210,398,203,396,198,394,164,397,165,401,163,419,162,423,196,423,200,423,200,"/>
+<Area shape="poly" alt=" state = ILLINOIS  
+ COL1 = 1304 " title=" state = ILLINOIS  
+ COL1 = 1304 " href="State/17-Injuries.html " target="_BLANK" coords="396,198,394,164,391,154,365,156,370,161,370,165,368,169,362,170,364,176,360,184,360,193,367,199,368,204,370,203,373,204,371,213,379,219,380,225,384,228,385,225,390,226,390,222,394,221,394,216,394,210,398,203,396,198,396,198,"/>
+<Area shape="poly" alt=" state = IDAHO  
+ COL1 = 4 " title=" state = IDAHO  
+ COL1 = 4 " href="State/16-Injuries.html " target="_BLANK" coords="185,120,182,115,181,118,174,116,169,118,167,112,165,111,162,99,158,101,157,100,161,86,158,85,154,77,151,74,152,70,150,66,153,53,145,51,138,85,138,90,141,96,131,110,133,113,126,141,153,147,180,152,185,120,185,120,"/>
+<Area shape="poly" alt=" state = GEORGIA  
+ COL1 = 2025 " title=" state = GEORGIA  
+ COL1 = 2025 " href="State/13-Injuries.html " target="_BLANK" coords="471,281,465,272,453,261,449,254,444,252,446,248,434,250,421,251,428,279,432,286,430,292,432,303,434,307,462,305,463,308,465,307,464,302,470,302,470,298,468,298,469,298,468,296,471,290,471,285,473,285,471,281,471,281,"/>
+<Area shape="poly" alt=" state = FLORIDA  
+ COL1 = 1015 " title=" state = FLORIDA  
+ COL1 = 1015 " href="State/12-Injuries.html " target="_BLANK" coords="493,350,485,334,483,328,475,315,470,302,464,302,465,307,463,308,462,305,434,307,432,303,405,306,408,313,407,315,409,314,410,311,411,313,412,311,413,313,410,314,420,311,422,313,417,313,426,316,424,313,427,313,426,315,430,316,426,316,431,319,430,321,433,321,441,317,440,315,442,314,448,316,456,325,459,324,461,332,460,341,462,343,463,341,462,339,464,341,465,339,463,345,465,345,463,346,468,354,470,354,468,351,471,351,471,357,474,355,472,358,474,358,476,365,481,367,484,374,492,370,494,363,493,350,493,350,"/>
+<Area shape="poly" alt=" state = DISTRICT OF COLUMBIA  
+ COL1 = 1 " title=" state = DISTRICT OF COLUMBIA  
+ COL1 = 1 " href="State/11-Injuries.html " target="_BLANK" coords="497,187,496,186,496,186,498,186,497,187,497,187,"/>
+<Area shape="poly" alt=" state = DELAWARE  
+ COL1 = 8 " title=" state = DELAWARE  
+ COL1 = 8 " href="State/10-Injuries.html " target="_BLANK" coords="516,186,516,186,515,183,508,176,509,171,509,171,506,173,510,189,516,188,516,188,516,188,516,186,516,186,"/>
+<Area shape="poly" alt=" state = CONNECTICUT  
+ COL1 = 11 " title=" state = CONNECTICUT  
+ COL1 = 11 " href="State/09-Injuries.html " target="_BLANK" coords="536,134,521,138,523,148,521,150,522,152,528,146,533,145,533,145,537,142,536,134,536,134,"/>
+<Area shape="poly" alt=" state = COLORADO  
+ COL1 = 159 " title=" state = COLORADO  
+ COL1 = 159 " href="State/08-Injuries.html " target="_BLANK" coords="260,188,261,175,242,174,196,168,189,221,248,228,258,228,260,188,260,188,"/>
+<Area shape="poly" alt=" state = CALIFORNIA  
+ COL1 = 21 " title=" state = CALIFORNIA  
+ COL1 = 21 " href="State/06-Injuries.html " target="_BLANK" coords="131,237,90,173,100,134,63,123,60,136,55,142,58,152,56,164,60,174,59,177,63,181,64,178,67,179,65,180,67,187,64,184,64,181,62,189,66,194,64,202,71,216,70,219,72,221,70,228,72,230,81,233,84,238,90,241,90,245,93,246,98,252,99,264,124,267,127,266,126,259,128,256,129,251,134,248,131,237,131,237,"/>
+<Area shape="poly" alt=" state = ARKANSAS  
+ COL1 = 1720 " title=" state = ARKANSAS  
+ COL1 = 1720 " href="State/05-Injuries.html " target="_BLANK" coords="379,242,372,242,375,238,374,235,368,236,368,236,330,237,332,252,332,275,337,276,337,283,366,282,367,279,367,276,365,277,365,273,367,273,367,269,369,267,368,266,371,263,371,258,374,257,374,255,376,253,375,250,377,248,377,245,380,243,379,242,379,242,"/>
+<Area shape="poly" alt=" state = ARIZONA  
+ COL1 = 11 " title=" state = ARIZONA  
+ COL1 = 11 " href="State/04-Injuries.html " target="_BLANK" coords="189,221,141,212,138,225,136,223,132,223,131,237,134,248,129,251,128,256,126,259,127,266,124,267,123,270,159,292,180,296,189,221,189,221,"/>
+<Area shape="poly" alt=" state = ALABAMA  
+ COL1 = 4140 " title=" state = ALABAMA  
+ COL1 = 4140 " href="State/01-Injuries.html " target="_BLANK" coords="430,292,432,303,405,306,408,313,407,315,401,317,404,316,401,311,400,316,397,315,395,295,396,255,395,254,421,251,428,279,432,286,430,292,430,292,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot8.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot8" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<div>
+<map name="SGPlot9">
+<Area shape="poly" alt=" begin_date_time = Sep 2018 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Sep 2018 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="591,339,594,339,594,340,591,340,591,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2018 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Aug 2018 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="590,339,592,339,592,340,590,340,590,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2018 
+ Injuries (Sum) = 66 
+ event_type = Tornado" title=" begin_date_time = Jul 2018 
+ Injuries (Sum) = 66 
+ event_type = Tornado" coords="588,334,591,334,591,340,588,340,588,334,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2018 
+ Injuries (Sum) = 19 
+ event_type = Tornado" title=" begin_date_time = Jun 2018 
+ Injuries (Sum) = 19 
+ event_type = Tornado" coords="587,338,589,338,589,340,587,340,587,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 2018 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = May 2018 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="585,339,588,339,588,340,585,340,585,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2018 
+ Injuries (Sum) = 32 
+ event_type = Tornado" title=" begin_date_time = Apr 2018 
+ Injuries (Sum) = 32 
+ event_type = Tornado" coords="584,337,586,337,586,340,584,340,584,337,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2018 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = Mar 2018 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="582,338,585,338,585,340,582,340,582,338,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2018 
+ Injuries (Sum) = 24 
+ event_type = Tornado" title=" begin_date_time = Feb 2018 
+ Injuries (Sum) = 24 
+ event_type = Tornado" coords="581,337,583,337,583,340,581,340,581,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2018 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Jan 2018 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="580,339,582,339,582,340,580,340,580,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2017 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Dec 2017 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="578,339,580,339,580,340,578,340,578,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2017 
+ Injuries (Sum) = 11 
+ event_type = Tornado" title=" begin_date_time = Nov 2017 
+ Injuries (Sum) = 11 
+ event_type = Tornado" coords="577,338,579,338,579,340,577,340,577,338,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2017 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Oct 2017 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="575,339,577,339,577,340,575,340,575,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2017 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Sep 2017 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="574,339,576,339,576,340,574,340,574,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2017 
+ Injuries (Sum) = 36 
+ event_type = Tornado" title=" begin_date_time = Aug 2017 
+ Injuries (Sum) = 36 
+ event_type = Tornado" coords="572,337,574,337,574,340,572,340,572,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2017 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Jul 2017 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="571,339,573,339,573,340,571,340,571,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2017 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Jun 2017 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="569,339,571,339,571,340,569,340,569,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2017 
+ Injuries (Sum) = 51 
+ event_type = Tornado" title=" begin_date_time = May 2017 
+ Injuries (Sum) = 51 
+ event_type = Tornado" coords="568,335,570,335,570,340,568,340,568,335,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2017 
+ Injuries (Sum) = 70 
+ event_type = Tornado" title=" begin_date_time = Apr 2017 
+ Injuries (Sum) = 70 
+ event_type = Tornado" coords="566,334,568,334,568,340,566,340,566,334,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2017 
+ Injuries (Sum) = 40 
+ event_type = Tornado" title=" begin_date_time = Mar 2017 
+ Injuries (Sum) = 40 
+ event_type = Tornado" coords="565,336,567,336,567,340,565,340,565,336,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2017 
+ Injuries (Sum) = 90 
+ event_type = Tornado" title=" begin_date_time = Feb 2017 
+ Injuries (Sum) = 90 
+ event_type = Tornado" coords="563,333,565,333,565,340,563,340,563,333,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2017 
+ Injuries (Sum) = 207 
+ event_type = Tornado" title=" begin_date_time = Jan 2017 
+ Injuries (Sum) = 207 
+ event_type = Tornado" coords="562,324,564,324,564,340,562,340,562,324,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2016 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Dec 2016 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="560,339,562,339,562,340,560,340,560,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2016 
+ Injuries (Sum) = 35 
+ event_type = Tornado" title=" begin_date_time = Nov 2016 
+ Injuries (Sum) = 35 
+ event_type = Tornado" coords="559,337,561,337,561,340,559,340,559,337,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2016 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Oct 2016 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="557,339,559,339,559,340,557,340,557,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2016 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Sep 2016 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="556,339,558,339,558,340,556,340,556,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2016 
+ Injuries (Sum) = 23 
+ event_type = Tornado" title=" begin_date_time = Aug 2016 
+ Injuries (Sum) = 23 
+ event_type = Tornado" coords="554,338,556,338,556,340,554,340,554,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2016 
+ Injuries (Sum) = 17 
+ event_type = Tornado" title=" begin_date_time = Jul 2016 
+ Injuries (Sum) = 17 
+ event_type = Tornado" coords="553,338,555,338,555,340,553,340,553,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2016 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = Jun 2016 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="551,338,553,338,553,340,551,340,551,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 2016 
+ Injuries (Sum) = 27 
+ event_type = Tornado" title=" begin_date_time = May 2016 
+ Injuries (Sum) = 27 
+ event_type = Tornado" coords="550,337,552,337,552,340,550,340,550,337,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2016 
+ Injuries (Sum) = 17 
+ event_type = Tornado" title=" begin_date_time = Apr 2016 
+ Injuries (Sum) = 17 
+ event_type = Tornado" coords="548,338,550,338,550,340,548,340,548,338,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2016 
+ Injuries (Sum) = 30 
+ event_type = Tornado" title=" begin_date_time = Mar 2016 
+ Injuries (Sum) = 30 
+ event_type = Tornado" coords="547,337,549,337,549,340,547,340,547,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2016 
+ Injuries (Sum) = 144 
+ event_type = Tornado" title=" begin_date_time = Feb 2016 
+ Injuries (Sum) = 144 
+ event_type = Tornado" coords="545,329,547,329,547,340,545,340,545,329,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2016 
+ Injuries (Sum) = 11 
+ event_type = Tornado" title=" begin_date_time = Jan 2016 
+ Injuries (Sum) = 11 
+ event_type = Tornado" coords="544,338,546,338,546,340,544,340,544,338,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2015 
+ Injuries (Sum) = 716 
+ event_type = Tornado" title=" begin_date_time = Dec 2015 
+ Injuries (Sum) = 716 
+ event_type = Tornado" coords="542,286,545,286,545,340,542,340,542,286,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2015 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Nov 2015 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="541,339,543,339,543,340,541,340,541,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2015 
+ Injuries (Sum) = 7 
+ event_type = Tornado" title=" begin_date_time = Oct 2015 
+ Injuries (Sum) = 7 
+ event_type = Tornado" coords="539,339,542,339,542,340,539,340,539,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2015 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Sep 2015 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="538,339,540,339,540,340,538,340,538,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2015 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Aug 2015 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="536,339,539,339,539,340,536,340,536,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2015 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Jul 2015 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="535,339,537,339,537,340,535,340,535,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2015 
+ Injuries (Sum) = 26 
+ event_type = Tornado" title=" begin_date_time = Jun 2015 
+ Injuries (Sum) = 26 
+ event_type = Tornado" coords="533,337,536,337,536,340,533,340,533,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2015 
+ Injuries (Sum) = 106 
+ event_type = Tornado" title=" begin_date_time = May 2015 
+ Injuries (Sum) = 106 
+ event_type = Tornado" coords="532,331,534,331,534,340,532,340,532,331,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2015 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = Apr 2015 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="530,338,533,338,533,340,530,340,530,338,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2015 
+ Injuries (Sum) = 37 
+ event_type = Tornado" title=" begin_date_time = Mar 2015 
+ Injuries (Sum) = 37 
+ event_type = Tornado" coords="529,337,531,337,531,340,529,340,529,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2015 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Feb 2015 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="527,339,530,339,530,340,527,340,527,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2015 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Jan 2015 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="526,339,528,339,528,340,526,340,526,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2014 
+ Injuries (Sum) = 60 
+ event_type = Tornado" title=" begin_date_time = Dec 2014 
+ Injuries (Sum) = 60 
+ event_type = Tornado" coords="524,335,527,335,527,340,524,340,524,335,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2014 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Nov 2014 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="523,339,525,339,525,340,523,340,523,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2014 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Oct 2014 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="521,339,524,339,524,340,521,340,521,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2014 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Sep 2014 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="520,339,522,339,522,340,520,340,520,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2014 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Aug 2014 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="518,339,521,339,521,340,518,340,518,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2014 
+ Injuries (Sum) = 27 
+ event_type = Tornado" title=" begin_date_time = Jul 2014 
+ Injuries (Sum) = 27 
+ event_type = Tornado" coords="517,337,519,337,519,340,517,340,517,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2014 
+ Injuries (Sum) = 37 
+ event_type = Tornado" title=" begin_date_time = Jun 2014 
+ Injuries (Sum) = 37 
+ event_type = Tornado" coords="515,337,518,337,518,340,515,340,515,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2014 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = May 2014 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="514,338,516,338,516,340,514,340,514,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2014 
+ Injuries (Sum) = 491 
+ event_type = Tornado" title=" begin_date_time = Apr 2014 
+ Injuries (Sum) = 491 
+ event_type = Tornado" coords="512,303,515,303,515,340,512,340,512,303,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2014 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Mar 2014 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="511,339,513,339,513,340,511,340,511,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2014 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Feb 2014 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="509,339,512,339,512,340,509,340,509,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2014 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Jan 2014 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="508,339,510,339,510,340,508,340,508,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2013 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Dec 2013 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="506,339,509,339,509,340,506,340,506,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2013 
+ Injuries (Sum) = 196 
+ event_type = Tornado" title=" begin_date_time = Nov 2013 
+ Injuries (Sum) = 196 
+ event_type = Tornado" coords="505,325,507,325,507,340,505,340,505,325,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2013 
+ Injuries (Sum) = 25 
+ event_type = Tornado" title=" begin_date_time = Oct 2013 
+ Injuries (Sum) = 25 
+ event_type = Tornado" coords="504,337,506,337,506,340,504,340,504,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2013 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Sep 2013 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="502,339,504,339,504,340,502,340,502,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2013 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Aug 2013 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="501,339,503,339,503,340,501,340,501,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2013 
+ Injuries (Sum) = 15 
+ event_type = Tornado" title=" begin_date_time = Jul 2013 
+ Injuries (Sum) = 15 
+ event_type = Tornado" coords="499,338,501,338,501,340,499,340,499,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2013 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Jun 2013 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="498,339,500,339,500,340,498,340,498,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2013 
+ Injuries (Sum) = 363 
+ event_type = Tornado" title=" begin_date_time = May 2013 
+ Injuries (Sum) = 363 
+ event_type = Tornado" coords="496,312,498,312,498,340,496,340,496,312,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2013 
+ Injuries (Sum) = 24 
+ event_type = Tornado" title=" begin_date_time = Apr 2013 
+ Injuries (Sum) = 24 
+ event_type = Tornado" coords="495,337,497,337,497,340,495,340,495,337,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2013 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Mar 2013 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="493,339,495,339,495,340,493,340,493,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2013 
+ Injuries (Sum) = 77 
+ event_type = Tornado" title=" begin_date_time = Feb 2013 
+ Injuries (Sum) = 77 
+ event_type = Tornado" coords="492,334,494,334,494,340,492,340,492,334,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2013 
+ Injuries (Sum) = 27 
+ event_type = Tornado" title=" begin_date_time = Jan 2013 
+ Injuries (Sum) = 27 
+ event_type = Tornado" coords="490,337,492,337,492,340,490,340,490,337,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2012 
+ Injuries (Sum) = 26 
+ event_type = Tornado" title=" begin_date_time = Dec 2012 
+ Injuries (Sum) = 26 
+ event_type = Tornado" coords="489,337,491,337,491,340,489,340,489,337,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2012 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Nov 2012 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="487,339,489,339,489,340,487,340,487,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2012 
+ Injuries (Sum) = 25 
+ event_type = Tornado" title=" begin_date_time = Oct 2012 
+ Injuries (Sum) = 25 
+ event_type = Tornado" coords="486,337,488,337,488,340,486,340,486,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2012 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Sep 2012 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="484,339,486,339,486,340,484,340,484,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2012 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Aug 2012 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="483,339,485,339,485,340,483,340,483,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2012 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Jul 2012 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="481,339,483,339,483,340,481,340,481,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2012 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Jun 2012 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="480,339,482,339,482,340,480,340,480,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2012 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = May 2012 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="478,338,480,338,480,340,478,340,478,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2012 
+ Injuries (Sum) = 137 
+ event_type = Tornado" title=" begin_date_time = Apr 2012 
+ Injuries (Sum) = 137 
+ event_type = Tornado" coords="477,329,479,329,479,340,477,340,477,329,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2012 
+ Injuries (Sum) = 323 
+ event_type = Tornado" title=" begin_date_time = Mar 2012 
+ Injuries (Sum) = 323 
+ event_type = Tornado" coords="475,315,477,315,477,340,475,340,475,315,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2012 
+ Injuries (Sum) = 206 
+ event_type = Tornado" title=" begin_date_time = Feb 2012 
+ Injuries (Sum) = 206 
+ event_type = Tornado" coords="474,324,476,324,476,340,474,340,474,324,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2012 
+ Injuries (Sum) = 99 
+ event_type = Tornado" title=" begin_date_time = Jan 2012 
+ Injuries (Sum) = 99 
+ event_type = Tornado" coords="472,332,474,332,474,340,472,340,472,332,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2011 
+ Injuries (Sum) = 7 
+ event_type = Tornado" title=" begin_date_time = Dec 2011 
+ Injuries (Sum) = 7 
+ event_type = Tornado" coords="471,339,473,339,473,340,471,340,471,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2011 
+ Injuries (Sum) = 40 
+ event_type = Tornado" title=" begin_date_time = Nov 2011 
+ Injuries (Sum) = 40 
+ event_type = Tornado" coords="469,336,471,336,471,340,469,340,469,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2011 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Oct 2011 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="468,339,470,339,470,340,468,340,468,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2011 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Sep 2011 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="466,339,469,339,469,340,466,340,466,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2011 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Aug 2011 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="465,339,467,339,467,340,465,340,465,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2011 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Jul 2011 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="463,339,466,339,466,340,463,340,463,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2011 
+ Injuries (Sum) = 207 
+ event_type = Tornado" title=" begin_date_time = Jun 2011 
+ Injuries (Sum) = 207 
+ event_type = Tornado" coords="462,324,464,324,464,340,462,340,462,324,"/>
+<Area shape="poly" alt=" begin_date_time = May 2011 
+ Injuries (Sum) = 1635 
+ event_type = Tornado" title=" begin_date_time = May 2011 
+ Injuries (Sum) = 1635 
+ event_type = Tornado" coords="460,217,463,217,463,340,460,340,460,217,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2011 
+ Injuries (Sum) = 3701 
+ event_type = Tornado" title=" begin_date_time = Apr 2011 
+ Injuries (Sum) = 3701 
+ event_type = Tornado" coords="459,62,461,62,461,340,459,340,459,62,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2011 
+ Injuries (Sum) = 31 
+ event_type = Tornado" title=" begin_date_time = Mar 2011 
+ Injuries (Sum) = 31 
+ event_type = Tornado" coords="457,337,460,337,460,340,457,340,457,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2011 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Feb 2011 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="456,339,458,339,458,340,456,340,456,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2011 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Jan 2011 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="454,339,457,339,457,340,454,340,454,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2010 
+ Injuries (Sum) = 31 
+ event_type = Tornado" title=" begin_date_time = Dec 2010 
+ Injuries (Sum) = 31 
+ event_type = Tornado" coords="453,337,455,337,455,340,453,340,453,337,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2010 
+ Injuries (Sum) = 44 
+ event_type = Tornado" title=" begin_date_time = Nov 2010 
+ Injuries (Sum) = 44 
+ event_type = Tornado" coords="451,336,454,336,454,340,451,340,451,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2010 
+ Injuries (Sum) = 34 
+ event_type = Tornado" title=" begin_date_time = Oct 2010 
+ Injuries (Sum) = 34 
+ event_type = Tornado" coords="450,337,452,337,452,340,450,340,450,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2010 
+ Injuries (Sum) = 29 
+ event_type = Tornado" title=" begin_date_time = Sep 2010 
+ Injuries (Sum) = 29 
+ event_type = Tornado" coords="448,337,451,337,451,340,448,340,448,337,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2010 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Aug 2010 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="447,339,449,339,449,340,447,340,447,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2010 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = Jul 2010 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="445,338,448,338,448,340,445,340,445,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2010 
+ Injuries (Sum) = 162 
+ event_type = Tornado" title=" begin_date_time = Jun 2010 
+ Injuries (Sum) = 162 
+ event_type = Tornado" coords="444,327,446,327,446,340,444,340,444,327,"/>
+<Area shape="poly" alt=" begin_date_time = May 2010 
+ Injuries (Sum) = 147 
+ event_type = Tornado" title=" begin_date_time = May 2010 
+ Injuries (Sum) = 147 
+ event_type = Tornado" coords="442,328,445,328,445,340,442,340,442,328,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2010 
+ Injuries (Sum) = 228 
+ event_type = Tornado" title=" begin_date_time = Apr 2010 
+ Injuries (Sum) = 228 
+ event_type = Tornado" coords="441,322,443,322,443,340,441,340,441,322,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2010 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = Mar 2010 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="439,338,442,338,442,340,439,340,439,338,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2010 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Feb 2010 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="438,339,440,339,440,340,438,340,438,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2010 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Jan 2010 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="436,339,439,339,439,340,436,340,436,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2009 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Dec 2009 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="435,339,437,339,437,340,435,340,435,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2009 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Nov 2009 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="433,339,436,339,436,340,433,340,433,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2009 
+ Injuries (Sum) = 22 
+ event_type = Tornado" title=" begin_date_time = Oct 2009 
+ Injuries (Sum) = 22 
+ event_type = Tornado" coords="432,338,434,338,434,340,432,340,432,338,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2009 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Sep 2009 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="430,339,433,339,433,340,430,340,430,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2009 
+ Injuries (Sum) = 37 
+ event_type = Tornado" title=" begin_date_time = Aug 2009 
+ Injuries (Sum) = 37 
+ event_type = Tornado" coords="429,337,431,337,431,340,429,340,429,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2009 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Jul 2009 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="427,339,430,339,430,340,427,340,427,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2009 
+ Injuries (Sum) = 6 
+ event_type = Tornado" title=" begin_date_time = Jun 2009 
+ Injuries (Sum) = 6 
+ event_type = Tornado" coords="426,339,428,339,428,340,426,340,426,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2009 
+ Injuries (Sum) = 49 
+ event_type = Tornado" title=" begin_date_time = May 2009 
+ Injuries (Sum) = 49 
+ event_type = Tornado" coords="425,336,427,336,427,340,425,340,425,336,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2009 
+ Injuries (Sum) = 169 
+ event_type = Tornado" title=" begin_date_time = Apr 2009 
+ Injuries (Sum) = 169 
+ event_type = Tornado" coords="423,327,425,327,425,340,423,340,423,327,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2009 
+ Injuries (Sum) = 47 
+ event_type = Tornado" title=" begin_date_time = Mar 2009 
+ Injuries (Sum) = 47 
+ event_type = Tornado" coords="422,336,424,336,424,340,422,340,422,336,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2009 
+ Injuries (Sum) = 57 
+ event_type = Tornado" title=" begin_date_time = Feb 2009 
+ Injuries (Sum) = 57 
+ event_type = Tornado" coords="420,335,422,335,422,340,420,340,420,335,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2009 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Jan 2009 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="419,339,421,339,421,340,419,340,419,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2008 
+ Injuries (Sum) = 7 
+ event_type = Tornado" title=" begin_date_time = Dec 2008 
+ Injuries (Sum) = 7 
+ event_type = Tornado" coords="417,339,419,339,419,340,417,340,417,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2008 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Nov 2008 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="416,339,418,339,418,340,416,340,416,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2008 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Oct 2008 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="414,339,416,339,416,340,414,340,414,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2008 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Sep 2008 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="413,339,415,339,415,340,413,340,413,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2008 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Aug 2008 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="411,339,413,339,413,340,411,340,411,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2008 
+ Injuries (Sum) = 7 
+ event_type = Tornado" title=" begin_date_time = Jul 2008 
+ Injuries (Sum) = 7 
+ event_type = Tornado" coords="410,339,412,339,412,340,410,340,410,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2008 
+ Injuries (Sum) = 93 
+ event_type = Tornado" title=" begin_date_time = Jun 2008 
+ Injuries (Sum) = 93 
+ event_type = Tornado" coords="408,332,410,332,410,340,408,340,408,332,"/>
+<Area shape="poly" alt=" begin_date_time = May 2008 
+ Injuries (Sum) = 690 
+ event_type = Tornado" title=" begin_date_time = May 2008 
+ Injuries (Sum) = 690 
+ event_type = Tornado" coords="407,288,409,288,409,340,407,340,407,288,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2008 
+ Injuries (Sum) = 258 
+ event_type = Tornado" title=" begin_date_time = Apr 2008 
+ Injuries (Sum) = 258 
+ event_type = Tornado" coords="405,320,407,320,407,340,405,340,405,320,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2008 
+ Injuries (Sum) = 90 
+ event_type = Tornado" title=" begin_date_time = Mar 2008 
+ Injuries (Sum) = 90 
+ event_type = Tornado" coords="404,333,406,333,406,340,404,340,404,333,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2008 
+ Injuries (Sum) = 504 
+ event_type = Tornado" title=" begin_date_time = Feb 2008 
+ Injuries (Sum) = 504 
+ event_type = Tornado" coords="402,302,404,302,404,340,402,340,402,302,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2008 
+ Injuries (Sum) = 62 
+ event_type = Tornado" title=" begin_date_time = Jan 2008 
+ Injuries (Sum) = 62 
+ event_type = Tornado" coords="401,335,403,335,403,340,401,340,401,335,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2007 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Dec 2007 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="399,339,401,339,401,340,399,340,399,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2007 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Nov 2007 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="398,339,400,339,400,340,398,340,398,339,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2007 
+ Injuries (Sum) = 40 
+ event_type = Tornado" title=" begin_date_time = Oct 2007 
+ Injuries (Sum) = 40 
+ event_type = Tornado" coords="396,336,398,336,398,340,396,340,396,336,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2007 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Sep 2007 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="395,339,397,339,397,340,395,340,395,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2007 
+ Injuries (Sum) = 33 
+ event_type = Tornado" title=" begin_date_time = Aug 2007 
+ Injuries (Sum) = 33 
+ event_type = Tornado" coords="393,337,395,337,395,340,393,340,393,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2007 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Jul 2007 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="392,339,394,339,394,340,392,340,392,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2007 
+ Injuries (Sum) = 19 
+ event_type = Tornado" title=" begin_date_time = Jun 2007 
+ Injuries (Sum) = 19 
+ event_type = Tornado" coords="390,338,393,338,393,340,390,340,390,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 2007 
+ Injuries (Sum) = 89 
+ event_type = Tornado" title=" begin_date_time = May 2007 
+ Injuries (Sum) = 89 
+ event_type = Tornado" coords="389,333,391,333,391,340,389,340,389,333,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2007 
+ Injuries (Sum) = 63 
+ event_type = Tornado" title=" begin_date_time = Apr 2007 
+ Injuries (Sum) = 63 
+ event_type = Tornado" coords="387,335,390,335,390,340,387,340,387,335,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2007 
+ Injuries (Sum) = 169 
+ event_type = Tornado" title=" begin_date_time = Mar 2007 
+ Injuries (Sum) = 169 
+ event_type = Tornado" coords="386,327,388,327,388,340,386,340,386,327,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2007 
+ Injuries (Sum) = 154 
+ event_type = Tornado" title=" begin_date_time = Feb 2007 
+ Injuries (Sum) = 154 
+ event_type = Tornado" coords="384,328,387,328,387,340,384,340,384,328,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2007 
+ Injuries (Sum) = 39 
+ event_type = Tornado" title=" begin_date_time = Jan 2007 
+ Injuries (Sum) = 39 
+ event_type = Tornado" coords="383,336,385,336,385,340,383,340,383,336,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2006 
+ Injuries (Sum) = 52 
+ event_type = Tornado" title=" begin_date_time = Dec 2006 
+ Injuries (Sum) = 52 
+ event_type = Tornado" coords="381,335,384,335,384,340,381,340,381,335,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2006 
+ Injuries (Sum) = 48 
+ event_type = Tornado" title=" begin_date_time = Nov 2006 
+ Injuries (Sum) = 48 
+ event_type = Tornado" coords="380,336,382,336,382,340,380,340,380,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2006 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Oct 2006 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="378,339,381,339,381,340,378,340,378,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2006 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = Sep 2006 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="377,338,379,338,379,340,377,340,377,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2006 
+ Injuries (Sum) = 47 
+ event_type = Tornado" title=" begin_date_time = Aug 2006 
+ Injuries (Sum) = 47 
+ event_type = Tornado" coords="375,336,378,336,378,340,375,340,375,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2006 
+ Injuries (Sum) = 6 
+ event_type = Tornado" title=" begin_date_time = Jul 2006 
+ Injuries (Sum) = 6 
+ event_type = Tornado" coords="374,339,376,339,376,340,374,340,374,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2006 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = Jun 2006 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="372,338,375,338,375,340,372,340,372,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 2006 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = May 2006 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="371,338,373,338,373,340,371,340,371,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2006 
+ Injuries (Sum) = 550 
+ event_type = Tornado" title=" begin_date_time = Apr 2006 
+ Injuries (Sum) = 550 
+ event_type = Tornado" coords="369,298,372,298,372,340,369,340,369,298,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2006 
+ Injuries (Sum) = 195 
+ event_type = Tornado" title=" begin_date_time = Mar 2006 
+ Injuries (Sum) = 195 
+ event_type = Tornado" coords="368,325,370,325,370,340,368,340,368,325,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2006 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Feb 2006 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="366,339,369,339,369,340,366,340,366,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2006 
+ Injuries (Sum) = 41 
+ event_type = Tornado" title=" begin_date_time = Jan 2006 
+ Injuries (Sum) = 41 
+ event_type = Tornado" coords="365,336,367,336,367,340,365,340,365,336,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2005 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Dec 2005 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="363,339,366,339,366,340,363,340,363,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2005 
+ Injuries (Sum) = 377 
+ event_type = Tornado" title=" begin_date_time = Nov 2005 
+ Injuries (Sum) = 377 
+ event_type = Tornado" coords="362,311,364,311,364,340,362,340,362,311,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2005 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Oct 2005 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="360,339,363,339,363,340,360,340,360,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2005 
+ Injuries (Sum) = 33 
+ event_type = Tornado" title=" begin_date_time = Sep 2005 
+ Injuries (Sum) = 33 
+ event_type = Tornado" coords="359,337,361,337,361,340,359,340,359,337,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2005 
+ Injuries (Sum) = 49 
+ event_type = Tornado" title=" begin_date_time = Aug 2005 
+ Injuries (Sum) = 49 
+ event_type = Tornado" coords="357,336,360,336,360,340,357,340,357,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2005 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Jul 2005 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="356,339,358,339,358,340,356,340,356,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2005 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Jun 2005 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="354,339,357,339,357,340,354,340,354,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2005 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = May 2005 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="353,339,355,339,355,340,353,340,353,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2005 
+ Injuries (Sum) = 15 
+ event_type = Tornado" title=" begin_date_time = Apr 2005 
+ Injuries (Sum) = 15 
+ event_type = Tornado" coords="351,338,354,338,354,340,351,340,351,338,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2005 
+ Injuries (Sum) = 23 
+ event_type = Tornado" title=" begin_date_time = Mar 2005 
+ Injuries (Sum) = 23 
+ event_type = Tornado" coords="350,338,352,338,352,340,350,340,350,338,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2005 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Feb 2005 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="349,339,351,339,351,340,349,340,349,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2005 
+ Injuries (Sum) = 31 
+ event_type = Tornado" title=" begin_date_time = Jan 2005 
+ Injuries (Sum) = 31 
+ event_type = Tornado" coords="347,337,349,337,349,340,347,340,347,337,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2004 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Dec 2004 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="346,339,348,339,348,340,346,340,346,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2004 
+ Injuries (Sum) = 43 
+ event_type = Tornado" title=" begin_date_time = Nov 2004 
+ Injuries (Sum) = 43 
+ event_type = Tornado" coords="344,336,346,336,346,340,344,340,344,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2004 
+ Injuries (Sum) = 30 
+ event_type = Tornado" title=" begin_date_time = Oct 2004 
+ Injuries (Sum) = 30 
+ event_type = Tornado" coords="343,337,345,337,345,340,343,340,343,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2004 
+ Injuries (Sum) = 72 
+ event_type = Tornado" title=" begin_date_time = Sep 2004 
+ Injuries (Sum) = 72 
+ event_type = Tornado" coords="341,334,343,334,343,340,341,340,341,334,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2004 
+ Injuries (Sum) = 38 
+ event_type = Tornado" title=" begin_date_time = Aug 2004 
+ Injuries (Sum) = 38 
+ event_type = Tornado" coords="340,336,342,336,342,340,340,340,340,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2004 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Jul 2004 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="338,339,340,339,340,340,338,340,338,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2004 
+ Injuries (Sum) = 35 
+ event_type = Tornado" title=" begin_date_time = Jun 2004 
+ Injuries (Sum) = 35 
+ event_type = Tornado" coords="337,337,339,337,339,340,337,340,337,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2004 
+ Injuries (Sum) = 131 
+ event_type = Tornado" title=" begin_date_time = May 2004 
+ Injuries (Sum) = 131 
+ event_type = Tornado" coords="335,329,337,329,337,340,335,340,335,329,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2004 
+ Injuries (Sum) = 26 
+ event_type = Tornado" title=" begin_date_time = Apr 2004 
+ Injuries (Sum) = 26 
+ event_type = Tornado" coords="334,337,336,337,336,340,334,340,334,337,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2004 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Mar 2004 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="332,339,334,339,334,340,332,340,332,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2004 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Feb 2004 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="331,339,333,339,333,340,331,340,331,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2004 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Jan 2004 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="329,339,331,339,331,340,329,340,329,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2003 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Dec 2003 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="328,339,330,339,330,340,328,340,328,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2003 
+ Injuries (Sum) = 84 
+ event_type = Tornado" title=" begin_date_time = Nov 2003 
+ Injuries (Sum) = 84 
+ event_type = Tornado" coords="326,333,328,333,328,340,326,340,326,333,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2003 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Oct 2003 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="325,339,327,339,327,340,325,340,325,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2003 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Sep 2003 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="323,339,325,339,325,340,323,340,323,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2003 
+ Injuries (Sum) = 30 
+ event_type = Tornado" title=" begin_date_time = Aug 2003 
+ Injuries (Sum) = 30 
+ event_type = Tornado" coords="322,337,324,337,324,340,322,340,322,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2003 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Jul 2003 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="320,339,322,339,322,340,320,340,320,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2003 
+ Injuries (Sum) = 27 
+ event_type = Tornado" title=" begin_date_time = Jun 2003 
+ Injuries (Sum) = 27 
+ event_type = Tornado" coords="319,337,321,337,321,340,319,340,319,337,"/>
+<Area shape="poly" alt=" begin_date_time = May 2003 
+ Injuries (Sum) = 660 
+ event_type = Tornado" title=" begin_date_time = May 2003 
+ Injuries (Sum) = 660 
+ event_type = Tornado" coords="317,290,319,290,319,340,317,340,317,290,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2003 
+ Injuries (Sum) = 39 
+ event_type = Tornado" title=" begin_date_time = Apr 2003 
+ Injuries (Sum) = 39 
+ event_type = Tornado" coords="316,336,318,336,318,340,316,340,316,336,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2003 
+ Injuries (Sum) = 225 
+ event_type = Tornado" title=" begin_date_time = Mar 2003 
+ Injuries (Sum) = 225 
+ event_type = Tornado" coords="314,322,317,322,317,340,314,340,314,322,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2003 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Feb 2003 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="313,339,315,339,315,340,313,340,313,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2002 
+ Injuries (Sum) = 57 
+ event_type = Tornado" title=" begin_date_time = Dec 2002 
+ Injuries (Sum) = 57 
+ event_type = Tornado" coords="311,335,314,335,314,340,311,340,311,335,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2002 
+ Injuries (Sum) = 332 
+ event_type = Tornado" title=" begin_date_time = Nov 2002 
+ Injuries (Sum) = 332 
+ event_type = Tornado" coords="310,314,312,314,312,340,310,340,310,314,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2002 
+ Injuries (Sum) = 39 
+ event_type = Tornado" title=" begin_date_time = Oct 2002 
+ Injuries (Sum) = 39 
+ event_type = Tornado" coords="308,336,311,336,311,340,308,340,308,336,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2002 
+ Injuries (Sum) = 162 
+ event_type = Tornado" title=" begin_date_time = Sep 2002 
+ Injuries (Sum) = 162 
+ event_type = Tornado" coords="307,327,309,327,309,340,307,340,307,327,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2002 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Aug 2002 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="305,339,308,339,308,340,305,340,305,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2002 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Jul 2002 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="304,339,306,339,306,340,304,340,304,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2002 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Jun 2002 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="302,339,305,339,305,340,302,340,302,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2002 
+ Injuries (Sum) = 19 
+ event_type = Tornado" title=" begin_date_time = May 2002 
+ Injuries (Sum) = 19 
+ event_type = Tornado" coords="301,338,303,338,303,340,301,340,301,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2002 
+ Injuries (Sum) = 318 
+ event_type = Tornado" title=" begin_date_time = Apr 2002 
+ Injuries (Sum) = 318 
+ event_type = Tornado" coords="299,315,302,315,302,340,299,340,299,315,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2002 
+ Injuries (Sum) = 36 
+ event_type = Tornado" title=" begin_date_time = Mar 2002 
+ Injuries (Sum) = 36 
+ event_type = Tornado" coords="298,337,300,337,300,340,298,340,298,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2002 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Feb 2002 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="296,339,299,339,299,340,296,340,296,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2002 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Jan 2002 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="295,339,297,339,297,340,295,340,295,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2001 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Dec 2001 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="293,339,296,339,296,340,293,340,293,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2001 
+ Injuries (Sum) = 267 
+ event_type = Tornado" title=" begin_date_time = Nov 2001 
+ Injuries (Sum) = 267 
+ event_type = Tornado" coords="292,319,294,319,294,340,292,340,292,319,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2001 
+ Injuries (Sum) = 71 
+ event_type = Tornado" title=" begin_date_time = Oct 2001 
+ Injuries (Sum) = 71 
+ event_type = Tornado" coords="290,334,293,334,293,340,290,340,290,334,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2001 
+ Injuries (Sum) = 62 
+ event_type = Tornado" title=" begin_date_time = Sep 2001 
+ Injuries (Sum) = 62 
+ event_type = Tornado" coords="289,335,291,335,291,340,289,340,289,335,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2001 
+ Injuries (Sum) = 6 
+ event_type = Tornado" title=" begin_date_time = Aug 2001 
+ Injuries (Sum) = 6 
+ event_type = Tornado" coords="287,339,290,339,290,340,287,340,287,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2001 
+ Injuries (Sum) = 40 
+ event_type = Tornado" title=" begin_date_time = Jul 2001 
+ Injuries (Sum) = 40 
+ event_type = Tornado" coords="286,336,288,336,288,340,286,340,286,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2001 
+ Injuries (Sum) = 53 
+ event_type = Tornado" title=" begin_date_time = Jun 2001 
+ Injuries (Sum) = 53 
+ event_type = Tornado" coords="284,335,287,335,287,340,284,340,284,335,"/>
+<Area shape="poly" alt=" begin_date_time = May 2001 
+ Injuries (Sum) = 30 
+ event_type = Tornado" title=" begin_date_time = May 2001 
+ Injuries (Sum) = 30 
+ event_type = Tornado" coords="283,337,285,337,285,340,283,340,283,337,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2001 
+ Injuries (Sum) = 54 
+ event_type = Tornado" title=" begin_date_time = Apr 2001 
+ Injuries (Sum) = 54 
+ event_type = Tornado" coords="281,335,284,335,284,340,281,340,281,335,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2001 
+ Injuries (Sum) = 55 
+ event_type = Tornado" title=" begin_date_time = Mar 2001 
+ Injuries (Sum) = 55 
+ event_type = Tornado" coords="280,335,282,335,282,340,280,340,280,335,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2001 
+ Injuries (Sum) = 91 
+ event_type = Tornado" title=" begin_date_time = Feb 2001 
+ Injuries (Sum) = 91 
+ event_type = Tornado" coords="278,332,281,332,281,340,278,340,278,332,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2001 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = Jan 2001 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="277,338,279,338,279,340,277,340,277,338,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 2000 
+ Injuries (Sum) = 194 
+ event_type = Tornado" title=" begin_date_time = Dec 2000 
+ Injuries (Sum) = 194 
+ event_type = Tornado" coords="275,325,278,325,278,340,275,340,275,325,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 2000 
+ Injuries (Sum) = 11 
+ event_type = Tornado" title=" begin_date_time = Nov 2000 
+ Injuries (Sum) = 11 
+ event_type = Tornado" coords="274,338,276,338,276,340,274,340,274,338,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 2000 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Oct 2000 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="273,339,275,339,275,340,273,340,273,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 2000 
+ Injuries (Sum) = 109 
+ event_type = Tornado" title=" begin_date_time = Sep 2000 
+ Injuries (Sum) = 109 
+ event_type = Tornado" coords="271,331,273,331,273,340,271,340,271,331,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 2000 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Aug 2000 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="270,339,272,339,272,340,270,340,270,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 2000 
+ Injuries (Sum) = 23 
+ event_type = Tornado" title=" begin_date_time = Jul 2000 
+ Injuries (Sum) = 23 
+ event_type = Tornado" coords="268,338,270,338,270,340,268,340,268,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 2000 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Jun 2000 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="267,339,269,339,269,340,267,340,267,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 2000 
+ Injuries (Sum) = 60 
+ event_type = Tornado" title=" begin_date_time = May 2000 
+ Injuries (Sum) = 60 
+ event_type = Tornado" coords="265,335,267,335,267,340,265,340,265,335,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 2000 
+ Injuries (Sum) = 83 
+ event_type = Tornado" title=" begin_date_time = Apr 2000 
+ Injuries (Sum) = 83 
+ event_type = Tornado" coords="264,333,266,333,266,340,264,340,264,333,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 2000 
+ Injuries (Sum) = 143 
+ event_type = Tornado" title=" begin_date_time = Mar 2000 
+ Injuries (Sum) = 143 
+ event_type = Tornado" coords="262,329,264,329,264,340,262,340,262,329,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 2000 
+ Injuries (Sum) = 215 
+ event_type = Tornado" title=" begin_date_time = Feb 2000 
+ Injuries (Sum) = 215 
+ event_type = Tornado" coords="261,323,263,323,263,340,261,340,261,323,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 2000 
+ Injuries (Sum) = 29 
+ event_type = Tornado" title=" begin_date_time = Jan 2000 
+ Injuries (Sum) = 29 
+ event_type = Tornado" coords="259,337,261,337,261,340,259,340,259,337,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1999 
+ Injuries (Sum) = 6 
+ event_type = Tornado" title=" begin_date_time = Dec 1999 
+ Injuries (Sum) = 6 
+ event_type = Tornado" coords="258,339,260,339,260,340,258,340,258,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1999 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = Nov 1999 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="256,338,258,338,258,340,256,340,256,338,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1999 
+ Injuries (Sum) = 11 
+ event_type = Tornado" title=" begin_date_time = Oct 1999 
+ Injuries (Sum) = 11 
+ event_type = Tornado" coords="255,338,257,338,257,340,255,340,255,338,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1999 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = Sep 1999 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="253,338,255,338,255,340,253,340,253,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1999 
+ Injuries (Sum) = 85 
+ event_type = Tornado" title=" begin_date_time = Aug 1999 
+ Injuries (Sum) = 85 
+ event_type = Tornado" coords="252,333,254,333,254,340,252,340,252,333,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1999 
+ Injuries (Sum) = 38 
+ event_type = Tornado" title=" begin_date_time = Jul 1999 
+ Injuries (Sum) = 38 
+ event_type = Tornado" coords="250,336,252,336,252,340,250,340,250,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1999 
+ Injuries (Sum) = 70 
+ event_type = Tornado" title=" begin_date_time = Jun 1999 
+ Injuries (Sum) = 70 
+ event_type = Tornado" coords="249,334,251,334,251,340,249,340,249,334,"/>
+<Area shape="poly" alt=" begin_date_time = May 1999 
+ Injuries (Sum) = 911 
+ event_type = Tornado" title=" begin_date_time = May 1999 
+ Injuries (Sum) = 911 
+ event_type = Tornado" coords="247,271,249,271,249,340,247,340,247,271,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1999 
+ Injuries (Sum) = 314 
+ event_type = Tornado" title=" begin_date_time = Apr 1999 
+ Injuries (Sum) = 314 
+ event_type = Tornado" coords="246,316,248,316,248,340,246,340,246,316,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1999 
+ Injuries (Sum) = 32 
+ event_type = Tornado" title=" begin_date_time = Mar 1999 
+ Injuries (Sum) = 32 
+ event_type = Tornado" coords="244,337,246,337,246,340,244,340,244,337,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1999 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Feb 1999 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="243,339,245,339,245,340,243,340,243,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1999 
+ Injuries (Sum) = 346 
+ event_type = Tornado" title=" begin_date_time = Jan 1999 
+ Injuries (Sum) = 346 
+ event_type = Tornado" coords="241,313,243,313,243,340,241,340,241,313,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1998 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Dec 1998 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="240,339,242,339,242,340,240,340,240,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1998 
+ Injuries (Sum) = 37 
+ event_type = Tornado" title=" begin_date_time = Nov 1998 
+ Injuries (Sum) = 37 
+ event_type = Tornado" coords="238,337,241,337,241,340,238,340,238,337,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1998 
+ Injuries (Sum) = 33 
+ event_type = Tornado" title=" begin_date_time = Oct 1998 
+ Injuries (Sum) = 33 
+ event_type = Tornado" coords="237,337,239,337,239,340,237,340,237,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1998 
+ Injuries (Sum) = 82 
+ event_type = Tornado" title=" begin_date_time = Sep 1998 
+ Injuries (Sum) = 82 
+ event_type = Tornado" coords="235,333,238,333,238,340,235,340,235,333,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1998 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Aug 1998 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="234,339,236,339,236,340,234,340,234,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1998 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Jul 1998 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="232,339,235,339,235,340,232,340,232,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1998 
+ Injuries (Sum) = 251 
+ event_type = Tornado" title=" begin_date_time = Jun 1998 
+ Injuries (Sum) = 251 
+ event_type = Tornado" coords="231,321,233,321,233,340,231,340,231,321,"/>
+<Area shape="poly" alt=" begin_date_time = May 1998 
+ Injuries (Sum) = 412 
+ event_type = Tornado" title=" begin_date_time = May 1998 
+ Injuries (Sum) = 412 
+ event_type = Tornado" coords="229,308,232,308,232,340,229,340,229,308,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1998 
+ Injuries (Sum) = 509 
+ event_type = Tornado" title=" begin_date_time = Apr 1998 
+ Injuries (Sum) = 509 
+ event_type = Tornado" coords="228,301,230,301,230,340,228,340,228,301,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1998 
+ Injuries (Sum) = 248 
+ event_type = Tornado" title=" begin_date_time = Mar 1998 
+ Injuries (Sum) = 248 
+ event_type = Tornado" coords="226,321,229,321,229,340,226,340,226,321,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1998 
+ Injuries (Sum) = 282 
+ event_type = Tornado" title=" begin_date_time = Feb 1998 
+ Injuries (Sum) = 282 
+ event_type = Tornado" coords="225,318,227,318,227,340,225,340,225,318,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1998 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Jan 1998 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="223,339,226,339,226,340,223,340,223,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1997 
+ Injuries (Sum) = 28 
+ event_type = Tornado" title=" begin_date_time = Dec 1997 
+ Injuries (Sum) = 28 
+ event_type = Tornado" coords="222,337,224,337,224,340,222,340,222,337,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1997 
+ Injuries (Sum) = 78 
+ event_type = Tornado" title=" begin_date_time = Nov 1997 
+ Injuries (Sum) = 78 
+ event_type = Tornado" coords="220,333,223,333,223,340,220,340,220,333,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1997 
+ Injuries (Sum) = 33 
+ event_type = Tornado" title=" begin_date_time = Oct 1997 
+ Injuries (Sum) = 33 
+ event_type = Tornado" coords="219,337,221,337,221,340,219,340,219,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1997 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Sep 1997 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="217,339,220,339,220,340,217,340,217,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1997 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Aug 1997 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="216,339,218,339,218,340,216,340,216,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1997 
+ Injuries (Sum) = 119 
+ event_type = Tornado" title=" begin_date_time = Jul 1997 
+ Injuries (Sum) = 119 
+ event_type = Tornado" coords="214,330,217,330,217,340,214,340,214,330,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1997 
+ Injuries (Sum) = 23 
+ event_type = Tornado" title=" begin_date_time = Jun 1997 
+ Injuries (Sum) = 23 
+ event_type = Tornado" coords="213,338,215,338,215,340,213,340,213,338,"/>
+<Area shape="poly" alt=" begin_date_time = May 1997 
+ Injuries (Sum) = 69 
+ event_type = Tornado" title=" begin_date_time = May 1997 
+ Injuries (Sum) = 69 
+ event_type = Tornado" coords="211,334,214,334,214,340,211,340,211,334,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1997 
+ Injuries (Sum) = 26 
+ event_type = Tornado" title=" begin_date_time = Apr 1997 
+ Injuries (Sum) = 26 
+ event_type = Tornado" coords="210,337,212,337,212,340,210,340,210,337,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1997 
+ Injuries (Sum) = 589 
+ event_type = Tornado" title=" begin_date_time = Mar 1997 
+ Injuries (Sum) = 589 
+ event_type = Tornado" coords="208,295,211,295,211,340,208,340,208,295,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1997 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Feb 1997 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="207,339,209,339,209,340,207,340,207,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1997 
+ Injuries (Sum) = 60 
+ event_type = Tornado" title=" begin_date_time = Jan 1997 
+ Injuries (Sum) = 60 
+ event_type = Tornado" coords="205,335,208,335,208,340,205,340,205,335,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1996 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Dec 1996 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="204,339,206,339,206,340,204,340,204,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1996 
+ Injuries (Sum) = 49 
+ event_type = Tornado" title=" begin_date_time = Nov 1996 
+ Injuries (Sum) = 49 
+ event_type = Tornado" coords="202,336,205,336,205,340,202,340,202,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1996 
+ Injuries (Sum) = 26 
+ event_type = Tornado" title=" begin_date_time = Oct 1996 
+ Injuries (Sum) = 26 
+ event_type = Tornado" coords="201,337,203,337,203,340,201,340,201,337,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1996 
+ Injuries (Sum) = 28 
+ event_type = Tornado" title=" begin_date_time = Sep 1996 
+ Injuries (Sum) = 28 
+ event_type = Tornado" coords="199,337,202,337,202,340,199,340,199,337,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1996 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Aug 1996 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="198,339,200,339,200,340,198,340,198,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1996 
+ Injuries (Sum) = 41 
+ event_type = Tornado" title=" begin_date_time = Jul 1996 
+ Injuries (Sum) = 41 
+ event_type = Tornado" coords="197,336,199,336,199,340,197,340,197,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1996 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Jun 1996 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="195,339,197,339,197,340,195,340,195,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1996 
+ Injuries (Sum) = 53 
+ event_type = Tornado" title=" begin_date_time = May 1996 
+ Injuries (Sum) = 53 
+ event_type = Tornado" coords="194,335,196,335,196,340,194,340,194,335,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1996 
+ Injuries (Sum) = 318 
+ event_type = Tornado" title=" begin_date_time = Apr 1996 
+ Injuries (Sum) = 318 
+ event_type = Tornado" coords="192,315,194,315,194,340,192,340,192,315,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1996 
+ Injuries (Sum) = 115 
+ event_type = Tornado" title=" begin_date_time = Mar 1996 
+ Injuries (Sum) = 115 
+ event_type = Tornado" coords="191,331,193,331,193,340,191,340,191,331,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1996 
+ Injuries (Sum) = 15 
+ event_type = Tornado" title=" begin_date_time = Feb 1996 
+ Injuries (Sum) = 15 
+ event_type = Tornado" coords="189,338,191,338,191,340,189,340,189,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1996 
+ Injuries (Sum) = 58 
+ event_type = Tornado" title=" begin_date_time = Jan 1996 
+ Injuries (Sum) = 58 
+ event_type = Tornado" coords="188,335,190,335,190,340,188,340,188,335,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1995 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Dec 1995 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="186,339,188,339,188,340,186,340,186,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1995 
+ Injuries (Sum) = 89 
+ event_type = Tornado" title=" begin_date_time = Nov 1995 
+ Injuries (Sum) = 89 
+ event_type = Tornado" coords="185,333,187,333,187,340,185,340,185,333,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1995 
+ Injuries (Sum) = 14 
+ event_type = Tornado" title=" begin_date_time = Oct 1995 
+ Injuries (Sum) = 14 
+ event_type = Tornado" coords="183,338,185,338,185,340,183,340,183,338,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1995 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Sep 1995 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="182,339,184,339,184,340,182,340,182,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1995 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Aug 1995 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="180,339,182,339,182,340,180,340,180,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1995 
+ Injuries (Sum) = 15 
+ event_type = Tornado" title=" begin_date_time = Jul 1995 
+ Injuries (Sum) = 15 
+ event_type = Tornado" coords="179,338,181,338,181,340,179,340,179,338,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1995 
+ Injuries (Sum) = 294 
+ event_type = Tornado" title=" begin_date_time = Jun 1995 
+ Injuries (Sum) = 294 
+ event_type = Tornado" coords="177,317,179,317,179,340,177,340,177,317,"/>
+<Area shape="poly" alt=" begin_date_time = May 1995 
+ Injuries (Sum) = 439 
+ event_type = Tornado" title=" begin_date_time = May 1995 
+ Injuries (Sum) = 439 
+ event_type = Tornado" coords="176,306,178,306,178,340,176,340,176,306,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1995 
+ Injuries (Sum) = 45 
+ event_type = Tornado" title=" begin_date_time = Apr 1995 
+ Injuries (Sum) = 45 
+ event_type = Tornado" coords="174,336,176,336,176,340,174,340,174,336,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1995 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Mar 1995 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="173,339,175,339,175,340,173,340,173,339,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1995 
+ Injuries (Sum) = 133 
+ event_type = Tornado" title=" begin_date_time = Feb 1995 
+ Injuries (Sum) = 133 
+ event_type = Tornado" coords="171,329,173,329,173,340,171,340,171,329,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1995 
+ Injuries (Sum) = 77 
+ event_type = Tornado" title=" begin_date_time = Jan 1995 
+ Injuries (Sum) = 77 
+ event_type = Tornado" coords="170,334,172,334,172,340,170,340,170,334,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1994 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Dec 1994 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="168,339,170,339,170,340,168,340,168,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1994 
+ Injuries (Sum) = 87 
+ event_type = Tornado" title=" begin_date_time = Nov 1994 
+ Injuries (Sum) = 87 
+ event_type = Tornado" coords="167,333,169,333,169,340,167,340,167,333,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1994 
+ Injuries (Sum) = 5 
+ event_type = Tornado" title=" begin_date_time = Oct 1994 
+ Injuries (Sum) = 5 
+ event_type = Tornado" coords="165,339,167,339,167,340,165,340,165,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1994 
+ Injuries (Sum) = 12 
+ event_type = Tornado" title=" begin_date_time = Sep 1994 
+ Injuries (Sum) = 12 
+ event_type = Tornado" coords="164,338,166,338,166,340,164,340,164,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1994 
+ Injuries (Sum) = 62 
+ event_type = Tornado" title=" begin_date_time = Aug 1994 
+ Injuries (Sum) = 62 
+ event_type = Tornado" coords="162,335,164,335,164,340,162,340,162,335,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1994 
+ Injuries (Sum) = 46 
+ event_type = Tornado" title=" begin_date_time = Jul 1994 
+ Injuries (Sum) = 46 
+ event_type = Tornado" coords="161,336,163,336,163,340,161,340,161,336,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1994 
+ Injuries (Sum) = 75 
+ event_type = Tornado" title=" begin_date_time = Jun 1994 
+ Injuries (Sum) = 75 
+ event_type = Tornado" coords="159,334,162,334,162,340,159,340,159,334,"/>
+<Area shape="poly" alt=" begin_date_time = May 1994 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = May 1994 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="158,339,160,339,160,340,158,340,158,339,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1994 
+ Injuries (Sum) = 224 
+ event_type = Tornado" title=" begin_date_time = Apr 1994 
+ Injuries (Sum) = 224 
+ event_type = Tornado" coords="156,323,159,323,159,340,156,340,156,323,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1994 
+ Injuries (Sum) = 271 
+ event_type = Tornado" title=" begin_date_time = Mar 1994 
+ Injuries (Sum) = 271 
+ event_type = Tornado" coords="155,319,157,319,157,340,155,340,155,319,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1994 
+ Injuries (Sum) = 7 
+ event_type = Tornado" title=" begin_date_time = Feb 1994 
+ Injuries (Sum) = 7 
+ event_type = Tornado" coords="153,339,156,339,156,340,153,340,153,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1994 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Jan 1994 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="152,339,154,339,154,340,152,340,152,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1993 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Dec 1993 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="150,339,153,339,153,340,150,340,150,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1993 
+ Injuries (Sum) = 42 
+ event_type = Tornado" title=" begin_date_time = Nov 1993 
+ Injuries (Sum) = 42 
+ event_type = Tornado" coords="149,336,151,336,151,340,149,340,149,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1993 
+ Injuries (Sum) = 45 
+ event_type = Tornado" title=" begin_date_time = Oct 1993 
+ Injuries (Sum) = 45 
+ event_type = Tornado" coords="147,336,150,336,150,340,147,340,147,336,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1993 
+ Injuries (Sum) = 15 
+ event_type = Tornado" title=" begin_date_time = Sep 1993 
+ Injuries (Sum) = 15 
+ event_type = Tornado" coords="146,338,148,338,148,340,146,340,146,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1993 
+ Injuries (Sum) = 261 
+ event_type = Tornado" title=" begin_date_time = Aug 1993 
+ Injuries (Sum) = 261 
+ event_type = Tornado" coords="144,320,147,320,147,340,144,340,144,320,"/>
+<Area shape="poly" alt=" begin_date_time = May 1993 
+ Injuries (Sum) = 18 
+ event_type = Tornado" title=" begin_date_time = May 1993 
+ Injuries (Sum) = 18 
+ event_type = Tornado" coords="143,338,145,338,145,340,143,340,143,338,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1993 
+ Injuries (Sum) = 167 
+ event_type = Tornado" title=" begin_date_time = Apr 1993 
+ Injuries (Sum) = 167 
+ event_type = Tornado" coords="141,327,144,327,144,340,141,340,141,327,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1993 
+ Injuries (Sum) = 88 
+ event_type = Tornado" title=" begin_date_time = Mar 1993 
+ Injuries (Sum) = 88 
+ event_type = Tornado" coords="140,333,142,333,142,340,140,340,140,333,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1993 
+ Injuries (Sum) = 135 
+ event_type = Tornado" title=" begin_date_time = Feb 1993 
+ Injuries (Sum) = 135 
+ event_type = Tornado" coords="138,329,141,329,141,340,138,340,138,329,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1993 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Jan 1993 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="137,339,139,339,139,340,137,340,137,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1992 
+ Injuries (Sum) = 6 
+ event_type = Tornado" title=" begin_date_time = Dec 1992 
+ Injuries (Sum) = 6 
+ event_type = Tornado" coords="135,339,138,339,138,340,135,340,135,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1992 
+ Injuries (Sum) = 650 
+ event_type = Tornado" title=" begin_date_time = Nov 1992 
+ Injuries (Sum) = 650 
+ event_type = Tornado" coords="134,291,136,291,136,340,134,340,134,291,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1992 
+ Injuries (Sum) = 105 
+ event_type = Tornado" title=" begin_date_time = Oct 1992 
+ Injuries (Sum) = 105 
+ event_type = Tornado" coords="132,331,135,331,135,340,132,340,132,331,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1992 
+ Injuries (Sum) = 17 
+ event_type = Tornado" title=" begin_date_time = Sep 1992 
+ Injuries (Sum) = 17 
+ event_type = Tornado" coords="131,338,133,338,133,340,131,340,131,338,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1992 
+ Injuries (Sum) = 95 
+ event_type = Tornado" title=" begin_date_time = Aug 1992 
+ Injuries (Sum) = 95 
+ event_type = Tornado" coords="129,332,132,332,132,340,129,340,129,332,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1992 
+ Injuries (Sum) = 134 
+ event_type = Tornado" title=" begin_date_time = Jul 1992 
+ Injuries (Sum) = 134 
+ event_type = Tornado" coords="128,329,130,329,130,340,128,340,128,329,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1992 
+ Injuries (Sum) = 147 
+ event_type = Tornado" title=" begin_date_time = Jun 1992 
+ Injuries (Sum) = 147 
+ event_type = Tornado" coords="126,328,129,328,129,340,126,340,126,328,"/>
+<Area shape="poly" alt=" begin_date_time = May 1992 
+ Injuries (Sum) = 26 
+ event_type = Tornado" title=" begin_date_time = May 1992 
+ Injuries (Sum) = 26 
+ event_type = Tornado" coords="125,337,127,337,127,340,125,340,125,337,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1992 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Apr 1992 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="123,339,126,339,126,340,123,340,123,339,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1992 
+ Injuries (Sum) = 100 
+ event_type = Tornado" title=" begin_date_time = Mar 1992 
+ Injuries (Sum) = 100 
+ event_type = Tornado" coords="122,332,124,332,124,340,122,340,122,332,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1992 
+ Injuries (Sum) = 31 
+ event_type = Tornado" title=" begin_date_time = Feb 1992 
+ Injuries (Sum) = 31 
+ event_type = Tornado" coords="121,337,123,337,123,340,121,340,121,337,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1992 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Jan 1992 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="119,339,121,339,121,340,119,340,119,339,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1991 
+ Injuries (Sum) = 2 
+ event_type = Tornado" title=" begin_date_time = Dec 1991 
+ Injuries (Sum) = 2 
+ event_type = Tornado" coords="118,339,120,339,120,340,118,340,118,339,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1991 
+ Injuries (Sum) = 104 
+ event_type = Tornado" title=" begin_date_time = Nov 1991 
+ Injuries (Sum) = 104 
+ event_type = Tornado" coords="116,332,118,332,118,340,116,340,116,332,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1991 
+ Injuries (Sum) = 0 
+ event_type = Tornado" title=" begin_date_time = Oct 1991 
+ Injuries (Sum) = 0 
+ event_type = Tornado" coords="115,339,117,339,117,340,115,340,115,339,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1991 
+ Injuries (Sum) = 10 
+ event_type = Tornado" title=" begin_date_time = Sep 1991 
+ Injuries (Sum) = 10 
+ event_type = Tornado" coords="113,339,115,339,115,340,113,340,113,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1991 
+ Injuries (Sum) = 3 
+ event_type = Tornado" title=" begin_date_time = Aug 1991 
+ Injuries (Sum) = 3 
+ event_type = Tornado" coords="112,339,114,339,114,340,112,340,112,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1991 
+ Injuries (Sum) = 4 
+ event_type = Tornado" title=" begin_date_time = Jul 1991 
+ Injuries (Sum) = 4 
+ event_type = Tornado" coords="110,339,112,339,112,340,110,340,110,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1991 
+ Injuries (Sum) = 8 
+ event_type = Tornado" title=" begin_date_time = Jun 1991 
+ Injuries (Sum) = 8 
+ event_type = Tornado" coords="109,339,111,339,111,340,109,340,109,339,"/>
+<Area shape="poly" alt=" begin_date_time = May 1991 
+ Injuries (Sum) = 66 
+ event_type = Tornado" title=" begin_date_time = May 1991 
+ Injuries (Sum) = 66 
+ event_type = Tornado" coords="107,334,109,334,109,340,107,340,107,334,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1991 
+ Injuries (Sum) = 347 
+ event_type = Tornado" title=" begin_date_time = Apr 1991 
+ Injuries (Sum) = 347 
+ event_type = Tornado" coords="106,313,108,313,108,340,106,340,106,313,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1991 
+ Injuries (Sum) = 299 
+ event_type = Tornado" title=" begin_date_time = Mar 1991 
+ Injuries (Sum) = 299 
+ event_type = Tornado" coords="104,317,106,317,106,340,104,340,104,317,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1991 
+ Injuries (Sum) = 1 
+ event_type = Tornado" title=" begin_date_time = Feb 1991 
+ Injuries (Sum) = 1 
+ event_type = Tornado" coords="103,339,105,339,105,340,103,340,103,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1991 
+ Injuries (Sum) = 20 
+ event_type = Tornado" title=" begin_date_time = Jan 1991 
+ Injuries (Sum) = 20 
+ event_type = Tornado" coords="101,338,103,338,103,340,101,340,101,338,"/>
+<Area shape="poly" alt=" begin_date_time = Dec 1990 
+ Injuries (Sum) = 23 
+ event_type = Tornado" title=" begin_date_time = Dec 1990 
+ Injuries (Sum) = 23 
+ event_type = Tornado" coords="100,338,102,338,102,340,100,340,100,338,"/>
+<Area shape="poly" alt=" begin_date_time = Nov 1990 
+ Injuries (Sum) = 46 
+ event_type = Tornado" title=" begin_date_time = Nov 1990 
+ Injuries (Sum) = 46 
+ event_type = Tornado" coords="98,336,100,336,100,340,98,340,98,336,"/>
+<Area shape="poly" alt=" begin_date_time = Oct 1990 
+ Injuries (Sum) = 83 
+ event_type = Tornado" title=" begin_date_time = Oct 1990 
+ Injuries (Sum) = 83 
+ event_type = Tornado" coords="97,333,99,333,99,340,97,340,97,333,"/>
+<Area shape="poly" alt=" begin_date_time = Sep 1990 
+ Injuries (Sum) = 7 
+ event_type = Tornado" title=" begin_date_time = Sep 1990 
+ Injuries (Sum) = 7 
+ event_type = Tornado" coords="95,339,97,339,97,340,95,340,95,339,"/>
+<Area shape="poly" alt=" begin_date_time = Aug 1990 
+ Injuries (Sum) = 358 
+ event_type = Tornado" title=" begin_date_time = Aug 1990 
+ Injuries (Sum) = 358 
+ event_type = Tornado" coords="94,312,96,312,96,340,94,340,94,312,"/>
+<Area shape="poly" alt=" begin_date_time = Jul 1990 
+ Injuries (Sum) = 9 
+ event_type = Tornado" title=" begin_date_time = Jul 1990 
+ Injuries (Sum) = 9 
+ event_type = Tornado" coords="92,339,94,339,94,340,92,340,92,339,"/>
+<Area shape="poly" alt=" begin_date_time = Jun 1990 
+ Injuries (Sum) = 324 
+ event_type = Tornado" title=" begin_date_time = Jun 1990 
+ Injuries (Sum) = 324 
+ event_type = Tornado" coords="91,315,93,315,93,340,91,340,91,315,"/>
+<Area shape="poly" alt=" begin_date_time = May 1990 
+ Injuries (Sum) = 89 
+ event_type = Tornado" title=" begin_date_time = May 1990 
+ Injuries (Sum) = 89 
+ event_type = Tornado" coords="89,333,91,333,91,340,89,340,89,333,"/>
+<Area shape="poly" alt=" begin_date_time = Apr 1990 
+ Injuries (Sum) = 25 
+ event_type = Tornado" title=" begin_date_time = Apr 1990 
+ Injuries (Sum) = 25 
+ event_type = Tornado" coords="88,337,90,337,90,340,88,340,88,337,"/>
+<Area shape="poly" alt=" begin_date_time = Mar 1990 
+ Injuries (Sum) = 102 
+ event_type = Tornado" title=" begin_date_time = Mar 1990 
+ Injuries (Sum) = 102 
+ event_type = Tornado" coords="86,332,88,332,88,340,86,340,86,332,"/>
+<Area shape="poly" alt=" begin_date_time = Feb 1990 
+ Injuries (Sum) = 74 
+ event_type = Tornado" title=" begin_date_time = Feb 1990 
+ Injuries (Sum) = 74 
+ event_type = Tornado" coords="85,334,87,334,87,340,85,340,85,334,"/>
+<Area shape="poly" alt=" begin_date_time = Jan 1990 
+ Injuries (Sum) = 37 
+ event_type = Tornado" title=" begin_date_time = Jan 1990 
+ Injuries (Sum) = 37 
+ event_type = Tornado" coords="83,337,86,337,86,340,83,340,83,337,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot9.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot9" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tornado Injuries</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Parameter results from HPGENSELECT</td>
+</tr>
+<tr>
+<td class="c systemtitle3">Distribution = Zero Inflated Poisson</td>
+</tr>
+</table><br>
+<div class="c proctitle">The HPGENSELECT Procedure</div>
+<div class="c proctitle">Selected Model</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Hpgenselect: Parameter Estimates">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<td class="r data">1</td>
+<td class="r data">15.983858</td>
+<td class="r data">1.798466</td>
+<td class="r data">78.9876</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">year</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.007980</td>
+<td class="r data">0.000883</td>
+<td class="r data">81.6554</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name April</th>
+<td class="r data">1</td>
+<td class="r data">1.397617</td>
+<td class="r data">0.040655</td>
+<td class="r data">1181.8060</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name August</th>
+<td class="r data">1</td>
+<td class="r data">0.920976</td>
+<td class="r data">0.048711</td>
+<td class="r data">357.4709</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name December</th>
+<td class="r data">1</td>
+<td class="r data">0.862291</td>
+<td class="r data">0.048593</td>
+<td class="r data">314.8913</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name February</th>
+<td class="r data">1</td>
+<td class="r data">1.084491</td>
+<td class="r data">0.044750</td>
+<td class="r data">587.3032</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name January</th>
+<td class="r data">1</td>
+<td class="r data">0.453255</td>
+<td class="r data">0.048806</td>
+<td class="r data">86.2464</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name July</th>
+<td class="r data">1</td>
+<td class="r data">0.220110</td>
+<td class="r data">0.056358</td>
+<td class="r data">15.2533</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name June</th>
+<td class="r data">1</td>
+<td class="r data">0.471904</td>
+<td class="r data">0.045646</td>
+<td class="r data">106.8789</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name March</th>
+<td class="r data">1</td>
+<td class="r data">0.928217</td>
+<td class="r data">0.042741</td>
+<td class="r data">471.6462</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name May</th>
+<td class="r data">1</td>
+<td class="r data">1.141187</td>
+<td class="r data">0.041245</td>
+<td class="r data">765.5630</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name November</th>
+<td class="r data">1</td>
+<td class="r data">0.925293</td>
+<td class="r data">0.043697</td>
+<td class="r data">448.3908</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name October</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.116661</td>
+<td class="r data">0.055145</td>
+<td class="r data">4.4755</td>
+<td class="r data">0.0344</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">month_name September</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ALABAMA</th>
+<td class="r data">1</td>
+<td class="r data">2.220515</td>
+<td class="r data">0.289599</td>
+<td class="r data">58.7915</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ARIZONA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.390778</td>
+<td class="r data">0.623949</td>
+<td class="r data">4.9684</td>
+<td class="r data">0.0258</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ARKANSAS</th>
+<td class="r data">1</td>
+<td class="r data">1.611744</td>
+<td class="r data">0.288699</td>
+<td class="r data">31.1674</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state CALIFORNIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-5.675518</td>
+<td class="r data">0.504459</td>
+<td class="r data">126.5782</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state COLORADO</th>
+<td class="r data">1</td>
+<td class="r data">0.635977</td>
+<td class="r data">0.299878</td>
+<td class="r data">4.4977</td>
+<td class="r data">0.0339</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state CONNECTICUT</th>
+<td class="r data">1</td>
+<td class="r data">0.261193</td>
+<td class="r data">0.456507</td>
+<td class="r data">0.3274</td>
+<td class="r data">0.5672</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state DELAWARE</th>
+<td class="r data">1</td>
+<td class="r data">0.106060</td>
+<td class="r data">0.515422</td>
+<td class="r data">0.0423</td>
+<td class="r data">0.8370</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state DISTRICT OF COLUMBIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.468779</td>
+<td class="r data">1.046189</td>
+<td class="r data">1.9710</td>
+<td class="r data">0.1603</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state FLORIDA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.628773</td>
+<td class="r data">0.323112</td>
+<td class="r data">3.7869</td>
+<td class="r data">0.0517</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state GEORGIA</th>
+<td class="r data">1</td>
+<td class="r data">1.119572</td>
+<td class="r data">0.296865</td>
+<td class="r data">14.2228</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state IDAHO</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-2.747830</td>
+<td class="r data">0.606974</td>
+<td class="r data">20.4946</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state ILLINOIS</th>
+<td class="r data">1</td>
+<td class="r data">0.191781</td>
+<td class="r data">0.306049</td>
+<td class="r data">0.3927</td>
+<td class="r data">0.5309</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state INDIANA</th>
+<td class="r data">1</td>
+<td class="r data">1.403041</td>
+<td class="r data">0.292801</td>
+<td class="r data">22.9613</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state IOWA</th>
+<td class="r data">1</td>
+<td class="r data">1.081464</td>
+<td class="r data">0.290711</td>
+<td class="r data">13.8388</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state KANSAS</th>
+<td class="r data">1</td>
+<td class="r data">1.428200</td>
+<td class="r data">0.289327</td>
+<td class="r data">24.3668</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state KENTUCKY</th>
+<td class="r data">1</td>
+<td class="r data">1.047849</td>
+<td class="r data">0.290965</td>
+<td class="r data">12.9693</td>
+<td class="r data">0.0003</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state LOUISIANA</th>
+<td class="r data">1</td>
+<td class="r data">0.637740</td>
+<td class="r data">0.291221</td>
+<td class="r data">4.7956</td>
+<td class="r data">0.0285</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MAINE</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.564382</td>
+<td class="r data">0.661891</td>
+<td class="r data">5.5862</td>
+<td class="r data">0.0181</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MARYLAND</th>
+<td class="r data">1</td>
+<td class="r data">1.319025</td>
+<td class="r data">0.296690</td>
+<td class="r data">19.7652</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MASSACHUSETTS</th>
+<td class="r data">1</td>
+<td class="r data">2.072656</td>
+<td class="r data">0.298332</td>
+<td class="r data">48.2674</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MICHIGAN</th>
+<td class="r data">1</td>
+<td class="r data">0.329242</td>
+<td class="r data">0.306287</td>
+<td class="r data">1.1555</td>
+<td class="r data">0.2824</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MINNESOTA</th>
+<td class="r data">1</td>
+<td class="r data">1.001112</td>
+<td class="r data">0.294510</td>
+<td class="r data">11.5549</td>
+<td class="r data">0.0007</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MISSISSIPPI</th>
+<td class="r data">1</td>
+<td class="r data">1.681699</td>
+<td class="r data">0.288695</td>
+<td class="r data">33.9326</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MISSOURI</th>
+<td class="r data">1</td>
+<td class="r data">1.633245</td>
+<td class="r data">0.291369</td>
+<td class="r data">31.4207</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state MONTANA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.035868</td>
+<td class="r data">0.521121</td>
+<td class="r data">3.9512</td>
+<td class="r data">0.0468</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEBRASKA</th>
+<td class="r data">1</td>
+<td class="r data">0.502332</td>
+<td class="r data">0.296089</td>
+<td class="r data">2.8783</td>
+<td class="r data">0.0898</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEVADA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-12.373362</td>
+<td class="r data">88.304045</td>
+<td class="r data">0.0196</td>
+<td class="r data">0.8886</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW HAMPSHIRE</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.876711</td>
+<td class="r data">0.628462</td>
+<td class="r data">1.9461</td>
+<td class="r data">0.1630</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW JERSEY</th>
+<td class="r data">1</td>
+<td class="r data">0.372340</td>
+<td class="r data">0.361111</td>
+<td class="r data">1.0632</td>
+<td class="r data">0.3025</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW MEXICO</th>
+<td class="r data">1</td>
+<td class="r data">1.673241</td>
+<td class="r data">0.307349</td>
+<td class="r data">29.6383</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NEW YORK</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.318605</td>
+<td class="r data">0.337174</td>
+<td class="r data">15.2940</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NORTH CAROLINA</th>
+<td class="r data">1</td>
+<td class="r data">0.901424</td>
+<td class="r data">0.297318</td>
+<td class="r data">9.1922</td>
+<td class="r data">0.0024</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state NORTH DAKOTA</th>
+<td class="r data">1</td>
+<td class="r data">0.816768</td>
+<td class="r data">0.308388</td>
+<td class="r data">7.0146</td>
+<td class="r data">0.0081</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state OHIO</th>
+<td class="r data">1</td>
+<td class="r data">0.262192</td>
+<td class="r data">0.305836</td>
+<td class="r data">0.7350</td>
+<td class="r data">0.3913</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state OKLAHOMA</th>
+<td class="r data">1</td>
+<td class="r data">1.971615</td>
+<td class="r data">0.288896</td>
+<td class="r data">46.5758</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state OREGON</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-2.424833</td>
+<td class="r data">0.580563</td>
+<td class="r data">17.4448</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state PENNSYLVANIA</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.417012</td>
+<td class="r data">0.310831</td>
+<td class="r data">1.7999</td>
+<td class="r data">0.1797</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state RHODE ISLAND</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-12.098273</td>
+<td class="r data">235.176913</td>
+<td class="r data">0.0026</td>
+<td class="r data">0.9590</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state SOUTH CAROLINA</th>
+<td class="r data">1</td>
+<td class="r data">0.555244</td>
+<td class="r data">0.293397</td>
+<td class="r data">3.5814</td>
+<td class="r data">0.0584</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state SOUTH DAKOTA</th>
+<td class="r data">1</td>
+<td class="r data">1.407440</td>
+<td class="r data">0.292919</td>
+<td class="r data">23.0868</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state TENNESSEE</th>
+<td class="r data">1</td>
+<td class="r data">1.696780</td>
+<td class="r data">0.291723</td>
+<td class="r data">33.8305</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state TEXAS</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.226208</td>
+<td class="r data">0.346628</td>
+<td class="r data">12.5141</td>
+<td class="r data">0.0004</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state UTAH</th>
+<td class="r data">1</td>
+<td class="r data">1.512402</td>
+<td class="r data">0.305778</td>
+<td class="r data">24.4637</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state VERMONT</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-11.968267</td>
+<td class="r data">155.509285</td>
+<td class="r data">0.0059</td>
+<td class="r data">0.9387</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state VIRGINIA</th>
+<td class="r data">1</td>
+<td class="r data">1.288270</td>
+<td class="r data">0.295570</td>
+<td class="r data">18.9973</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state WASHINGTON</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-12.910888</td>
+<td class="r data">74.497456</td>
+<td class="r data">0.0300</td>
+<td class="r data">0.8624</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state WEST VIRGINIA</th>
+<td class="r data">1</td>
+<td class="r data">0.496463</td>
+<td class="r data">0.350875</td>
+<td class="r data">2.0020</td>
+<td class="r data">0.1571</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state WISCONSIN</th>
+<td class="r data">1</td>
+<td class="r data">0.664259</td>
+<td class="r data">0.295381</td>
+<td class="r data">5.0572</td>
+<td class="r data">0.0245</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">state WYOMING</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Population_n</th>
+<td class="r data">1</td>
+<td class="r data">0.000000126</td>
+<td class="r data" nowrap>8.2510741E-9</td>
+<td class="r data">232.3284</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">num_events</th>
+<td class="r data">1</td>
+<td class="r data">0.032787</td>
+<td class="r data">0.000525</td>
+<td class="r data">3894.9504</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter">&nbsp;</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>
